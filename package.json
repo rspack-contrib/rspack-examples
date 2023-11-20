@@ -16,12 +16,5 @@
   "bugs": {
     "url": "https://github.com/rspack-contrib/rspack-examples/issues"
   },
-  "homepage": "https://github.com/rspack-contrib/rspack-examples#readme",
-  "devDependencies": {
-    "@rspack/core": "0.3.14",
-    "@rspack/cli": "0.3.14",
-    "webpack": "5.89.0",
-    "webpack-cli": "5.1.4",
-    "html-webpack-plugin": "5.5.3"
-  }
+  "homepage": "https://github.com/rspack-contrib/rspack-examples#readme"
 }
