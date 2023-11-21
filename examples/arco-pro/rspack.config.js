@@ -1,6 +1,7 @@
 const path = require('path');
+const rspack = require('@rspack/core');
 const { default: HtmlPlugin } = require('@rspack/plugin-html');
-
+const ReactRefreshPlugin = require('@rspack/plugin-react-refresh');
 const prod = process.env.NODE_ENV === 'production';
 
 /** @type {import('@rspack/cli').Configuration} */
@@ -33,6 +34,55 @@ const config = {
         test: /\.png$/,
         type: 'asset',
       },
+      {
+        test: /\.(j|t)s$/,
+        exclude: [/[\\/]node_modules[\\/]/],
+        loader: 'builtin:swc-loader',
+        options: {
+          sourceMap: false,
+          jsc: {
+            parser: {
+              syntax: 'typescript',
+            },
+            externalHelpers: true,
+            transform: {
+              react: {
+                runtime: 'automatic',
+                development: !prod,
+                refresh: !prod,
+              },
+            },
+          },
+          env: {
+            targets: 'Chrome >= 48',
+          },
+        },
+      },
+      {
+        test: /\.(j|t)sx$/,
+        loader: 'builtin:swc-loader',
+        exclude: [/[\\/]node_modules[\\/]/],
+        options: {
+          sourceMap: false,
+          jsc: {
+            parser: {
+              syntax: 'typescript',
+              tsx: true,
+            },
+            transform: {
+              react: {
+                runtime: 'automatic',
+                development: !prod,
+                refresh: !prod,
+              },
+            },
+            externalHelpers: true,
+          },
+          env: {
+            targets: 'Chrome >= 48',
+          },
+        },
+      },
     ],
   },
   resolve: {
@@ -61,12 +111,14 @@ const config = {
       template: path.join(__dirname, 'index.html'),
       favicon: path.join(__dirname, 'public', 'favicon.ico'),
     }),
+    new rspack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+    }),
+    !prod && new ReactRefreshPlugin(),
+    new rspack.ProgressPlugin({}),
   ],
   infrastructureLogging: {
     debug: false,
-  },
-  builtins: {
-    progress: true,
   },
 };
 module.exports = config;
