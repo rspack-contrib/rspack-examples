@@ -82,9 +82,6 @@ importers:
       '@rspack/cli':
         specifier: 0.3.14
         version: 0.3.14(@swc/core@1.3.14)(react-refresh@0.14.0)
-      '@rspack/core':
-        specifier: 0.3.14
-        version: 0.3.14
       '@rspack/plugin-html':
         specifier: 0.3.14
         version: 0.3.14(@rspack/core@0.3.14)

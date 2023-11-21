@@ -1,5 +1,4 @@
 const path = require('path');
-const rspack = require('@rspack/core');
 const { default: HtmlPlugin } = require('@rspack/plugin-html');
 
 const prod = process.env.NODE_ENV === 'production';
@@ -62,7 +61,6 @@ const config = {
       template: path.join(__dirname, 'index.html'),
       favicon: path.join(__dirname, 'public', 'favicon.ico'),
     }),
-    //new rspack.ProgressPlugin({})
   ],
   infrastructureLogging: {
     debug: false,
