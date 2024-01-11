@@ -1,0 +1,12 @@
+{
+  "name": "rspack-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:example": "pnpm --filter \"example-*\" build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

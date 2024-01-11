@@ -1,0 +1,21 @@
+{
+  "name": "example-perfsee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "cross-env PERFSEE_NO_UPLOAD=true rspack build",
+    "analyze": "PERFSEE_AUDIT=true rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "latest",
+    "@perfsee/webpack": "1.6.0",
+    "@rspack/core": "latest"
+  },
+  "sideEffects": false,
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
