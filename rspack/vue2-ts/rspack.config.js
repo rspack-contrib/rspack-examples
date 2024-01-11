@@ -54,6 +54,9 @@ const config = {
 				type: "asset/resource"
 			}
 		]
+	},
+	experiments: {
+		css:false
 	}
 };
 module.exports = config;

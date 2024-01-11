@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@node-rs/crc32": "1.7.0"
+    "@node-rs/crc32": "1.7.0",
+    "react": "18.2.0"
   },
   "devDependencies": {
     "@rspack/cli": "latest",
@@ -37,6 +38,7 @@
     "image-webpack-loader": "8.1.0",
     "svg-react-loader": "0.4.6",
     "node-loader": "2.0.0",
-    "@rspack/core": "latest"
+    "@rspack/core": "latest",
+    "file-loader": "6.2.0"
   }
 }
