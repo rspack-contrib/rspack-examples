@@ -38,6 +38,7 @@
     "svg-react-loader": "0.4.6",
     "node-loader": "2.0.0",
     "@rspack/core": "latest",
-    "file-loader": "6.2.0"
+    "file-loader": "6.2.0",
+    "sass": "1.69.7"
   }
 }
