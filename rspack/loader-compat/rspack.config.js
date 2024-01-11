@@ -119,14 +119,6 @@ const config = {
 						{
 							loader: "file-loader"
 						},
-						{
-							loader: "image-webpack-loader",
-							options: {
-								optipng: {
-									enabled: true
-								}
-							}
-						}
 					];
 				}
 			}

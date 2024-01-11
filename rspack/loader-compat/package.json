@@ -35,7 +35,6 @@
     "source-map-loader": "4.0.1",
     "thread-loader": "4.0.1",
     "ts-loader": "9.4.2",
-    "image-webpack-loader": "8.1.0",
     "svg-react-loader": "0.4.6",
     "node-loader": "2.0.0",
     "@rspack/core": "latest",
