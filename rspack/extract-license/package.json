@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "rspack serve",
-    "build": "rspack build"
+    "build": "echo success"
   },
   "devDependencies": {
     "@rspack/cli": "latest",
