@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "rspack serve",
-    "build": "rspack build"
+    "build": "cross-env BUILD=true rspack build"
   },
   "devDependencies": {
     "@rspack/cli": "latest",
