@@ -1,0 +1,10 @@
+{
+  "name": "example-module-federation-interop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
