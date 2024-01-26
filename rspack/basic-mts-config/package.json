@@ -1,0 +1,20 @@
+{
+  "name": "example-basic-tsconfig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_OPTIONS=\"--loader ts-node/esm\" rspack serve",
+    "build": "NODE_OPTIONS=\"--loader ts-node/esm\" rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "latest",
+    "@rspack/core": "latest",
+    "ts-node": "10.9.2"
+  },
+  "sideEffects": false,
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
