@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "rspack serve",
+    "doctor": "RSDOCTOR=true rspack serve",
     "build": "rspack build",
     "analyze": "pnpm run build --analyze",
     "preview": "cd dist && serve -s",
@@ -53,7 +54,8 @@
     "react-refresh": "^0.14.0",
     "serve": "14.1.2",
     "style-loader": "^3.3.1",
-    "swc-loader": "^0.2.3"
+    "swc-loader": "^0.2.3",
+    "@rsdoctor/rspack-plugin": "0.1.0"
   },
   "browserslist": {
     "production": [
