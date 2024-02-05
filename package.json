@@ -11,7 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "cross-env": "7.0.3",
-    "webpack": "5.89.0"
+    "webpack": "5.89.0",
+    "neo-async": "^2.6.2"
   },
   "packageManager": "pnpm@8.9.2"
 }

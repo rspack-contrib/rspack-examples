@@ -46,9 +46,9 @@ const doCompileAndReplace = (args, prefix, callback) => {
 	}
 
 	try {
-		require.resolve("webpack-cli");
+		require.resolve("@rspack/cli");
 	} catch (e) {
-		throw new Error("Please install webpack-cli at root.");
+		throw new Error("Please install @rspack/cli at root.");
 	}
 
 	const connectIO = (subprocess) => {
@@ -73,7 +73,7 @@ const doCompileAndReplace = (args, prefix, callback) => {
 	}
 	let disconnectIO = null;
 
-	const subprocess = cp.exec(`node ${path.resolve(__dirname, "../bin/webpack.js")} ${args} ${displayReasons} ${commonArgs}`, (error, stdout, stderr) => {
+	const subprocess = cp.exec(`pnpm run rspack ${args} ${displayReasons} ${commonArgs}`, (error, stdout, stderr) => {
 		disconnectIO && disconnectIO();
 		if (stderr)
 			console.log(stderr);
@@ -95,6 +95,6 @@ async.series([
 	callback => doCompileAndReplace("--mode development --env development --devtool none", "development", callback),
 	callback => doCompileAndReplace("--mode none --env none --output-pathinfo verbose", "", callback)
 ], () => {
-	readme = tc.replaceBase(readme);
-	fs.writeFile("README.md", readme, "utf-8", function () { });
+	// readme = tc.replaceBase(readme);
+	// fs.writeFile("README.md", readme, "utf-8", function () { });
 });
