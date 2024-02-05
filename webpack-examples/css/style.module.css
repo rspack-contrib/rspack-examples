@@ -1,0 +1,20 @@
+:root {
+	--large: 72px;
+}
+
+.main {
+	font-size: var(--large);
+	color: darkblue;
+}
+
+@media (min-width: 1024px) {
+	.main {
+		color: green;
+	}
+}
+
+@supports (display: grid) {
+	.main {
+		display: grid
+	}
+}
