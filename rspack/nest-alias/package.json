@@ -1,0 +1,27 @@
+{
+  "name": "cra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc -b",
+    "bundle": "rspack",
+    "bundle:webpack": "webpack",
+    "build": "pnpm compile && pnpm bundle",
+    "build:webpack": "pnpm compile && pnpm bundle:webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lib1": "workspace:*",
+    "lib2": "workspace:*",
+    "typescript": "^5.2.2",
+    "@rspack/cli": "0.3.13"
+  },
+  "devDependencies": {
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
