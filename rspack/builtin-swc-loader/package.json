@@ -16,7 +16,8 @@
     "@rspack/core": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-refresh": "0.14.0"
+    "react-refresh": "0.14.0",
+    "lib3": "workspace:*"
   },
   "devDependencies": {
     "@rspack/core": "latest",
