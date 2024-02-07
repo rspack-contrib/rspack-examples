@@ -4,3 +4,4 @@ packages:
   - "rspress/*"
   - "modernjs/*"
   - "rsdoctor/*"
+  - "libs/*"
