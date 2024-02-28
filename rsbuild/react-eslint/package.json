@@ -1,5 +1,5 @@
 {
-  "name": "rsbuild-eslint",
+  "name": "rsbuild-react-eslint",
   "private": true,
   "version": "1.0.0",
   "scripts": {
