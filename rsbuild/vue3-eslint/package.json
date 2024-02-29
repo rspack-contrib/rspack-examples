@@ -1,0 +1,23 @@
+{
+  "name": "rsbuild-vue3-eslint",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev --open",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.19"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^0.4.8",
+    "@rsbuild/plugin-eslint": "^0.4.8",
+    "@rsbuild/plugin-vue": "^0.4.8",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.22.0",
+    "typescript": "^5.3.0"
+  }
+}
