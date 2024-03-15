@@ -1,9 +1,13 @@
 <template>
   <div class="content">
-    <h1>Rsbuild with Vue</h1>
+    <h1>{{ title }}</h1>
     <p>Start building amazing things with Rsbuild.</p>
   </div>
 </template>
+
+<script setup lang="ts">
+const title = ref("Rsbuild with Vue");
+</script>
 
 <style scoped>
 .content {
