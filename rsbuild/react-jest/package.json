@@ -13,8 +13,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@rsbuild/core": "^0.4.15",
-    "@rsbuild/plugin-react": "^0.4.15",
+    "@rsbuild/core": "^0.5.1",
+    "@rsbuild/plugin-react": "^0.5.1",
     "@swc/core": "^1.4.8",
     "@swc/jest": "^0.2.36",
     "@testing-library/jest-dom": "^6.4.2",
