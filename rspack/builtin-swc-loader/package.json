@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@rspack/core": "latest",
-    "@swc/helpers": "0.5.1"
+    "@swc/helpers": "0.5.1",
+    "@swc/plugin-remove-console": "1.5.113"
   }
 }
