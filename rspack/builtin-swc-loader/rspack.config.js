@@ -39,6 +39,16 @@ const config = {
                   useBuiltins: false,
                 },
               },
+              experimental: {
+                plugins: [
+                  [
+                    "@swc/plugin-remove-console", // need to use specific version to be compatible with rspack's internal swc version
+                    {
+                      exclude: ["error"],
+                    },
+                  ],
+                ],
+              },
             },
           },
         },
