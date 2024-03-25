@@ -1,0 +1,32 @@
+{
+  "name": "rsdoctor-next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "doctor": "RSDOCTOR=true next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:analysis": "npm run doctor && npx rsdoctor analyze --profile ./.next/.rsdoctor/manifest.json"
+  },
+  "dependencies": {
+    "next": "14.1.0",
+    "next-compose-plugins": "^2.2.1",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@rsdoctor/cli": "^0.1.8",
+    "@rsdoctor/webpack-plugin": "^0.1.8",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
