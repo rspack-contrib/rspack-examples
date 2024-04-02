@@ -10,23 +10,20 @@
   },
   "dependencies": {
     "@swc/helpers": "0.5.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@modern-js/storybook": "latest",
     "@rspack/cli": "latest",
     "@rspack/core": "latest",
     "@storybook/addon-essentials": "^7.0.0",
     "@storybook/addon-interactions": "^7.0.0",
     "@storybook/addon-links": "^7.0.0",
     "@storybook/blocks": "^7.0.0",
-    "@storybook/react": "^7.0.0",
     "@storybook/testing-library": "^0.0.14-next.1",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
-    "prop-types": "^15.8.1",
-    "react-refresh": "^0.14.0",
-    "storybook": "^7.0.0",
-    "storybook-react-rspack": "7.0.0-rc.18"
+    "prop-types": "^15.8.1"
   }
 }
