@@ -1,16 +1,18 @@
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
-  stories: ['../src/stories/**/*.mdx', '../src/stories/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: [
+    '../src/stories/**/*.mdx',
+    '../src/stories/**/*.stories.@(js|jsx|ts|tsx)',
+  ],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
   ],
   framework: {
-    name: 'storybook-react-rspack',
-    // name: '@storybook/react-webpack5',
+    name: '@modern-js/storybook',
     options: {
-      fastRefresh: true,
+      bundler: 'rspack',
     },
   },
   docs: {
@@ -18,7 +20,6 @@ const config = {
   },
   typescript: {
     reactDocgen: 'react-docgen',
-    // reactDocgen: true,
   },
-};
-export default config;
+}
+export default config
