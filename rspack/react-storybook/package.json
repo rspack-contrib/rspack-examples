@@ -14,7 +14,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@modern-js/storybook": "latest",
+    "@modern-js/storybook": "^2.48.4",
     "@rspack/cli": "latest",
     "@rspack/core": "latest",
     "@storybook/addon-essentials": "^7.0.0",
