@@ -1,3 +1,11 @@
+import "remote-web-worker";
+const worker = new Worker(
+  "https://cdn.jsdelivr.net/npm/console-log-hello-world",
+  { type: "classic" }
+);
+worker.addEventListener("message", (msg) => {
+  console.log("msg from remote", msg);
+});
 document.body.innerHTML = `
 	<pre id="history"></pre>
 	<form>

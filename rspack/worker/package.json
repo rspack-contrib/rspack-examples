@@ -12,6 +12,7 @@
     "@rspack/cli": "latest"
   },
   "devDependencies": {
-    "@rspack/core": "latest"
+    "@rspack/core": "latest",
+    "remote-web-worker": "0.0.9"
   }
 }
