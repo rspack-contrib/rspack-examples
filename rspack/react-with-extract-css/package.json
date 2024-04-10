@@ -1,0 +1,27 @@
+{
+  "name": "example-react-example-css-extract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "rspack build",
+    "dev": "rspack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@rspack/cli": "latest",
+    "@swc/helpers": "0.5.1",
+    "css-loader": "^7.1.0",
+    "less-loader": "11.1.0",
+    "normalize.css": "8.0.1",
+    "react": "17.0.0",
+    "react-dom": "17.0.0"
+  },
+  "devDependencies": {
+    "@rspack/core": "latest",
+    "react-refresh": "^0.14.0"
+  }
+}
