@@ -13,7 +13,7 @@
     "@rspack/plugin-node-polyfill": "latest",
     "@rspack/core": "latest"
   },
-  "sideEffects": false,
+  "sideEffects": ["**/*.css","**/*.less","**/*.scss"],
   "keywords": [],
   "author": "",
   "license": "MIT"

@@ -20,7 +20,7 @@
     "@rspack/core": "latest",
     "react-refresh": "^0.14.0"
   },
-  "sideEffects": false,
+  "sideEffects": ["**/*.css","**/*.less","**/*.scss"],
   "keywords": [],
   "author": "",
   "license": "MIT"
