@@ -16,7 +16,7 @@
     "@rspack/core": "latest"
   },
   "browserslist": "last 4 version",
-  "sideEffects": false,
+  "sideEffects": ["**/*.css","**/*.less","**/*.scss"],
   "keywords": [],
   "author": "",
   "license": "MIT"
