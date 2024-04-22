@@ -13,5 +13,10 @@
     "cross-env": "7.0.3",
     "webpack": "5.89.0"
   },
-  "packageManager": "pnpm@8.9.2"
+  "packageManager": "pnpm@8.9.2",
+  "pnpm": {
+    "overrides": {
+      "react-focus-lock": "2.11.3"
+    }
+  }
 }
