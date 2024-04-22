@@ -12,7 +12,7 @@ export async function startDevServer() {
 
   const fastify = Fastify();
 
-  const { default: middie } = await import("@fastify/middie");
+  const middie = await import("@fastify/middie");
 
   await fastify.register(middie);
 
