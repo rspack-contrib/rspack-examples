@@ -1,0 +1,16 @@
+{
+  "name": "rsbuild-fastify",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node ./server.mjs",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^0.6.0",
+    "@fastify/middie": "^8.3.0",
+    "fastify": "^4.26.2",
+    "typescript": "^5.3.0"
+  }
+}
