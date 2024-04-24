@@ -12,6 +12,28 @@ const config = {
 		new rspack.HtmlRspackPlugin({
 			template: "./index.html"
 		})
-	]
+	],
+	module: {
+		rules: [
+			{
+				test: /\.ts$/,
+				use: [
+					{
+						loader: 'builtin:swc-loader',
+						/**
+						 * @type {import('@rspack/core').SwcLoaderOptions}
+						 */
+						options: {
+							jsc: {
+								parser:{
+									syntax: 'typescript'
+								}
+							}
+						}
+					}
+				]
+			}
+		]
+	}
 };
 module.exports = config;
