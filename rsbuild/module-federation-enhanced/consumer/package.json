@@ -1,5 +1,5 @@
 {
-  "name": "rsbuild-module-federation-remote",
+  "name": "rsbuild-module-federation-enhanced-consumer",
   "private": true,
   "scripts": {
     "dev": "rsbuild dev --open",
@@ -11,8 +11,11 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@module-federation/enhanced": "^0.1.10",
     "@rsbuild/core": "^0.6.0",
     "@rsbuild/plugin-react": "^0.6.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
     "typescript": "^5.4.5"
   }
 }
