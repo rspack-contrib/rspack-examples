@@ -11,6 +11,3 @@ dist/
 .vscode/*
 !.vscode/extensions.json
 .idea
-
-# MF Types
-@mf-types
