@@ -14,7 +14,7 @@
     "@perfsee/webpack": "1.6.0",
     "@rspack/core": "latest"
   },
-  "sideEffects": ["**/*.css","**/*.less","**/*.scss"],
+  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
   "keywords": [],
   "author": "",
   "license": "MIT"

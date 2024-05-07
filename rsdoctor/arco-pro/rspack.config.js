@@ -1,72 +1,72 @@
-const path = require("path");
-const rspack = require("@rspack/core");
-const { RsdoctorRspackPlugin } = require("@rsdoctor/rspack-plugin");
-const ReactRefreshPlugin = require("@rspack/plugin-react-refresh");
-const { default: HtmlPlugin } = require("@rspack/plugin-html");
+const path = require('path');
+const rspack = require('@rspack/core');
+const { RsdoctorRspackPlugin } = require('@rsdoctor/rspack-plugin');
+const ReactRefreshPlugin = require('@rspack/plugin-react-refresh');
+const { default: HtmlPlugin } = require('@rspack/plugin-html');
 
-const prod = process.env.NODE_ENV === "production";
+const prod = process.env.NODE_ENV === 'production';
 
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
   context: __dirname,
-  entry: "./src/index.tsx",
-  target: ["web", "es5"],
+  entry: './src/index.tsx',
+  target: ['web', 'es5'],
   devtool: false,
   devServer: {
     port: 5555,
-    webSocketServer: "sockjs",
+    webSocketServer: 'sockjs',
     historyApiFallback: true,
   },
   module: {
     rules: [
       {
         test: /\.less$/,
-        use: "less-loader",
-        type: "css",
+        use: 'less-loader',
+        type: 'css',
       },
       {
         test: /\.module\.less$/,
-        use: "less-loader",
-        type: "css/module",
+        use: 'less-loader',
+        type: 'css/module',
       },
       {
         test: /\.svg$/,
-        use: "@svgr/webpack",
+        use: '@svgr/webpack',
       },
       {
         test: /\.(j|t)s$/,
         exclude: [/[\\/]node_modules[\\/]/],
         use: {
-          loader: "builtin:swc-loader",
+          loader: 'builtin:swc-loader',
           options: {
             sourceMap: false,
             jsc: {
               parser: {
-                syntax: "typescript",
+                syntax: 'typescript',
               },
               externalHelpers: true,
             },
             env: {
-              targets: "Chrome >= 48",
+              targets: 'Chrome >= 48',
             },
           },
-        }
+        },
       },
       {
         test: /\.(j|t)sx$/,
         exclude: [/[\\/]node_modules[\\/]/],
         use: {
-          loader: "builtin:swc-loader",
+          loader: 'builtin:swc-loader',
           options: {
             sourceMap: false,
             jsc: {
               parser: {
-                syntax: "typescript",
+                syntax: 'typescript',
                 tsx: true,
               },
               transform: {
                 react: {
-                  runtime: "automatic",
+                  runtime: 'automatic',
                   development: !prod,
                   refresh: !prod,
                 },
@@ -74,31 +74,31 @@ const config = {
               externalHelpers: true,
             },
             env: {
-              targets: "Chrome >= 48",
+              targets: 'Chrome >= 48',
             },
           },
-        }
+        },
       },
       {
         test: /\.png$/,
-        type: "asset",
+        type: 'asset',
       },
     ],
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      '@': path.resolve(__dirname, 'src'),
       // The default exported mock.js contains a minified [parser](https://github.com/nuysoft/Mock/blob/refactoring/src/mock/regexp/parser.js) with super deep binary
       // expression, which causes stack overflow for swc parser in debug mode.
       // Alias to the unminified version mitigates this problem.
       // See also <https://github.com/search?q=repo%3Aswc-project%2Fswc+parser+stack+overflow&type=issues>
-      mockjs: require.resolve("./patches/mock.js"),
+      mockjs: require.resolve('./patches/mock.js'),
     },
-    extensions: ["...", ".ts", ".tsx", ".jsx"],
+    extensions: ['...', '.ts', '.tsx', '.jsx'],
   },
   output: {
-    publicPath: "/",
-    filename: "[name].[contenthash].js",
+    publicPath: '/',
+    filename: '[name].[contenthash].js',
   },
   optimization: {
     minimize: false, // Disabling minification because it takes too long on CI
@@ -106,7 +106,7 @@ const config = {
     splitChunks: {
       cacheGroups: {
         someVendor: {
-          chunks: "all",
+          chunks: 'all',
           minChunks: 2,
         },
       },
@@ -114,9 +114,9 @@ const config = {
   },
   plugins: [
     new HtmlPlugin({
-      title: "Arco Pro App",
-      template: path.join(__dirname, "index.html"),
-      favicon: path.join(__dirname, "public", "favicon.ico"),
+      title: 'Arco Pro App',
+      template: path.join(__dirname, 'index.html'),
+      favicon: path.join(__dirname, 'public', 'favicon.ico'),
     }),
     new ReactRefreshPlugin(),
     new rspack.ProgressPlugin(),

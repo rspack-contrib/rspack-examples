@@ -1,43 +1,43 @@
-import MultiInterval from '@/components/Chart/multi-stack-interval'
-import PeriodLine from '@/components/Chart/period-legend-line'
-import useLocale from '@/utils/useLocale'
-import { Card, Grid, Space, Table, Typography } from '@arco-design/web-react'
-import axios from 'axios'
-import React, { useEffect, useMemo, useState } from 'react'
-import locale from './locale'
-import './mock'
-import PublicOpinion from './public-opinion'
+import MultiInterval from '@/components/Chart/multi-stack-interval';
+import PeriodLine from '@/components/Chart/period-legend-line';
+import useLocale from '@/utils/useLocale';
+import { Card, Grid, Space, Table, Typography } from '@arco-design/web-react';
+import axios from 'axios';
+import React, { useEffect, useMemo, useState } from 'react';
+import locale from './locale';
+import './mock';
+import PublicOpinion from './public-opinion';
 
-const { Row, Col } = Grid
+const { Row, Col } = Grid;
 
 function DataAnalysis() {
-  const t = useLocale(locale)
-  const [loading, setLoading] = useState(false)
-  const [tableLoading, setTableLoading] = useState(false)
+  const t = useLocale(locale);
+  const [loading, setLoading] = useState(false);
+  const [tableLoading, setTableLoading] = useState(false);
 
-  const [chartData, setChartData] = useState([])
-  const [tableData, setTableData] = useState([])
+  const [chartData, setChartData] = useState([]);
+  const [tableData, setTableData] = useState([]);
 
   const getChartData = async () => {
-    setLoading(true)
+    setLoading(true);
     const { data } = await axios
       .get('/api/data-analysis/content-publishing')
-      .finally(() => setLoading(false))
-    setChartData(data)
-  }
+      .finally(() => setLoading(false));
+    setChartData(data);
+  };
 
   const getTableData = async () => {
-    setTableLoading(true)
+    setTableLoading(true);
     const { data } = await axios
       .get('/api/data-analysis/author-list')
-      .finally(() => setTableLoading(false))
-    setTableData(data.list)
-  }
+      .finally(() => setTableLoading(false));
+    setTableData(data.list);
+  };
 
   useEffect(() => {
-    getChartData()
-    getTableData()
-  }, [])
+    getChartData();
+    getTableData();
+  }, []);
 
   const columns = useMemo(() => {
     return [
@@ -54,7 +54,7 @@ function DataAnalysis() {
         dataIndex: 'contentCount',
         sorter: (a, b) => a.contentCount - b.contentCount,
         render(x) {
-          return Number(x).toLocaleString()
+          return Number(x).toLocaleString();
         },
       },
       {
@@ -62,18 +62,16 @@ function DataAnalysis() {
         dataIndex: 'clickCount',
         sorter: (a, b) => a.clickCount - b.clickCount,
         render(x) {
-          return Number(x).toLocaleString()
+          return Number(x).toLocaleString();
         },
       },
-    ]
-  }, [t])
+    ];
+  }, [t]);
 
   return (
     <Space size={16} direction="vertical" style={{ width: '100%' }}>
       <Card>
-        <Typography.Title heading={6}>
-          {t['dataAnalysis.title.publicOpinion']}
-        </Typography.Title>
+        <Typography.Title heading={6}>{t['dataAnalysis.title.publicOpinion']}</Typography.Title>
         <PublicOpinion />
       </Card>
       <Row gutter={16}>
@@ -87,9 +85,7 @@ function DataAnalysis() {
         </Col>
         <Col span={10}>
           <Card>
-            <Typography.Title heading={6}>
-              {t['dataAnalysis.title.authorsList']}
-            </Typography.Title>
+            <Typography.Title heading={6}>{t['dataAnalysis.title.authorsList']}</Typography.Title>
             <div style={{ height: '370px' }}>
               <Table
                 rowKey="id"
@@ -113,6 +109,6 @@ function DataAnalysis() {
         </Col>
       </Row>
     </Space>
-  )
+  );
 }
-export default DataAnalysis
+export default DataAnalysis;

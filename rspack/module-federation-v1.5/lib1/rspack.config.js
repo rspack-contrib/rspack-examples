@@ -1,67 +1,67 @@
-const path = require("path")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-const ReactRefreshPlugin = require("@rspack/plugin-react-refresh")
-const rspack = require("@rspack/core")
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ReactRefreshPlugin = require('@rspack/plugin-react-refresh');
+const rspack = require('@rspack/core');
 
-const isProduction = process.env.NODE_ENV === "production"
+const isProduction = process.env.NODE_ENV === 'production';
 
 /** @type {import('@rspack/core').Configuration} */
 module.exports = {
-  mode: isProduction ? "production" : "development",
-  entry: "./src/index.js",
+  mode: isProduction ? 'production' : 'development',
+  entry: './src/index.js',
   context: __dirname,
   output: {
     // set uniqueName explicitly to make react-refresh works
-    uniqueName: "lib1"
+    uniqueName: 'lib1',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        include: path.resolve(__dirname, "src"),
+        include: path.resolve(__dirname, 'src'),
         use: {
-          loader: "builtin:swc-loader",
+          loader: 'builtin:swc-loader',
           options: {
             jsc: {
-							parser: {
-								syntax: "ecmascript",
-								jsx: true
-							},
-							transform: {
-								react: {
-									runtime: "automatic",
+              parser: {
+                syntax: 'ecmascript',
+                jsx: true,
+              },
+              transform: {
+                react: {
+                  runtime: 'automatic',
                   refresh: !isProduction,
-								}
-							}
-						}
-          }
-        }
-      }
-    ]
+                },
+              },
+            },
+          },
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       // exclude container entry from html, to use the correct HMR handler
-      excludeChunks: ['mfeBBB']
+      excludeChunks: ['mfeBBB'],
     }),
     new rspack.container.ModuleFederationPlugin({
       // A unique name
-      name: "mfeBBB",
+      name: 'mfeBBB',
       // List of exposed modules
       exposes: {
-        "./Component": "./src/Component",
+        './Component': './src/Component',
       },
 
       // list of shared modules
       shared: [
         // date-fns is shared with the other remote, app doesn't know about that
-        "date-fns",
+        'date-fns',
         {
           react: {
-            singleton: true // must be specified in each config
-          }
-        }
-      ]
+            singleton: true, // must be specified in each config
+          },
+        },
+      ],
     }),
     !isProduction && new ReactRefreshPlugin(),
   ],
@@ -70,6 +70,6 @@ module.exports = {
     // add CORS header for HMR chunk (xxx.hot-update.json and xxx.hot-update.js)
     headers: {
       'Access-Control-Allow-Origin': '*',
-    }
-  }
-}
+    },
+  },
+};

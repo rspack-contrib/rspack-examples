@@ -1,12 +1,21 @@
-import useLocale from '@/utils/useLocale'
-import { Badge, Button, Descriptions, Skeleton, Space, Table, Tag, Typography } from '@arco-design/web-react'
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-import locale from './locale'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import {
+  Badge,
+  Button,
+  Descriptions,
+  Skeleton,
+  Space,
+  Table,
+  Tag,
+  Typography,
+} from '@arco-design/web-react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import locale from './locale';
+import styles from './style/index.module.less';
 
 function Verified() {
-  const t = useLocale(locale)
+  const t = useLocale(locale);
   const [data, setData] = useState({
     accountType: '',
     isVerified: true,
@@ -17,35 +26,33 @@ function Verified() {
     enterpriseName: '',
     enterpriseCertificateType: '',
     organizationCode: '',
-  })
+  });
 
-  const [loading, setLoading] = useState(true)
-  const [tableData, setTableData] = useState([])
-  const [tableLoading, setTableLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
+  const [tableData, setTableData] = useState([]);
+  const [tableLoading, setTableLoading] = useState(true);
 
   const getData = async () => {
     const { data } = await axios
       .get('/api/user/verified/enterprise')
-      .finally(() => setLoading(false))
-    setData(data)
+      .finally(() => setLoading(false));
+    setData(data);
 
     const { data: tableData } = await axios
       .get('/api/user/verified/authList')
-      .finally(() => setTableLoading(false))
-    setTableData(tableData)
-  }
+      .finally(() => setTableLoading(false));
+    setTableData(tableData);
+  };
 
   useEffect(() => {
-    getData()
-  }, [])
+    getData();
+  }, []);
 
-  const loadingNode = <Skeleton text={{ rows: 1 }} />
+  const loadingNode = <Skeleton text={{ rows: 1 }} />;
 
   return (
     <div className={styles.verified}>
-      <Typography.Title heading={6}>
-        {t['userSetting.verified.enterprise']}
-      </Typography.Title>
+      <Typography.Title heading={6}>{t['userSetting.verified.enterprise']}</Typography.Title>
       <Descriptions
         className={styles['verified-enterprise']}
         labelStyle={{ textAlign: 'right' }}
@@ -54,25 +61,21 @@ function Verified() {
         column={3}
         data={Object.entries(data).map(([key, value]) => ({
           label: t[`userSetting.verified.label.${key}`],
-          value: loading
-            ? (
-              loadingNode
+          value: loading ? (
+            loadingNode
+          ) : typeof value === 'boolean' ? (
+            value ? (
+              <Tag color="green">{t['userSetting.value.verified']}</Tag>
+            ) : (
+              <Tag color="red">{t['userSetting.value.notVerified']}</Tag>
             )
-            : typeof value === 'boolean'
-            ? (
-              value
-                ? <Tag color="green">{t['userSetting.value.verified']}</Tag>
-                : <Tag color="red">{t['userSetting.value.notVerified']}</Tag>
-            )
-            : (
-              value
-            ),
+          ) : (
+            value
+          ),
         }))}
       />
 
-      <Typography.Title heading={6}>
-        {t['userSetting.verified.records']}
-      </Typography.Title>
+      <Typography.Title heading={6}>{t['userSetting.verified.records']}</Typography.Title>
       <Table
         columns={[
           { title: t['userSetting.verified.authType'], dataIndex: 'authType' },
@@ -84,23 +87,16 @@ function Verified() {
             title: t['userSetting.verified.authStatus'],
             dataIndex: 'authStatus',
             render(x) {
-              return x
-                ? (
+              return x ? (
+                <Badge status="success" text={t['userSetting.verified.status.success']}></Badge>
+              ) : (
+                <span>
                   <Badge
-                    status="success"
-                    text={t['userSetting.verified.status.success']}
-                  >
-                  </Badge>
-                )
-                : (
-                  <span>
-                    <Badge
-                      status="processing"
-                      text={t['userSetting.verified.status.waiting']}
-                    >
-                    </Badge>
-                  </span>
-                )
+                    status="processing"
+                    text={t['userSetting.verified.status.waiting']}
+                  ></Badge>
+                </span>
+              );
             },
           },
           {
@@ -112,22 +108,14 @@ function Verified() {
             headerCellStyle: { paddingLeft: '15px' },
             render: (_, x) => {
               if (x.authStatus) {
-                return (
-                  <Button type="text">
-                    {t['userSetting.verified.operation.view']}
-                  </Button>
-                )
+                return <Button type="text">{t['userSetting.verified.operation.view']}</Button>;
               }
               return (
                 <Space>
-                  <Button type="text">
-                    {t['userSetting.verified.operation.view']}
-                  </Button>
-                  <Button type="text">
-                    {t['userSetting.verified.operation.revoke']}
-                  </Button>
+                  <Button type="text">{t['userSetting.verified.operation.view']}</Button>
+                  <Button type="text">{t['userSetting.verified.operation.revoke']}</Button>
                 </Space>
-              )
+              );
             },
           },
         ]}
@@ -135,7 +123,7 @@ function Verified() {
         loading={tableLoading}
       />
     </div>
-  )
+  );
 }
 
-export default Verified
+export default Verified;

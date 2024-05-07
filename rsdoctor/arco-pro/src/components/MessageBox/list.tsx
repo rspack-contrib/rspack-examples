@@ -1,45 +1,42 @@
-import { Avatar, Button, List, Result, Space, Tag, Typography } from '@arco-design/web-react'
-import React from 'react'
-import useLocale from '../../utils/useLocale'
-import styles from './style/index.module.less'
+import { Avatar, Button, List, Result, Space, Tag, Typography } from '@arco-design/web-react';
+import React from 'react';
+import useLocale from '../../utils/useLocale';
+import styles from './style/index.module.less';
 
 export interface MessageItemData {
-  id: string
-  title: string
-  subTitle?: string
-  avatar?: string
-  content: string
-  time?: string
-  status: number
+  id: string;
+  title: string;
+  subTitle?: string;
+  avatar?: string;
+  content: string;
+  time?: string;
+  status: number;
   tag?: {
-    text?: string
-    color?: string
-  }
+    text?: string;
+    color?: string;
+  };
 }
 
-export type MessageListType = MessageItemData[]
+export type MessageListType = MessageItemData[];
 
 interface MessageListProps {
-  data: MessageItemData[]
-  unReadData: MessageItemData[]
-  onItemClick?: (item: MessageItemData, index: number) => void
-  onAllBtnClick?: (
-    unReadData: MessageItemData[],
-    data: MessageItemData[],
-  ) => void
+  data: MessageItemData[];
+  unReadData: MessageItemData[];
+  onItemClick?: (item: MessageItemData, index: number) => void;
+  onAllBtnClick?: (unReadData: MessageItemData[], data: MessageItemData[]) => void;
 }
 
 function MessageList(props: MessageListProps) {
-  const t = useLocale()
-  const { data, unReadData } = props
+  const t = useLocale();
+  const { data, unReadData } = props;
 
   function onItemClick(item: MessageItemData, index: number) {
-    if (item.status) return
-    props.onItemClick && props.onItemClick(item, index)
+    if (item.status) return;
+    props.onItemClick && props.onItemClick(item, index);
   }
 
   function onAllBtnClick() {
-    props.onAllBtnClick && props.onAllBtnClick(unReadData, data)
+    props.onAllBtnClick && props.onAllBtnClick(unReadData, data);
   }
 
   return (
@@ -73,24 +70,26 @@ function MessageList(props: MessageListProps) {
               cursor: 'pointer',
             }}
             onClick={() => {
-              onItemClick(item, index)
+              onItemClick(item, index);
             }}
           >
             <List.Item.Meta
-              avatar={item.avatar && (
-                <Avatar shape="circle" size={36}>
-                  <img src={item.avatar} />
-                </Avatar>
-              )}
+              avatar={
+                item.avatar && (
+                  <Avatar shape="circle" size={36}>
+                    <img src={item.avatar} />
+                  </Avatar>
+                )
+              }
               title={
                 <div className={styles['message-title']}>
                   <Space size={4}>
                     <span>{item.title}</span>
-                    <Typography.Text type="secondary">
-                      {item.subTitle}
-                    </Typography.Text>
+                    <Typography.Text type="secondary">{item.subTitle}</Typography.Text>
                   </Space>
-                  {item.tag && item.tag.text ? <Tag color={item.tag.color}>{item.tag.text}</Tag> : null}
+                  {item.tag && item.tag.text ? (
+                    <Tag color={item.tag.color}>{item.tag.text}</Tag>
+                  ) : null}
                 </div>
               }
               description={
@@ -108,7 +107,7 @@ function MessageList(props: MessageListProps) {
         </List.Item>
       ))}
     </List>
-  )
+  );
 }
 
-export default MessageList
+export default MessageList;

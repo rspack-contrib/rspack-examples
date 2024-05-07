@@ -7,7 +7,7 @@ function App() {
     <div className="app">
       <HelloWorld />
     </div>
-  )
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));

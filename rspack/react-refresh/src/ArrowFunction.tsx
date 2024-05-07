@@ -1,1 +1,1 @@
-export const ArrowFunction = () => <h1>Arrow Function</h1>
+export const ArrowFunction = () => <h1>Arrow Function</h1>;

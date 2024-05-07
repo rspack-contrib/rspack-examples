@@ -1,11 +1,11 @@
-import { lazy, Suspense } from 'react'
-import { ArrowFunction } from './ArrowFunction'
-import ClassDefault from './ClassDefault'
-import { ClassNamed } from './ClassNamed'
-import FunctionDefault from './FunctionDefault'
-import { FunctionNamed } from './FunctionNamed'
+import { lazy, Suspense } from 'react';
+import { ArrowFunction } from './ArrowFunction';
+import ClassDefault from './ClassDefault';
+import { ClassNamed } from './ClassNamed';
+import FunctionDefault from './FunctionDefault';
+import { FunctionNamed } from './FunctionNamed';
 
-const LazyComponent = lazy(() => import('./LazyComponent'))
+const LazyComponent = lazy(() => import('./LazyComponent'));
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <LazyComponent />
       </Suspense>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

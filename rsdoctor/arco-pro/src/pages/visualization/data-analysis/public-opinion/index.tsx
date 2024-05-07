@@ -1,11 +1,11 @@
-import useLocale from '@/utils/useLocale'
-import { Grid } from '@arco-design/web-react'
-import axios from 'axios'
-import React, { useEffect, useMemo, useState } from 'react'
-import locale from '../locale'
-import PublicOpinionCard, { PublicOpinionCardProps } from './card'
+import useLocale from '@/utils/useLocale';
+import { Grid } from '@arco-design/web-react';
+import axios from 'axios';
+import React, { useEffect, useMemo, useState } from 'react';
+import locale from '../locale';
+import PublicOpinionCard, { PublicOpinionCardProps } from './card';
 
-const { Row, Col } = Grid
+const { Row, Col } = Grid;
 
 const cardInfo = [
   {
@@ -24,44 +24,44 @@ const cardInfo = [
     key: 'share',
     type: 'pie',
   },
-]
+];
 
 function PublicOpinion() {
-  const t = useLocale(locale)
-  const [loading, setLoading] = useState(true)
+  const t = useLocale(locale);
+  const [loading, setLoading] = useState(true);
   const [data, setData] = useState<PublicOpinionCardProps[]>(
     cardInfo.map((item) => ({
       ...item,
       chartType: item.type as 'line' | 'pie' | 'interval',
       title: t[`dataAnalysis.publicOpinion.${item.key}`],
     })),
-  )
+  );
 
   const getData = async () => {
     const requestList = cardInfo.map(async (info) => {
       const { data } = await axios
         .get(`/api/data-analysis/overview?type=${info.type}`)
-        .catch(() => ({ data: {} }))
+        .catch(() => ({ data: {} }));
       return {
         ...data,
         key: info.key,
         chartType: info.type,
-      }
-    })
-    const result = await Promise.all(requestList).finally(() => setLoading(false))
-    setData(result)
-  }
+      };
+    });
+    const result = await Promise.all(requestList).finally(() => setLoading(false));
+    setData(result);
+  };
 
   useEffect(() => {
-    getData()
-  }, [])
+    getData();
+  }, []);
 
   const formatData = useMemo(() => {
     return data.map((item) => ({
       ...item,
       title: t[`dataAnalysis.publicOpinion.${item.key}`],
-    }))
-  }, [t, data])
+    }));
+  }, [t, data]);
 
   return (
     <div>
@@ -77,7 +77,7 @@ function PublicOpinion() {
         ))}
       </Row>
     </div>
-  )
+  );
 }
 
-export default PublicOpinion
+export default PublicOpinion;

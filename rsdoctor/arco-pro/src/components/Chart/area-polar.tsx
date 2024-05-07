@@ -1,26 +1,26 @@
-import DataSet from '@antv/data-set'
-import { Spin } from '@arco-design/web-react'
-import { Area, Axis, Chart, Coordinate, Legend, Line, Tooltip } from 'bizcharts'
-import React from 'react'
-import CustomTooltip from './customer-tooltip'
+import DataSet from '@antv/data-set';
+import { Spin } from '@arco-design/web-react';
+import { Area, Axis, Chart, Coordinate, Legend, Line, Tooltip } from 'bizcharts';
+import React from 'react';
+import CustomTooltip from './customer-tooltip';
 
 interface AreaPolarProps {
-  data: any[]
-  loading: boolean
-  fields: string[]
-  height: number
+  data: any[];
+  loading: boolean;
+  fields: string[];
+  height: number;
 }
 function AreaPolar(props: AreaPolarProps) {
-  const { data, loading, fields, height } = props
+  const { data, loading, fields, height } = props;
 
-  const { DataView } = DataSet
-  const dv = new DataView().source(data)
+  const { DataView } = DataSet;
+  const dv = new DataView().source(data);
   dv.transform({
     type: 'fold',
     fields: fields, // 展开字段集
     key: 'category', // key字段
     value: 'score', // value字段
-  })
+  });
 
   return (
     <Spin loading={loading} style={{ width: '100%' }}>
@@ -41,7 +41,7 @@ function AreaPolar(props: AreaPolarProps) {
         <Coordinate type="polar" radius={0.8} />
         <Tooltip shared>
           {(title, items) => {
-            return <CustomTooltip title={title} data={items} />
+            return <CustomTooltip title={title} data={items} />;
           }}
         </Tooltip>
         <Line
@@ -54,11 +54,7 @@ function AreaPolar(props: AreaPolarProps) {
           tooltip={false}
           color={[
             'category',
-            [
-              'rgba(49, 60, 169, 0.4)',
-              'rgba(33, 204, 255, 0.4)',
-              'rgba(36, 158, 255, 0.4)',
-            ],
+            ['rgba(49, 60, 169, 0.4)', 'rgba(33, 204, 255, 0.4)', 'rgba(36, 158, 255, 0.4)'],
           ]}
         />
         <Axis name="score" label={false} />
@@ -72,13 +68,13 @@ function AreaPolar(props: AreaPolarProps) {
                 lineWidth: 0,
                 fill: ['#313CA9', '#21CCFF', '#249EFF'][index],
               },
-            }
+            };
           }}
           name="category"
         />
       </Chart>
     </Spin>
-  )
+  );
 }
 
-export default AreaPolar
+export default AreaPolar;

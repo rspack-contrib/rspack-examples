@@ -1,36 +1,36 @@
-import useLocale from '@/utils/useLocale'
-import { Card, Grid, Skeleton, Spin, Statistic, Typography } from '@arco-design/web-react'
-import axios from 'axios'
-import { Chart, Interaction, Interval, Line, Tooltip } from 'bizcharts'
-import cs from 'classnames'
-import React, { useEffect, useMemo, useState } from 'react'
-import locale from './locale'
+import useLocale from '@/utils/useLocale';
+import { Card, Grid, Skeleton, Spin, Statistic, Typography } from '@arco-design/web-react';
+import axios from 'axios';
+import { Chart, Interaction, Interval, Line, Tooltip } from 'bizcharts';
+import cs from 'classnames';
+import React, { useEffect, useMemo, useState } from 'react';
+import locale from './locale';
 
-import { IconArrowFall, IconArrowRise } from '@arco-design/web-react/icon'
-import styles from './style/card-block.module.less'
+import { IconArrowFall, IconArrowRise } from '@arco-design/web-react/icon';
+import styles from './style/card-block.module.less';
 
-const { Row, Col } = Grid
-const { Title, Text } = Typography
+const { Row, Col } = Grid;
+const { Title, Text } = Typography;
 const basicChartProps = {
   pure: true,
   autoFit: true,
   height: 80,
   padding: [0, 10, 0, 10],
-}
+};
 
 export interface CardProps {
-  key: string
-  title?: string
-  chartData?: any[]
-  chartType: string
-  count?: number
-  increment?: boolean
-  diff?: number
-  loading?: boolean
+  key: string;
+  title?: string;
+  chartData?: any[];
+  chartType: string;
+  count?: number;
+  increment?: boolean;
+  diff?: number;
+  loading?: boolean;
 }
 
 function CustomTooltip(props: { items: any[] }) {
-  const { items } = props
+  const { items } = props;
   return (
     <div className={styles.tooltip}>
       {items.map((item, index) => (
@@ -39,10 +39,10 @@ function CustomTooltip(props: { items: any[] }) {
         </div>
       ))}
     </div>
-  )
+  );
 }
 function SimpleLine(props: { chartData: any[] }) {
-  const { chartData } = props
+  const { chartData } = props;
   return (
     <Chart data={chartData} {...basicChartProps}>
       <Line
@@ -54,11 +54,11 @@ function SimpleLine(props: { chartData: any[] }) {
         {(_, items) => <CustomTooltip items={items} />}
       </Tooltip>
     </Chart>
-  )
+  );
 }
 
 function SimpleInterval(props: { chartData: any[] }) {
-  const { chartData } = props
+  const { chartData } = props;
   return (
     <Chart data={chartData} {...basicChartProps}>
       <Interval
@@ -67,22 +67,20 @@ function SimpleInterval(props: { chartData: any[] }) {
           'x',
           (xVal) => {
             if (Number(xVal) % 2 === 0) {
-              return '#86DF6C'
+              return '#86DF6C';
             }
-            return '#468DFF'
+            return '#468DFF';
           },
         ]}
       />
-      <Tooltip shared={false}>
-        {(_, items) => <CustomTooltip items={items} />}
-      </Tooltip>
+      <Tooltip shared={false}>{(_, items) => <CustomTooltip items={items} />}</Tooltip>
       <Interaction type="active-region" />
     </Chart>
-  )
+  );
 }
 
 function CardBlock(props: CardProps) {
-  const { chartType, title, count, increment, diff, chartData, loading } = props
+  const { chartType, title, count, increment, diff, chartData, loading } = props;
 
   return (
     <Card className={styles.card}>
@@ -97,24 +95,18 @@ function CardBlock(props: CardProps) {
           value={count}
           extra={
             <div className={styles['compare-yesterday']}>
-              {loading
-                ? (
-                  <Skeleton
-                    text={{ rows: 1 }}
-                    style={{ width: '100px' }}
-                    animation
-                  />
-                )
-                : (
-                  <span
-                    className={cs(styles['diff'], {
-                      [styles['diff-increment']]: increment,
-                    })}
-                  >
-                    {diff}
-                    {increment ? <IconArrowRise /> : <IconArrowFall />}
-                  </span>
-                )}
+              {loading ? (
+                <Skeleton text={{ rows: 1 }} style={{ width: '100px' }} animation />
+              ) : (
+                <span
+                  className={cs(styles['diff'], {
+                    [styles['diff-increment']]: increment,
+                  })}
+                >
+                  {diff}
+                  {increment ? <IconArrowRise /> : <IconArrowFall />}
+                </span>
+              )}
             </div>
           }
           groupSeparator
@@ -127,7 +119,7 @@ function CardBlock(props: CardProps) {
         </Spin>
       </div>
     </Card>
-  )
+  );
 }
 
 const cardInfo = [
@@ -147,44 +139,44 @@ const cardInfo = [
     key: 'contentConsumption',
     type: 'interval',
   },
-]
+];
 function CardList() {
-  const t = useLocale(locale)
-  const [loading, setLoading] = useState(false)
+  const t = useLocale(locale);
+  const [loading, setLoading] = useState(false);
   const [data, setData] = useState(
     cardInfo.map((item) => ({
       ...item,
       chartType: item.type,
     })),
-  )
+  );
 
   const getData = async () => {
     const requestList = cardInfo.map(async (info) => {
       const { data } = await axios
         .get(`/api/multi-dimension/card?type=${info.type}`)
-        .catch(() => ({ data: {} }))
+        .catch(() => ({ data: {} }));
       return {
         ...data,
         key: info.key,
         chartType: info.type,
-      }
-    })
+      };
+    });
 
-    setLoading(true)
-    const result = await Promise.all(requestList).finally(() => setLoading(false))
-    setData(result)
-  }
+    setLoading(true);
+    const result = await Promise.all(requestList).finally(() => setLoading(false));
+    setData(result);
+  };
 
   useEffect(() => {
-    getData()
-  }, [])
+    getData();
+  }, []);
 
   const formatData = useMemo(() => {
     return data.map((item) => ({
       ...item,
       title: t[`multiDAnalysis.cardList.${item.key}`],
-    }))
-  }, [t, data])
+    }));
+  }, [t, data]);
 
   return (
     <Row gutter={16}>
@@ -194,7 +186,7 @@ function CardList() {
         </Col>
       ))}
     </Row>
-  )
+  );
 }
 
-export default CardList
+export default CardList;

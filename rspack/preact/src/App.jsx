@@ -7,9 +7,9 @@ function App() {
   const [count, setCount] = useState(1);
   useEffect(() => {
     setInterval(() => {
-      setCount(x => x+1);
-    },1000)
-  },[])
+      setCount((x) => x + 1);
+    }, 1000);
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
@@ -17,9 +17,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <div>
-          count: {count}
-        </div>
+        <div>count: {count}</div>
         <a
           className="App-link"
           href="https://reactjs.org"

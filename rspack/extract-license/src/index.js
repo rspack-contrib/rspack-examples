@@ -9,5 +9,5 @@
  * Utility functions for the foo package.
  * @license Apache-2.0
  */
-const add = require("lodash").add;
-console.log("result:", add(10, 32));
+const add = require('lodash').add;
+console.log('result:', add(10, 32));

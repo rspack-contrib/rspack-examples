@@ -1,22 +1,22 @@
-import { Badge, Typography } from '@arco-design/web-react'
-import React from 'react'
-import styles from './style/index.module.less'
+import { Badge, Typography } from '@arco-design/web-react';
+import React from 'react';
+import styles from './style/index.module.less';
 
-const { Text } = Typography
+const { Text } = Typography;
 interface TooltipProps {
-  title: string
+  title: string;
   data: {
-    name: string
-    value: string
-    color: string
-  }[]
-  color?: string
-  name?: string
-  formatter?: (value: string) => React.ReactNode
+    name: string;
+    value: string;
+    color: string;
+  }[];
+  color?: string;
+  name?: string;
+  formatter?: (value: string) => React.ReactNode;
 }
 
 function CustomTooltip(props: TooltipProps) {
-  const { formatter = (value) => value, color, name } = props
+  const { formatter = (value) => value, color, name } = props;
   return (
     <div className={styles['customer-tooltip']}>
       <div className={styles['customer-tooltip-title']}>
@@ -36,7 +36,7 @@ function CustomTooltip(props: TooltipProps) {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default CustomTooltip
+export default CustomTooltip;

@@ -1,48 +1,56 @@
-import useLocale from '@/utils/useLocale'
-import { Button, Card, Form, Grid, Input, Message, Select, Space, Typography } from '@arco-design/web-react'
-import { FormInstance } from '@arco-design/web-react/es/Form'
-import axios from 'axios'
-import React, { useRef, useState } from 'react'
-import locale from './locale'
-import './mock'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import {
+  Button,
+  Card,
+  Form,
+  Grid,
+  Input,
+  Message,
+  Select,
+  Space,
+  Typography,
+} from '@arco-design/web-react';
+import { FormInstance } from '@arco-design/web-react/es/Form';
+import axios from 'axios';
+import React, { useRef, useState } from 'react';
+import locale from './locale';
+import './mock';
+import styles from './style/index.module.less';
 
 function GroupForm() {
-  const t = useLocale(locale)
-  const formRef = useRef<FormInstance>()
-  const [loading, setLoading] = useState(false)
+  const t = useLocale(locale);
+  const formRef = useRef<FormInstance>();
+  const [loading, setLoading] = useState(false);
 
   function submit(data) {
-    setLoading(true)
+    setLoading(true);
     axios
       .post('/api/groupForm', {
         data,
       })
       .then(() => {
-        Message.success(t['groupForm.submitSuccess'])
+        Message.success(t['groupForm.submitSuccess']);
       })
       .finally(() => {
-        setLoading(false)
-      })
+        setLoading(false);
+      });
   }
 
   function handleSubmit() {
     formRef.current.validate().then((values) => {
-      submit(values)
-    })
+      submit(values);
+    });
   }
 
   function handleReset() {
-    formRef.current.resetFields()
+    formRef.current.resetFields();
   }
 
   return (
     <div className={styles.container}>
       <Form layout="vertical" ref={formRef} className={styles['form-group']}>
         <Card>
-          <Typography.Title heading={6}>
-            {t['groupForm.title.video']}
-          </Typography.Title>
+          <Typography.Title heading={6}>{t['groupForm.title.video']}</Typography.Title>
           <Grid.Row gutter={80}>
             <Grid.Col span={8}>
               <Form.Item
@@ -62,9 +70,7 @@ function GroupForm() {
                 label={t['groupForm.form.label.video.acquisition.resolution']}
                 field="video.acquisition.resolution"
               >
-                <Select
-                  placeholder={t['groupForm.placeholder.video.acquisition.resolution']}
-                >
+                <Select placeholder={t['groupForm.placeholder.video.acquisition.resolution']}>
                   <Select.Option value="resolution1">分辨率1</Select.Option>
                   <Select.Option value="resolution2">分辨率2</Select.Option>
                   <Select.Option value="resolution3">分辨率3</Select.Option>
@@ -89,9 +95,7 @@ function GroupForm() {
                 label={t['groupForm.form.label.video.encoding.resolution']}
                 field="video.encoding.resolution"
               >
-                <Select
-                  placeholder={t['groupForm.placeholder.video.encoding.resolution']}
-                >
+                <Select placeholder={t['groupForm.placeholder.video.encoding.resolution']}>
                   <Select.Option value="resolution1">分辨率1</Select.Option>
                   <Select.Option value="resolution2">分辨率2</Select.Option>
                   <Select.Option value="resolution3">分辨率3</Select.Option>
@@ -158,9 +162,7 @@ function GroupForm() {
           </Grid.Row>
         </Card>
         <Card>
-          <Typography.Title heading={6}>
-            {t['groupForm.title.audio']}
-          </Typography.Title>
+          <Typography.Title heading={6}>{t['groupForm.title.audio']}</Typography.Title>
           <Grid.Row gutter={80}>
             <Grid.Col span={8}>
               <Form.Item
@@ -180,9 +182,7 @@ function GroupForm() {
                 label={t['groupForm.form.label.audio.acquisition.channels']}
                 field="audio.acquisition.channels"
               >
-                <Select
-                  placeholder={t['groupForm.placeholder.audio.acquisition.channels']}
-                >
+                <Select placeholder={t['groupForm.placeholder.audio.acquisition.channels']}>
                   <Select.Option value="1">1</Select.Option>
                   <Select.Option value="2">2</Select.Option>
                   <Select.Option value="3">3</Select.Option>
@@ -216,16 +216,9 @@ function GroupForm() {
           </Grid.Row>
         </Card>
         <Card style={{ marginBottom: '40px' }}>
-          <Typography.Title heading={6}>
-            {t['groupForm.title.explanation']}
-          </Typography.Title>
-          <Form.Item
-            label={t['groupForm.form.label.explanation']}
-            field="audio.explanation"
-          >
-            <Input.TextArea
-              placeholder={t['groupForm.placeholder.explanation']}
-            />
+          <Typography.Title heading={6}>{t['groupForm.title.explanation']}</Typography.Title>
+          <Form.Item label={t['groupForm.form.label.explanation']} field="audio.explanation">
+            <Input.TextArea placeholder={t['groupForm.placeholder.explanation']} />
           </Form.Item>
         </Card>
       </Form>
@@ -234,18 +227,13 @@ function GroupForm() {
           <Button onClick={handleReset} size="large">
             {t['groupForm.reset']}
           </Button>
-          <Button
-            type="primary"
-            onClick={handleSubmit}
-            loading={loading}
-            size="large"
-          >
+          <Button type="primary" onClick={handleSubmit} loading={loading} size="large">
             {t['groupForm.submit']}
           </Button>
         </Space>
       </div>
     </div>
-  )
+  );
 }
 
-export default GroupForm
+export default GroupForm;

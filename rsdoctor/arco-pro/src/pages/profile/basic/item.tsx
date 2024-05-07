@@ -1,26 +1,26 @@
-import useLocale from '@/utils/useLocale'
-import { Card, Descriptions, Skeleton } from '@arco-design/web-react'
-import React, { CSSProperties } from 'react'
-import locale from './locale'
+import useLocale from '@/utils/useLocale';
+import { Card, Descriptions, Skeleton } from '@arco-design/web-react';
+import React, { CSSProperties } from 'react';
+import locale from './locale';
 
 interface ProfileItemProps {
-  title: string
-  data: any
-  style?: CSSProperties
-  type: 'origin' | 'current'
-  loading?: boolean
+  title: string;
+  data: any;
+  style?: CSSProperties;
+  type: 'origin' | 'current';
+  loading?: boolean;
 }
 
 function ProfileItem(props: ProfileItemProps) {
-  const t = useLocale(locale)
-  const { title, data, type, loading } = props
+  const t = useLocale(locale);
+  const { title, data, type, loading } = props;
   const blockDataList: {
-    title: string
+    title: string;
     data: {
-      label: string
-      value: string
-    }[]
-  }[] = []
+      label: string;
+      value: string;
+    }[];
+  }[] = [];
 
   blockDataList.push({
     title: t[`basicProfile.title.${type}Video`],
@@ -62,7 +62,7 @@ function ProfileItem(props: ProfileItemProps) {
         value: data?.video?.encoding.profile || '-',
       },
     ],
-  })
+  });
 
   blockDataList.push({
     title: t[`basicProfile.title.${type}Audio`],
@@ -73,7 +73,9 @@ function ProfileItem(props: ProfileItemProps) {
       },
       {
         label: t['basicProfile.label.audio.acquisition.channels'],
-        value: `${data?.audio?.acquisition.channels || '-'} ${t['basicProfile.unit.audio.channels']}`,
+        value: `${data?.audio?.acquisition.channels || '-'} ${
+          t['basicProfile.unit.audio.channels']
+        }`,
       },
       {
         label: t['basicProfile.label.audio.encoding.channels'],
@@ -88,7 +90,7 @@ function ProfileItem(props: ProfileItemProps) {
         value: data?.audio?.encoding.profile || '-',
       },
     ],
-  })
+  });
 
   return (
     <Card>
@@ -100,23 +102,20 @@ function ProfileItem(props: ProfileItemProps) {
             labelStyle={{ textAlign: 'right', width: 200, paddingRight: 10 }}
             valueStyle={{ width: 400 }}
             title={blockTitle}
-            data={loading
-              ? blockData.map((item) => ({
-                ...item,
-                value: (
-                  <Skeleton
-                    text={{ rows: 1, style: { width: '200px' } }}
-                    animation
-                  />
-                ),
-              }))
-              : blockData}
+            data={
+              loading
+                ? blockData.map((item) => ({
+                    ...item,
+                    value: <Skeleton text={{ rows: 1, style: { width: '200px' } }} animation />,
+                  }))
+                : blockData
+            }
             style={index > 0 ? { marginTop: '20px' } : {}}
           />
         ))}
       </div>
     </Card>
-  )
+  );
 }
 
-export default ProfileItem
+export default ProfileItem;

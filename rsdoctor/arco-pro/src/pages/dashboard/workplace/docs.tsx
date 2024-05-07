@@ -1,17 +1,17 @@
-import useLocale from '@/utils/useLocale'
-import { Card, Link, Typography } from '@arco-design/web-react'
-import React from 'react'
-import locale from './locale'
-import styles from './style/docs.module.less'
+import useLocale from '@/utils/useLocale';
+import { Card, Link, Typography } from '@arco-design/web-react';
+import React from 'react';
+import locale from './locale';
+import styles from './style/docs.module.less';
 
 const links = {
   react: 'https://arco.design/react/docs/start',
   vue: 'https://arco.design/vue/docs/start',
   designLab: 'https://arco.design/themes',
   materialMarket: 'https://arco.design/material/',
-}
+};
 function QuickOperation() {
-  const t = useLocale(locale)
+  const t = useLocale(locale);
   return (
     <Card>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -26,7 +26,7 @@ function QuickOperation() {
         ))}
       </div>
     </Card>
-  )
+  );
 }
 
-export default QuickOperation
+export default QuickOperation;

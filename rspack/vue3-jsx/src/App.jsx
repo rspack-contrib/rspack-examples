@@ -1,9 +1,9 @@
-import { ref } from "vue";
-import vueLogo from "./assets/vue.svg";
-import "./App.css";
+import { ref } from 'vue';
+import vueLogo from './assets/vue.svg';
+import './App.css';
 
 export default {
-  name: "App",
+  name: 'App',
 
   setup() {
     const count = ref(0);

@@ -1,11 +1,11 @@
-import useLocale from '@/utils/useLocale'
-import { Button, Result } from '@arco-design/web-react'
-import React from 'react'
-import locale from './locale'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import { Button, Result } from '@arco-design/web-react';
+import React from 'react';
+import locale from './locale';
+import styles from './style/index.module.less';
 
 function Exception404() {
-  const t = useLocale(locale)
+  const t = useLocale(locale);
 
   return (
     <div className={styles.wrapper}>
@@ -23,7 +23,7 @@ function Exception404() {
         ]}
       />
     </div>
-  )
+  );
 }
 
-export default Exception404
+export default Exception404;

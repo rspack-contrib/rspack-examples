@@ -1,5 +1,5 @@
-import { formatRelative, subDays } from "date-fns";
-import { useEffect, useState } from "react";
+import { formatRelative, subDays } from 'date-fns';
+import { useEffect, useState } from 'react';
 // date-fns is a shared module, but used as usual
 // exposing modules act as async boundary,
 // so no additional async boundary need to be added here
@@ -9,17 +9,16 @@ import { useEffect, useState } from "react";
 const Component = ({ locale }) => {
   let [cnt, setCnt] = useState(0);
   useEffect(() => {
-	setInterval(() => {
-		setCnt(x => x+1);
-	}, 1000)
-  },[])
+    setInterval(() => {
+      setCnt((x) => x + 1);
+    }, 1000);
+  }, []);
   return (
-    <div style={{ border: "5px solid darkblue" }}>
-	  <div>cnt: {cnt}</div>
+    <div style={{ border: '5px solid darkblue' }}>
+      <div>cnt: {cnt}</div>
       <p>I'm a Component exposed from container B!</p>
       <p>
-        Using date-fn in Remote:{" "}
-        {formatRelative(subDays(new Date(), 2), new Date(), { locale })}
+        Using date-fn in Remote: {formatRelative(subDays(new Date(), 2), new Date(), { locale })}
       </p>
     </div>
   );

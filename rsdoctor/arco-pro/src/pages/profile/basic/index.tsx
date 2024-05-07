@@ -1,70 +1,68 @@
-import useLocale from '@/utils/useLocale'
-import { Badge, Button, Card, Grid, Space, Steps, Table, Typography } from '@arco-design/web-react'
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-import ProfileItem from './item'
-import locale from './locale'
-import './mock'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import { Badge, Button, Card, Grid, Space, Steps, Table, Typography } from '@arco-design/web-react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import ProfileItem from './item';
+import locale from './locale';
+import './mock';
+import styles from './style/index.module.less';
 
 function BasicProfile() {
-  const t = useLocale(locale)
-  const [loading, setLoading] = useState(false)
-  const [data, setData] = useState({ status: 1 })
-  const [preLoading, setPreLoading] = useState(false)
-  const [preData, setPreData] = useState({})
-  const [tableLoading, setTableLoading] = useState(false)
-  const [tableData, setTableData] = useState([])
+  const t = useLocale(locale);
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState({ status: 1 });
+  const [preLoading, setPreLoading] = useState(false);
+  const [preData, setPreData] = useState({});
+  const [tableLoading, setTableLoading] = useState(false);
+  const [tableData, setTableData] = useState([]);
 
   function fetchData() {
-    setLoading(true)
+    setLoading(true);
     axios
       .get('/api/basicProfile')
       .then((res) => {
-        setData(res.data || {})
+        setData(res.data || {});
       })
       .finally(() => {
-        setLoading(false)
-      })
+        setLoading(false);
+      });
   }
 
   function fetchPreData() {
-    setPreLoading(true)
+    setPreLoading(true);
     axios
       .get('/api/basicProfile')
       .then((res) => {
-        setPreData(res.data || {})
+        setPreData(res.data || {});
       })
       .finally(() => {
-        setPreLoading(false)
-      })
+        setPreLoading(false);
+      });
   }
 
   function fetchTableData() {
-    setTableLoading(true)
+    setTableLoading(true);
     axios
       .get('/api/adjustment')
       .then((res) => {
-        setTableData(res.data)
+        setTableData(res.data);
       })
       .finally(() => {
-        setTableLoading(false)
-      })
+        setTableLoading(false);
+      });
   }
   useEffect(() => {
-    fetchData()
-    fetchPreData()
-    fetchTableData()
-  }, [])
+    fetchData();
+    fetchPreData();
+    fetchTableData();
+  }, []);
 
   return (
     <div className={styles.container}>
       <Card>
         <Grid.Row justify="space-between" align="center">
           <Grid.Col span={16}>
-            <Typography.Title heading={6}>
-              {t['basicProfile.title.form']}
-            </Typography.Title>
+            <Typography.Title heading={6}>{t['basicProfile.title.form']}</Typography.Title>
           </Grid.Col>
           <Grid.Col span={8} style={{ textAlign: 'right' }}>
             <Space>
@@ -94,9 +92,7 @@ function BasicProfile() {
         loading={preLoading}
       />
       <Card>
-        <Typography.Title heading={6}>
-          {t['basicProfile.adjustment.record']}
-        </Typography.Title>
+        <Typography.Title heading={6}>{t['basicProfile.adjustment.record']}</Typography.Title>
         <Table
           loading={tableLoading}
           data={tableData}
@@ -114,20 +110,10 @@ function BasicProfile() {
               title: t['basicProfile.adjustment.status'],
               render: (status) => {
                 if (status) {
-                  return (
-                    <Badge
-                      status="success"
-                      text={t['basicProfile.adjustment.success']}
-                    />
-                  )
+                  return <Badge status="success" text={t['basicProfile.adjustment.success']} />;
                 }
 
-                return (
-                  <Badge
-                    status="processing"
-                    text={t['basicProfile.adjustment.waiting']}
-                  />
-                )
+                return <Badge status="processing" text={t['basicProfile.adjustment.waiting']} />;
               },
             },
             {
@@ -138,18 +124,14 @@ function BasicProfile() {
               title: t['basicProfile.adjustment.operation'],
               headerCellStyle: { paddingLeft: '15px' },
               render() {
-                return (
-                  <Button type="text">
-                    {t['basicProfile.adjustment.operation.view']}
-                  </Button>
-                )
+                return <Button type="text">{t['basicProfile.adjustment.operation.view']}</Button>;
               },
             },
           ]}
         />
       </Card>
     </div>
-  )
+  );
 }
 
-export default BasicProfile
+export default BasicProfile;

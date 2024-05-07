@@ -1,51 +1,44 @@
-import useLocale from '@/utils/useLocale'
-import { Button, Input, Select, Space, Spin, Typography } from '@arco-design/web-react'
-import { IconDownload, IconFaceSmileFill } from '@arco-design/web-react/icon'
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-import locale from './locale'
-import MessageList from './message-list'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import { Button, Input, Select, Space, Spin, Typography } from '@arco-design/web-react';
+import { IconDownload, IconFaceSmileFill } from '@arco-design/web-react/icon';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import locale from './locale';
+import MessageList from './message-list';
+import styles from './style/index.module.less';
 
 export default function ChatPanel() {
-  const t = useLocale(locale)
-  const [messageList, setMessageList] = useState([])
-  const [loading, setLoading] = useState(false)
+  const t = useLocale(locale);
+  const [messageList, setMessageList] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   function fetchMessageList() {
-    setLoading(true)
+    setLoading(true);
     axios
       .get('/api/chatList')
       .then((res) => {
-        setMessageList(res.data || [])
+        setMessageList(res.data || []);
       })
       .finally(() => {
-        setLoading(false)
-      })
+        setLoading(false);
+      });
   }
 
   useEffect(() => {
-    fetchMessageList()
-  }, [])
+    fetchMessageList();
+  }, []);
 
   return (
     <div className={styles['chat-panel']}>
       <div className={styles['chat-panel-header']}>
-        <Typography.Title
-          style={{ marginTop: 0, marginBottom: 16 }}
-          heading={6}
-        >
+        <Typography.Title style={{ marginTop: 0, marginBottom: 16 }} heading={6}>
           {t['monitor.title.chatPanel']}
         </Typography.Title>
         <Space size={8}>
           <Select style={{ width: 80 }} defaultValue="all">
-            <Select.Option value="all">
-              {t['monitor.chat.options.all']}
-            </Select.Option>
+            <Select.Option value="all">{t['monitor.chat.options.all']}</Select.Option>
           </Select>
-          <Input.Search
-            placeholder={t['monitor.chat.placeholder.searchCategory']}
-          />
+          <Input.Search placeholder={t['monitor.chat.placeholder.searchCategory']} />
           <Button type="text" iconOnly>
             <IconDownload />
           </Button>
@@ -63,5 +56,5 @@ export default function ChatPanel() {
         </Space>
       </div>
     </div>
-  )
+  );
 }

@@ -9,9 +9,7 @@ const App = () => {
         <h1>Rsbuild with React</h1>
         <p>Start building amazing things with Rsbuild.</p>
       </div>
-      <button className="button">
-        Button
-      </button>
+      <button className="button">Button</button>
     </>
   );
 };

@@ -1,37 +1,35 @@
-import useLocale from '@/utils/useLocale'
-import { Card, Link, Radio, Table, Typography } from '@arco-design/web-react'
-import { IconCaretDown, IconCaretUp } from '@arco-design/web-react/icon'
-import axios from 'axios'
-import React, { useCallback, useEffect, useState } from 'react'
-import locale from './locale'
-import styles from './style/popular-contents.module.less'
+import useLocale from '@/utils/useLocale';
+import { Card, Link, Radio, Table, Typography } from '@arco-design/web-react';
+import { IconCaretDown, IconCaretUp } from '@arco-design/web-react/icon';
+import axios from 'axios';
+import React, { useCallback, useEffect, useState } from 'react';
+import locale from './locale';
+import styles from './style/popular-contents.module.less';
 
 function PopularContent() {
-  const t = useLocale(locale)
-  const [type, setType] = useState(0)
-  const [data, setData] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [page, setPage] = useState(1)
-  const [total, setTotal] = useState(0)
+  const t = useLocale(locale);
+  const [type, setType] = useState(0);
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
+  const [total, setTotal] = useState(0);
 
   const fetchData = useCallback(() => {
-    setLoading(true)
+    setLoading(true);
     axios
-      .get(
-        `/api/workplace/popular-contents?page=${page}&pageSize=5&category=${type}`,
-      )
+      .get(`/api/workplace/popular-contents?page=${page}&pageSize=5&category=${type}`)
       .then((res) => {
-        setData(res.data.list)
-        setTotal(res.data.total)
+        setData(res.data.list);
+        setTotal(res.data.total);
       })
       .finally(() => {
-        setLoading(false)
-      })
-  }, [page, type])
+        setLoading(false);
+      });
+  }, [page, type]);
 
   useEffect(() => {
-    fetchData()
-  }, [page, fetchData])
+    fetchData();
+  }, [page, fetchData]);
 
   const columns = [
     {
@@ -53,7 +51,7 @@ function PopularContent() {
       dataIndex: 'pv',
       width: 100,
       render: (text) => {
-        return `${text / 1000}k`
+        return `${text / 1000}k`;
       },
     },
     {
@@ -66,22 +64,22 @@ function PopularContent() {
           <span>
             {`${(text * 100).toFixed(2)}%`}
             <span className={styles['symbol']}>
-              {text < 0
-                ? <IconCaretUp style={{ color: 'rgb(var(--green-6))' }} />
-                : <IconCaretDown style={{ color: 'rgb(var(--red-6))' }} />}
+              {text < 0 ? (
+                <IconCaretUp style={{ color: 'rgb(var(--green-6))' }} />
+              ) : (
+                <IconCaretDown style={{ color: 'rgb(var(--red-6))' }} />
+              )}
             </span>
           </span>
-        )
+        );
       },
     },
-  ]
+  ];
 
   return (
     <Card>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <Typography.Title heading={6}>
-          {t['workplace.popularContents']}
-        </Typography.Title>
+        <Typography.Title heading={6}>{t['workplace.popularContents']}</Typography.Title>
         <Link>{t['workplace.seeMore']}</Link>
       </div>
       <Radio.Group
@@ -102,12 +100,12 @@ function PopularContent() {
         loading={loading}
         tableLayoutFixed
         onChange={(pagination) => {
-          setPage(pagination.current)
+          setPage(pagination.current);
         }}
         pagination={{ total, current: page, pageSize: 5, simple: true }}
       />
     </Card>
-  )
+  );
 }
 
-export default PopularContent
+export default PopularContent;

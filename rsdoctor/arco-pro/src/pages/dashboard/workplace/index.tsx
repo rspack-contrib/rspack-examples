@@ -1,18 +1,18 @@
-import { Grid, Space } from '@arco-design/web-react'
-import React from 'react'
-import Announcement from './announcement'
-import Carousel from './carousel'
-import ContentPercentage from './content-percentage'
-import Docs from './docs'
-import './mock'
-import Overview from './overview'
-import PopularContents from './popular-contents'
-import Shortcuts from './shortcuts'
-import styles from './style/index.module.less'
+import { Grid, Space } from '@arco-design/web-react';
+import React from 'react';
+import Announcement from './announcement';
+import Carousel from './carousel';
+import ContentPercentage from './content-percentage';
+import Docs from './docs';
+import './mock';
+import Overview from './overview';
+import PopularContents from './popular-contents';
+import Shortcuts from './shortcuts';
+import styles from './style/index.module.less';
 
-const { Row, Col } = Grid
+const { Row, Col } = Grid;
 
-const gutter = 16
+const gutter = 16;
 
 function Workplace() {
   return (
@@ -35,7 +35,7 @@ function Workplace() {
         <Docs />
       </Space>
     </Space>
-  )
+  );
 }
 
-export default Workplace
+export default Workplace;

@@ -1,22 +1,22 @@
-import { Badge, Button, Typography } from '@arco-design/web-react'
-import dayjs from 'dayjs'
-import React from 'react'
-import IconHorizontalVideo from './icons/horizontal.svg'
-import IconText from './icons/text.svg'
-import IconVerticalVideo from './icons/vertical.svg'
-import styles from './style/index.module.less'
+import { Badge, Button, Typography } from '@arco-design/web-react';
+import dayjs from 'dayjs';
+import React from 'react';
+import IconHorizontalVideo from './icons/horizontal.svg';
+import IconText from './icons/text.svg';
+import IconVerticalVideo from './icons/vertical.svg';
+import styles from './style/index.module.less';
 
-const { Text } = Typography
+const { Text } = Typography;
 
-export const ContentType = ['图文', '横版短视频', '竖版短视频']
-export const FilterType = ['规则筛选', '人工']
-export const Status = ['未上线', '已上线']
+export const ContentType = ['图文', '横版短视频', '竖版短视频'];
+export const FilterType = ['规则筛选', '人工'];
+export const Status = ['未上线', '已上线'];
 
 const ContentIcon = [
   <IconText key={0} />,
   <IconHorizontalVideo key={1} />,
   <IconVerticalVideo key={2} />,
-]
+];
 
 export function getColumns(
   t: any,
@@ -52,7 +52,7 @@ export function getColumns(
       dataIndex: 'count',
       sorter: (a, b) => a.count - b.count,
       render(x) {
-        return Number(x).toLocaleString()
+        return Number(x).toLocaleString();
       },
     },
     {
@@ -66,9 +66,9 @@ export function getColumns(
       dataIndex: 'status',
       render: (x) => {
         if (x === 0) {
-          return <Badge status="error" text={Status[x]}></Badge>
+          return <Badge status="error" text={Status[x]}></Badge>;
         }
-        return <Badge status="success" text={Status[x]}></Badge>
+        return <Badge status="success" text={Status[x]}></Badge>;
       },
     },
     {
@@ -76,16 +76,12 @@ export function getColumns(
       dataIndex: 'operations',
       headerCellStyle: { paddingLeft: '15px' },
       render: (_, record) => (
-        <Button
-          type="text"
-          size="small"
-          onClick={() => callback(record, 'view')}
-        >
+        <Button type="text" size="small" onClick={() => callback(record, 'view')}>
           {t['searchTable.columns.operations.view']}
         </Button>
       ),
     },
-  ]
+  ];
 }
 
-export default () => ContentIcon
+export default () => ContentIcon;

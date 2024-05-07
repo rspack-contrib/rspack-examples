@@ -1,23 +1,17 @@
-import useLocale from '@/utils/useLocale'
-import { Button, Card, Radio, Tabs } from '@arco-design/web-react'
-import React from 'react'
-import DataStatisticList from './data-statistic-list'
-import locale from './locale'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import { Button, Card, Radio, Tabs } from '@arco-design/web-react';
+import React from 'react';
+import DataStatisticList from './data-statistic-list';
+import locale from './locale';
+import styles from './style/index.module.less';
 
 export default function DataStatistic() {
-  const t = useLocale(locale)
+  const t = useLocale(locale);
   return (
     <Card>
       <Tabs defaultActiveTab="liveMethod">
-        <Tabs.TabPane
-          key="liveMethod"
-          title={t['monitor.tab.title.liveMethod']}
-        />
-        <Tabs.TabPane
-          key="onlineUsers"
-          title={t['monitor.tab.title.onlineUsers']}
-        />
+        <Tabs.TabPane key="liveMethod" title={t['monitor.tab.title.liveMethod']} />
+        <Tabs.TabPane key="onlineUsers" title={t['monitor.tab.title.onlineUsers']} />
       </Tabs>
       <div className={styles['data-statistic-content']}>
         <Radio.Group defaultValue="3" type="button">
@@ -38,5 +32,5 @@ export default function DataStatistic() {
         </div>
       </div>
     </Card>
-  )
+  );
 }

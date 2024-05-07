@@ -1,21 +1,17 @@
-const TsconfigPathsPlugin =
-  require("tsconfig-paths-webpack-plugin").TsconfigPathsPlugin;
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin').TsconfigPathsPlugin;
 
 module.exports = {
-  mode: "none",
+  mode: 'none',
   entry: {
-    main: "./src/index.ts",
+    main: './src/index.ts',
   },
   resolve: {
-    extensions: [".ts", "..."],
+    extensions: ['.ts', '...'],
     plugins: [
       new TsconfigPathsPlugin({
-        configFile: "./tsconfig.json",
-        extensions: [".ts", ".tsx"],
-        references: [
-          "../../libs/lib1/tsconfig.json",
-          "../../libs/lib2/tsconfig.json",
-        ],
+        configFile: './tsconfig.json',
+        extensions: ['.ts', '.tsx'],
+        references: ['../../libs/lib1/tsconfig.json', '../../libs/lib2/tsconfig.json'],
       }),
     ],
   },

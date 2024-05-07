@@ -1,24 +1,33 @@
-import { GlobalContext } from '@/context'
-import useLocale from '@/utils/useLocale'
-import { Button, Cascader, Form, Input, Message, Select, Skeleton, Space } from '@arco-design/web-react'
-import React, { useContext } from 'react'
-import locale from './locale'
+import { GlobalContext } from '@/context';
+import useLocale from '@/utils/useLocale';
+import {
+  Button,
+  Cascader,
+  Form,
+  Input,
+  Message,
+  Select,
+  Skeleton,
+  Space,
+} from '@arco-design/web-react';
+import React, { useContext } from 'react';
+import locale from './locale';
 
 function InfoForm({ loading }: { loading?: boolean }) {
-  const t = useLocale(locale)
-  const [form] = Form.useForm()
-  const { lang } = useContext(GlobalContext)
+  const t = useLocale(locale);
+  const [form] = Form.useForm();
+  const { lang } = useContext(GlobalContext);
 
   const handleSave = async () => {
     try {
-      await form.validate()
-      Message.success('userSetting.saveSuccess')
+      await form.validate();
+      Message.success('userSetting.saveSuccess');
     } catch (_) {}
-  }
+  };
 
   const handleReset = () => {
-    form.resetFields()
-  }
+    form.resetFields();
+  };
 
   const loadingNode = (rows = 1) => {
     return (
@@ -29,8 +38,8 @@ function InfoForm({ loading }: { loading?: boolean }) {
         }}
         animation
       />
-    )
-  }
+    );
+  };
 
   return (
     <Form
@@ -50,11 +59,7 @@ function InfoForm({ loading }: { loading?: boolean }) {
           },
         ]}
       >
-        {loading
-          ? (
-            loadingNode()
-          )
-          : <Input placeholder={t['userSetting.info.email.placeholder']} />}
+        {loading ? loadingNode() : <Input placeholder={t['userSetting.info.email.placeholder']} />}
       </Form.Item>
       <Form.Item
         label={t['userSetting.info.nickName']}
@@ -66,29 +71,22 @@ function InfoForm({ loading }: { loading?: boolean }) {
           },
         ]}
       >
-        {loading
-          ? (
-            loadingNode()
-          )
-          : <Input placeholder={t['userSetting.info.nickName.placeholder']} />}
+        {loading ? (
+          loadingNode()
+        ) : (
+          <Input placeholder={t['userSetting.info.nickName.placeholder']} />
+        )}
       </Form.Item>
       <Form.Item
         label={t['userSetting.info.area']}
         field="rangeArea"
-        rules={[
-          { required: true, message: t['userSetting.info.area.placeholder'] },
-        ]}
+        rules={[{ required: true, message: t['userSetting.info.area.placeholder'] }]}
       >
-        {loading
-          ? (
-            loadingNode()
-          )
-          : (
-            <Select
-              options={['中国']}
-              placeholder={t['userSetting.info.area.placeholder']}
-            />
-          )}
+        {loading ? (
+          loadingNode()
+        ) : (
+          <Select options={['中国']} placeholder={t['userSetting.info.area.placeholder']} />
+        )}
       </Form.Item>
       <Form.Item
         label={t['userSetting.info.location']}
@@ -100,62 +98,56 @@ function InfoForm({ loading }: { loading?: boolean }) {
           },
         ]}
       >
-        {loading
-          ? (
-            loadingNode()
-          )
-          : (
-            <Cascader
-              options={[
-                {
-                  label: '北京市',
-                  value: 'BeiJing',
-                  children: [
-                    {
-                      label: '北京市',
-                      value: 'BeiJing',
-                      children: [
-                        { label: '海淀区', value: 'HaiDian' },
-                        { label: '朝阳区', value: 'ChaoYang' },
-                      ],
-                    },
-                  ],
-                },
-                {
-                  label: '上海市',
-                  value: 'ShangHai',
-                  children: [
-                    {
-                      label: '上海市',
-                      value: 'ShangHai',
-                      children: [
-                        { label: '黄浦区', value: 'HuangPu' },
-                        { label: '静安区', value: 'JingAn' },
-                      ],
-                    },
-                  ],
-                },
-              ]}
-            />
-          )}
+        {loading ? (
+          loadingNode()
+        ) : (
+          <Cascader
+            options={[
+              {
+                label: '北京市',
+                value: 'BeiJing',
+                children: [
+                  {
+                    label: '北京市',
+                    value: 'BeiJing',
+                    children: [
+                      { label: '海淀区', value: 'HaiDian' },
+                      { label: '朝阳区', value: 'ChaoYang' },
+                    ],
+                  },
+                ],
+              },
+              {
+                label: '上海市',
+                value: 'ShangHai',
+                children: [
+                  {
+                    label: '上海市',
+                    value: 'ShangHai',
+                    children: [
+                      { label: '黄浦区', value: 'HuangPu' },
+                      { label: '静安区', value: 'JingAn' },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        )}
       </Form.Item>
       <Form.Item label={t['userSetting.info.address']} field="address">
-        {loading
-          ? (
-            loadingNode()
-          )
-          : <Input placeholder={t['userSetting.info.address.placeholder']} />}
+        {loading ? (
+          loadingNode()
+        ) : (
+          <Input placeholder={t['userSetting.info.address.placeholder']} />
+        )}
       </Form.Item>
       <Form.Item label={t['userSetting.info.profile']} field="profile">
-        {loading
-          ? (
-            loadingNode(3)
-          )
-          : (
-            <Input.TextArea
-              placeholder={t['userSetting.info.profile.placeholder']}
-            />
-          )}
+        {loading ? (
+          loadingNode(3)
+        ) : (
+          <Input.TextArea placeholder={t['userSetting.info.profile.placeholder']} />
+        )}
       </Form.Item>
 
       <Form.Item label=" ">
@@ -167,7 +159,7 @@ function InfoForm({ loading }: { loading?: boolean }) {
         </Space>
       </Form.Item>
     </Form>
-  )
+  );
 }
 
-export default InfoForm
+export default InfoForm;

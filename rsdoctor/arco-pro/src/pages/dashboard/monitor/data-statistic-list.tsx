@@ -1,11 +1,11 @@
-import useLocale from '@/utils/useLocale'
-import { Table, Tag, Typography } from '@arco-design/web-react'
-import React from 'react'
-import locale from './locale'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import { Table, Tag, Typography } from '@arco-design/web-react';
+import React from 'react';
+import locale from './locale';
+import styles from './style/index.module.less';
 
 export default function QuickOperation() {
-  const t = useLocale(locale)
+  const t = useLocale(locale);
   const columns = [
     {
       title: t['monitor.list.title.order'],
@@ -18,10 +18,7 @@ export default function QuickOperation() {
         <div className={styles['data-statistic-list-cover-wrapper']}>
           <img src={record.cover} />
           {record.status === -1 && (
-            <Tag
-              color="red"
-              className={styles['data-statistic-list-cover-tag']}
-            >
+            <Tag color="red" className={styles['data-statistic-list-cover-tag']}>
               {t['monitor.list.tag.auditFailed']}
             </Tag>
           )}
@@ -40,7 +37,7 @@ export default function QuickOperation() {
       dataIndex: 'id',
       title: t['monitor.list.title.id'],
     },
-  ]
+  ];
   const data = [
     {
       cover:
@@ -50,7 +47,7 @@ export default function QuickOperation() {
       id: '54e23ade',
       status: -1,
     },
-  ]
+  ];
   return (
     <div className={styles['']}>
       <Table
@@ -63,14 +60,11 @@ export default function QuickOperation() {
         border={false}
         pagination={false}
       />
-      <Typography.Text
-        type="secondary"
-        className={styles['data-statistic-list-tip']}
-      >
+      <Typography.Text type="secondary" className={styles['data-statistic-list-tip']}>
         {t['monitor.list.tip.rotations']}
         {data.length}
         {t['monitor.list.tip.rest']}
       </Typography.Text>
     </div>
-  )
+  );
 }

@@ -1,16 +1,14 @@
-const rspack = require("@rspack/core");
-const path = require("path");
+const rspack = require('@rspack/core');
+const path = require('path');
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
   entry: {
-    main: "./src/index.jsx",
+    main: './src/index.jsx',
   },
   resolve: {
-    extensions: ["...", ".jsx"],
+    extensions: ['...', '.jsx'],
     alias: {
-      "@swc/helpers": path.dirname(
-        require.resolve("@swc/helpers/package.json")
-      ),
+      '@swc/helpers': path.dirname(require.resolve('@swc/helpers/package.json')),
     },
   },
   module: {
@@ -18,23 +16,23 @@ const config = {
       {
         test: /\.(jsx|js)$/,
         use: {
-          loader: "builtin:swc-loader",
+          loader: 'builtin:swc-loader',
           options: {
             // Enable source map
             sourceMap: true,
-            target: "es5",
+            target: 'es5',
             jsc: {
               parser: {
-                syntax: "ecmascript",
+                syntax: 'ecmascript',
                 jsx: true,
               },
               externalHelpers: true,
               preserveAllComments: false,
               transform: {
                 react: {
-                  runtime: "automatic",
-                  pragma: "React.createElement",
-                  pragmaFrag: "React.Fragment",
+                  runtime: 'automatic',
+                  pragma: 'React.createElement',
+                  pragmaFrag: 'React.Fragment',
                   throwIfNamespace: true,
                   useBuiltins: false,
                 },
@@ -42,9 +40,9 @@ const config = {
               experimental: {
                 plugins: [
                   [
-                    "@swc/plugin-remove-console", // need to use specific version to be compatible with rspack's internal swc version
+                    '@swc/plugin-remove-console', // need to use specific version to be compatible with rspack's internal swc version
                     {
-                      exclude: ["error"],
+                      exclude: ['error'],
                     },
                   ],
                 ],
@@ -52,11 +50,11 @@ const config = {
             },
           },
         },
-        type: "javascript/auto",
+        type: 'javascript/auto',
       },
       {
         test: /\.(png|svg|jpg)$/,
-        type: "asset/resource",
+        type: 'asset/resource',
       },
     ],
   },
@@ -65,7 +63,7 @@ const config = {
   },
   plugins: [
     new rspack.HtmlRspackPlugin({
-      template: "./index.html",
+      template: './index.html',
     }),
   ],
 };

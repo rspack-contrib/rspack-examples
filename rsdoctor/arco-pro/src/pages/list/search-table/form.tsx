@@ -1,35 +1,35 @@
-import { GlobalContext } from '@/context'
-import useLocale from '@/utils/useLocale'
-import { Button, DatePicker, Form, Grid, Input, Select } from '@arco-design/web-react'
-import { IconRefresh, IconSearch } from '@arco-design/web-react/icon'
-import dayjs from 'dayjs'
-import React, { useContext } from 'react'
-import { ContentType, FilterType, Status } from './constants'
-import locale from './locale'
-import styles from './style/index.module.less'
+import { GlobalContext } from '@/context';
+import useLocale from '@/utils/useLocale';
+import { Button, DatePicker, Form, Grid, Input, Select } from '@arco-design/web-react';
+import { IconRefresh, IconSearch } from '@arco-design/web-react/icon';
+import dayjs from 'dayjs';
+import React, { useContext } from 'react';
+import { ContentType, FilterType, Status } from './constants';
+import locale from './locale';
+import styles from './style/index.module.less';
 
-const { Row, Col } = Grid
-const { useForm } = Form
+const { Row, Col } = Grid;
+const { useForm } = Form;
 
 function SearchForm(props: {
-  onSearch: (values: Record<string, any>) => void
+  onSearch: (values: Record<string, any>) => void;
 }) {
-  const { lang } = useContext(GlobalContext)
+  const { lang } = useContext(GlobalContext);
 
-  const t = useLocale(locale)
-  const [form] = useForm()
+  const t = useLocale(locale);
+  const [form] = useForm();
 
   const handleSubmit = () => {
-    const values = form.getFieldsValue()
-    props.onSearch(values)
-  }
+    const values = form.getFieldsValue();
+    props.onSearch(values);
+  };
 
   const handleReset = () => {
-    form.resetFields()
-    props.onSearch({})
-  }
+    form.resetFields();
+    props.onSearch({});
+  };
 
-  const colSpan = lang === 'zh-CN' ? 8 : 12
+  const colSpan = lang === 'zh-CN' ? 8 : 12;
 
   return (
     <div className={styles['search-form-wrapper']}>
@@ -48,17 +48,11 @@ function SearchForm(props: {
           </Col>
           <Col span={colSpan}>
             <Form.Item label={t['searchTable.columns.name']} field="name">
-              <Input
-                allowClear
-                placeholder={t['searchForm.name.placeholder']}
-              />
+              <Input allowClear placeholder={t['searchForm.name.placeholder']} />
             </Form.Item>
           </Col>
           <Col span={colSpan}>
-            <Form.Item
-              label={t['searchTable.columns.contentType']}
-              field="contentType"
-            >
+            <Form.Item label={t['searchTable.columns.contentType']} field="contentType">
               <Select
                 placeholder={t['searchForm.all.placeholder']}
                 options={ContentType.map((item, index) => ({
@@ -71,10 +65,7 @@ function SearchForm(props: {
             </Form.Item>
           </Col>
           <Col span={colSpan}>
-            <Form.Item
-              label={t['searchTable.columns.filterType']}
-              field="filterType"
-            >
+            <Form.Item label={t['searchTable.columns.filterType']} field="filterType">
               <Select
                 placeholder={t['searchForm.all.placeholder']}
                 options={FilterType.map((item, index) => ({
@@ -87,10 +78,7 @@ function SearchForm(props: {
             </Form.Item>
           </Col>
           <Col span={colSpan}>
-            <Form.Item
-              label={t['searchTable.columns.createdTime']}
-              field="createdTime"
-            >
+            <Form.Item label={t['searchTable.columns.createdTime']} field="createdTime">
               <DatePicker.RangePicker
                 allowClear
                 style={{ width: '100%' }}
@@ -122,7 +110,7 @@ function SearchForm(props: {
         </Button>
       </div>
     </div>
-  )
+  );
 }
 
-export default SearchForm
+export default SearchForm;

@@ -1,12 +1,12 @@
-import useLocale from '@/utils/useLocale'
-import { Button, Link, Result, Typography } from '@arco-design/web-react'
-import { IconLink } from '@arco-design/web-react/icon'
-import React from 'react'
-import locale from './locale'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import { Button, Link, Result, Typography } from '@arco-design/web-react';
+import { IconLink } from '@arco-design/web-react/icon';
+import React from 'react';
+import locale from './locale';
+import styles from './style/index.module.less';
 
 function Success() {
-  const t = useLocale(locale)
+  const t = useLocale(locale);
 
   return (
     <div>
@@ -47,7 +47,7 @@ function Success() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Success
+export default Success;
