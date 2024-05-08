@@ -22,7 +22,7 @@
     "@rspack/core": "latest",
     "cross-env": "7.0.3"
   },
-  "sideEffects": ["**/*.css","**/*.less","**/*.scss"],
+  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
   "keywords": [],
   "author": "",
   "license": "MIT"

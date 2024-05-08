@@ -1,12 +1,22 @@
-import Logo from '@/assets/logo.svg'
-import MessageBox from '@/components/MessageBox'
-import { GlobalContext } from '@/context'
-import defaultLocale from '@/locale'
-import { generatePermission } from '@/routes'
-import { GlobalState } from '@/store'
-import useLocale from '@/utils/useLocale'
-import useStorage from '@/utils/useStorage'
-import { Avatar, Button, Divider, Dropdown, Input, Menu, Message, Select, Tooltip } from '@arco-design/web-react'
+import Logo from '@/assets/logo.svg';
+import MessageBox from '@/components/MessageBox';
+import { GlobalContext } from '@/context';
+import defaultLocale from '@/locale';
+import { generatePermission } from '@/routes';
+import { GlobalState } from '@/store';
+import useLocale from '@/utils/useLocale';
+import useStorage from '@/utils/useStorage';
+import {
+  Avatar,
+  Button,
+  Divider,
+  Dropdown,
+  Input,
+  Menu,
+  Message,
+  Select,
+  Tooltip,
+} from '@arco-design/web-react';
 import {
   IconDashboard,
   IconExperiment,
@@ -19,32 +29,32 @@ import {
   IconSunFill,
   IconTag,
   IconUser,
-} from '@arco-design/web-react/icon'
-import React, { useContext, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import Settings from '../Settings'
-import IconButton from './IconButton'
-import styles from './style/index.module.less'
+} from '@arco-design/web-react/icon';
+import React, { useContext, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Settings from '../Settings';
+import IconButton from './IconButton';
+import styles from './style/index.module.less';
 function Navbar({ show }: { show: boolean }) {
-  const t = useLocale()
-  const userInfo = useSelector((state: GlobalState) => state.userInfo)
-  const dispatch = useDispatch()
+  const t = useLocale();
+  const userInfo = useSelector((state: GlobalState) => state.userInfo);
+  const dispatch = useDispatch();
 
-  const [_, setUserStatus] = useStorage('userStatus')
-  const [role, setRole] = useStorage('userRole', 'admin')
+  const [_, setUserStatus] = useStorage('userStatus');
+  const [role, setRole] = useStorage('userRole', 'admin');
 
-  const { setLang, lang, theme, setTheme } = useContext(GlobalContext)
+  const { setLang, lang, theme, setTheme } = useContext(GlobalContext);
 
   function logout() {
-    setUserStatus('logout')
-    window.location.href = '/login'
+    setUserStatus('logout');
+    window.location.href = '/login';
   }
 
   function onMenuItemClick(key) {
     if (key === 'logout') {
-      logout()
+      logout();
     } else {
-      Message.info(`You clicked ${key}`)
+      Message.info(`You clicked ${key}`);
     }
   }
 
@@ -57,21 +67,21 @@ function Navbar({ show }: { show: boolean }) {
           permissions: generatePermission(role),
         },
       },
-    })
-  }, [role])
+    });
+  }, [role]);
 
   if (!show) {
     return (
       <div className={styles['fixed-settings']}>
         <Settings trigger={<Button icon={<IconSettings />} type="primary" size="large" />} />
       </div>
-    )
+    );
   }
 
   const handleChangeRole = () => {
-    const newRole = role === 'admin' ? 'user' : 'admin'
-    setRole(newRole)
-  }
+    const newRole = role === 'admin' ? 'user' : 'admin';
+    setRole(newRole);
+  };
 
   const droplist = (
     <Menu onClickMenuItem={onMenuItemClick}>
@@ -120,7 +130,7 @@ function Navbar({ show }: { show: boolean }) {
         {t['navbar.logout']}
       </Menu.Item>
     </Menu>
-  )
+  );
 
   return (
     <div className={styles.navbar}>
@@ -151,9 +161,9 @@ function Navbar({ show }: { show: boolean }) {
             }}
             trigger="hover"
             onChange={(value) => {
-              setLang(value)
-              const nextLang = defaultLocale[value]
-              Message.info(`${nextLang['message.lang.tips']}${value}`)
+              setLang(value);
+              const nextLang = defaultLocale[value];
+              Message.info(`${nextLang['message.lang.tips']}${value}`);
             }}
           />
         </li>
@@ -163,7 +173,13 @@ function Navbar({ show }: { show: boolean }) {
           </MessageBox>
         </li>
         <li>
-          <Tooltip content={theme === 'light' ? t['settings.navbar.theme.toDark'] : t['settings.navbar.theme.toLight']}>
+          <Tooltip
+            content={
+              theme === 'light'
+                ? t['settings.navbar.theme.toDark']
+                : t['settings.navbar.theme.toLight']
+            }
+          >
             <IconButton
               icon={theme !== 'dark' ? <IconMoonFill /> : <IconSunFill />}
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
@@ -182,7 +198,7 @@ function Navbar({ show }: { show: boolean }) {
         )}
       </ul>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

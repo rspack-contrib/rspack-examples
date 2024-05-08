@@ -1,19 +1,19 @@
-import useLocale from '@/utils/useLocale'
-import { Card, Tabs } from '@arco-design/web-react'
-import React, { useState } from 'react'
-import { useSelector } from 'react-redux'
-import InfoHeader from './header'
-import InfoForm from './info'
-import locale from './locale'
-import './mock'
-import Security from './security'
-import Verified from './verified'
+import useLocale from '@/utils/useLocale';
+import { Card, Tabs } from '@arco-design/web-react';
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import InfoHeader from './header';
+import InfoForm from './info';
+import locale from './locale';
+import './mock';
+import Security from './security';
+import Verified from './verified';
 
 function UserInfo() {
-  const t = useLocale(locale)
-  const userInfo = useSelector((state: any) => state.userInfo)
-  const loading = useSelector((state: any) => state.userLoading)
-  const [activeTab, setActiveTab] = useState('basic')
+  const t = useLocale(locale);
+  const userInfo = useSelector((state: any) => state.userInfo);
+  const loading = useSelector((state: any) => state.userLoading);
+  const [activeTab, setActiveTab] = useState('basic');
   return (
     <div>
       <Card style={{ padding: '14px 20px' }}>
@@ -33,7 +33,7 @@ function UserInfo() {
         </Tabs>
       </Card>
     </div>
-  )
+  );
 }
 
-export default UserInfo
+export default UserInfo;

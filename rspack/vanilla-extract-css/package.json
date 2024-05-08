@@ -1,15 +1,7 @@
 {
   "name": "example-vanilla-extract",
   "description": "Example React project using vanilla-extract and Sprinkles, compiling with webpack",
-  "keywords": [
-    "vanilla-extract",
-    "sprinkles",
-    "css-in-js",
-    "css-in-ts",
-    "css",
-    "webpack",
-    "react"
-  ],
+  "keywords": ["vanilla-extract", "sprinkles", "css-in-js", "css-in-ts", "css", "webpack", "react"],
   "version": "0.0.25",
   "main": "src/index.ts",
   "author": "SEEK",

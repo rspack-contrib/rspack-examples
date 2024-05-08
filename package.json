@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:example": "pnpm --filter \"example-*\" build"
+    "build:example": "pnpm --filter \"example-*\" build",
+    "prepare": "husky 2>/dev/null || true"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
     "cross-env": "7.0.3",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.2",
     "webpack": "5.89.0"
   },
   "packageManager": "pnpm@8.9.2",
@@ -18,5 +22,10 @@
     "overrides": {
       "react-focus-lock": "2.11.3"
     }
+  },
+  "lint-staged": {
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+      "npx @biomejs/biome check --apply --no-errors-on-unmatched --colors=force --diagnostic-level=error"
+    ]
   }
 }

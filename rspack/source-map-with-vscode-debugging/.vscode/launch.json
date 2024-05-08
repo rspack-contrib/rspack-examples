@@ -1,17 +1,17 @@
 // debug config for running project under vscode debugger
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "trace": true,
-            "name": "Chrome Debug",
-            "type": "chrome",
-            "request": "launch",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceRoot}/",  // folder containing rspack.config.js
-            "userDataDir": "${workspaceRoot}/.vscode/chrome",
-            "sourceMaps": true,
-            "disableNetworkCache": true
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "trace": true,
+      "name": "Chrome Debug",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceRoot}/", // folder containing rspack.config.js
+      "userDataDir": "${workspaceRoot}/.vscode/chrome",
+      "sourceMaps": true,
+      "disableNetworkCache": true
+    }
+  ]
 }

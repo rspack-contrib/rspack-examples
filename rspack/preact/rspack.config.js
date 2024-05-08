@@ -53,7 +53,7 @@ const config = {
     new rspack.HtmlRspackPlugin({
       template: './index.html',
     }),
-		dev && new rspack.HotModuleReplacementPlugin()
+    dev && new rspack.HotModuleReplacementPlugin(),
   ].filter(Boolean),
 };
 module.exports = config;

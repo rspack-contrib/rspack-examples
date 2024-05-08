@@ -1,6 +1,6 @@
-import { defineConfig } from "@rsbuild/core";
-import { pluginVue } from "@rsbuild/plugin-vue";
-import AutoImport from "unplugin-auto-import/rspack";
+import { defineConfig } from '@rsbuild/core';
+import { pluginVue } from '@rsbuild/plugin-vue';
+import AutoImport from 'unplugin-auto-import/rspack';
 
 export default defineConfig({
   plugins: [pluginVue()],
@@ -15,7 +15,7 @@ export default defineConfig({
             /\.vue\?vue/, // .vue
           ],
           // global imports to register
-          imports: ["vue"],
+          imports: ['vue'],
         }),
       ],
     },

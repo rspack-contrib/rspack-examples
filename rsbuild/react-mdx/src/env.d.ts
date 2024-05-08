@@ -1,11 +1,11 @@
 /// <reference types="@rsbuild/core/types" />
 
-declare module "*.md" {
+declare module '*.md' {
   let MDXComponent: () => JSX.Element;
   export default MDXComponent;
 }
 
-declare module "*.mdx" {
+declare module '*.mdx' {
   let MDXComponent: () => JSX.Element;
   export default MDXComponent;
 }

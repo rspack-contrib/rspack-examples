@@ -1,10 +1,10 @@
-import useBizTheme from '@/utils/useChartTheme'
-import { Spin } from '@arco-design/web-react'
-import { Axis, Chart, Legend, Line, Slider, Tooltip } from 'bizcharts'
-import React from 'react'
-import CustomTooltip from './customer-tooltip'
+import useBizTheme from '@/utils/useChartTheme';
+import { Spin } from '@arco-design/web-react';
+import { Axis, Chart, Legend, Line, Slider, Tooltip } from 'bizcharts';
+import React from 'react';
+import CustomTooltip from './customer-tooltip';
 
-const lineColor = ['#21CCFF', '#313CA9', '#249EFF']
+const lineColor = ['#21CCFF', '#313CA9', '#249EFF'];
 function PeriodLine({ data, loading }: { data: any[]; loading: boolean }) {
   return (
     <Spin loading={loading} style={{ width: '100%' }}>
@@ -21,14 +21,14 @@ function PeriodLine({ data, loading }: { data: any[]; loading: boolean }) {
         <Line shape="smooth" position="time*rate" color={['name', lineColor]} />
         <Tooltip crosshairs={{ type: 'x' }} showCrosshairs shared>
           {(title, items) => {
-            return <CustomTooltip title={title} data={items} />
+            return <CustomTooltip title={title} data={items} />;
           }}
         </Tooltip>
         <Axis
           name="rate"
           label={{
             formatter(text) {
-              return `${Number(text)} %`
+              return `${Number(text)} %`;
             },
           }}
         />
@@ -41,7 +41,7 @@ function PeriodLine({ data, loading }: { data: any[]; loading: boolean }) {
                 fill: lineColor[index],
                 r: 4,
               },
-            }
+            };
           }}
         />
         <Slider
@@ -75,7 +75,7 @@ function PeriodLine({ data, loading }: { data: any[]; loading: boolean }) {
         />
       </Chart>
     </Spin>
-  )
+  );
 }
 
-export default PeriodLine
+export default PeriodLine;

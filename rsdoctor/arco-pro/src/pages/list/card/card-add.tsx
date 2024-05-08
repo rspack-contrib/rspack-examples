@@ -1,11 +1,11 @@
-import { Card } from '@arco-design/web-react'
-import { IconPlus } from '@arco-design/web-react/icon'
-import cs from 'classnames'
-import React from 'react'
-import styles from './style/index.module.less'
+import { Card } from '@arco-design/web-react';
+import { IconPlus } from '@arco-design/web-react/icon';
+import cs from 'classnames';
+import React from 'react';
+import styles from './style/index.module.less';
 
 interface AddCardProps {
-  description?: string
+  description?: string;
 }
 function AddCard(props: AddCardProps) {
   return (
@@ -22,7 +22,7 @@ function AddCard(props: AddCardProps) {
         <div className={styles.description}>{props.description}</div>
       </div>
     </Card>
-  )
+  );
 }
 
-export default AddCard
+export default AddCard;

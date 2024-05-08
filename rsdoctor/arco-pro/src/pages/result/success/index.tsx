@@ -1,13 +1,13 @@
-import useLocale from '@/utils/useLocale'
-import { Button, Result, Steps, Typography } from '@arco-design/web-react'
-import React from 'react'
-import locale from './locale'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import { Button, Result, Steps, Typography } from '@arco-design/web-react';
+import React from 'react';
+import locale from './locale';
+import styles from './style/index.module.less';
 
-const Step = Steps.Step
+const Step = Steps.Step;
 
 function Success() {
-  const t = useLocale(locale)
+  const t = useLocale(locale);
 
   return (
     <div>
@@ -27,35 +27,18 @@ function Success() {
           ]}
         />
         <div className={styles['steps-wrapper']}>
-          <Typography.Paragraph bold>
-            {t['success.result.progress']}
-          </Typography.Paragraph>
+          <Typography.Paragraph bold>{t['success.result.progress']}</Typography.Paragraph>
           <Steps type="dot" current={2}>
-            <Step
-              title={t['success.submitApplication']}
-              description="2020/10/10 14:00:39"
-            />
-            <Step
-              title={t['success.leaderReview']}
-              description={t['success.processing']}
-            />
-            <Step
-              title={t['success.purchaseCertificate']}
-              description={t['success.waiting']}
-            />
-            <Step
-              title={t['success.safetyTest']}
-              description={t['success.waiting']}
-            />
-            <Step
-              title={t['success.launched']}
-              description={t['success.waiting']}
-            />
+            <Step title={t['success.submitApplication']} description="2020/10/10 14:00:39" />
+            <Step title={t['success.leaderReview']} description={t['success.processing']} />
+            <Step title={t['success.purchaseCertificate']} description={t['success.waiting']} />
+            <Step title={t['success.safetyTest']} description={t['success.waiting']} />
+            <Step title={t['success.launched']} description={t['success.waiting']} />
           </Steps>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Success
+export default Success;

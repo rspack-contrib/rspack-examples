@@ -1,26 +1,26 @@
-import { Space, Typography } from '@arco-design/web-react'
-import { IconCommand, IconStar } from '@arco-design/web-react/icon'
-import cs from 'classnames'
-import React from 'react'
-import styles from './style/index.module.less'
+import { Space, Typography } from '@arco-design/web-react';
+import { IconCommand, IconStar } from '@arco-design/web-react/icon';
+import cs from 'classnames';
+import React from 'react';
+import styles from './style/index.module.less';
 
 export interface Message {
-  id?: string
-  username?: string
-  content?: string
-  time?: string
-  isCollect?: boolean
+  id?: string;
+  username?: string;
+  content?: string;
+  time?: string;
+  isCollect?: boolean;
 }
 
 export interface MessageItemProps {
-  data: Message
+  data: Message;
 }
 
 function MessageItem(props: MessageItemProps) {
-  const { data = {} } = props
+  const { data = {} } = props;
   const classNames = cs(styles['message-item'], {
     [styles['message-item-collected']]: data.isCollect,
-  })
+  });
   return (
     <div className={classNames}>
       <Space size={4} direction="vertical" style={{ width: '100%' }}>
@@ -46,7 +46,7 @@ function MessageItem(props: MessageItemProps) {
         </div>
       </Space>
     </div>
-  )
+  );
 }
 
-export default MessageItem
+export default MessageItem;

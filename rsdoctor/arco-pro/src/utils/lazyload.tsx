@@ -1,31 +1,31 @@
-import { Spin } from '@arco-design/web-react'
-import loadable from '@loadable/component'
-import React from 'react'
-import styles from '../style/layout.module.less'
+import { Spin } from '@arco-design/web-react';
+import loadable from '@loadable/component';
+import React from 'react';
+import styles from '../style/layout.module.less';
 
 // https://github.com/gregberge/loadable-components/pull/226
 function load(fn, options) {
-  const Component = loadable(fn, options)
+  const Component = loadable(fn, options);
 
-  Component.preload = fn.requireAsync || fn
+  Component.preload = fn.requireAsync || fn;
 
-  return Component
+  return Component;
 }
 
 function LoadingComponent(props: {
-  error: boolean
-  timedOut: boolean
-  pastDelay: boolean
+  error: boolean;
+  timedOut: boolean;
+  pastDelay: boolean;
 }) {
   if (props.error) {
-    console.error(props.error)
-    return null
+    console.error(props.error);
+    return null;
   }
   return (
     <div className={styles.spin}>
       <Spin />
     </div>
-  )
+  );
 }
 
 export default (loader) =>
@@ -35,4 +35,4 @@ export default (loader) =>
       error: false,
       timedOut: false,
     }),
-  })
+  });

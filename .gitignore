@@ -131,3 +131,5 @@ dist
 
 # ignore lock to test more
 pnpm-lock.yaml
+
+.idea/

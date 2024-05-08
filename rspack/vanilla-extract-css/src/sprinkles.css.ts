@@ -47,7 +47,4 @@ const colorModeProperties = defineProperties({
   },
 });
 
-export const sprinkles = createSprinkles(
-  responsiveProperties,
-  colorModeProperties,
-);
+export const sprinkles = createSprinkles(responsiveProperties, colorModeProperties);

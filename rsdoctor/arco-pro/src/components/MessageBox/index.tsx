@@ -1,54 +1,56 @@
-import { Avatar, Badge, Button, Spin, Tabs, Trigger } from '@arco-design/web-react'
-import { IconCustomerService, IconDesktop, IconFile, IconMessage } from '@arco-design/web-react/icon'
-import axios from 'axios'
-import groupBy from 'lodash/groupBy'
-import React, { useEffect, useState } from 'react'
-import useLocale from '../../utils/useLocale'
-import MessageList, { MessageListType } from './list'
-import styles from './style/index.module.less'
+import { Avatar, Badge, Button, Spin, Tabs, Trigger } from '@arco-design/web-react';
+import {
+  IconCustomerService,
+  IconDesktop,
+  IconFile,
+  IconMessage,
+} from '@arco-design/web-react/icon';
+import axios from 'axios';
+import groupBy from 'lodash/groupBy';
+import React, { useEffect, useState } from 'react';
+import useLocale from '../../utils/useLocale';
+import MessageList, { MessageListType } from './list';
+import styles from './style/index.module.less';
 
 function DropContent() {
-  const t = useLocale()
-  const [loading, setLoading] = useState(false)
+  const t = useLocale();
+  const [loading, setLoading] = useState(false);
   const [groupData, setGroupData] = useState<{
-    [key: string]: MessageListType
-  }>({})
-  const [sourceData, setSourceData] = useState<MessageListType>([])
+    [key: string]: MessageListType;
+  }>({});
+  const [sourceData, setSourceData] = useState<MessageListType>([]);
 
   function fetchSourceData(showLoading = true) {
-    showLoading && setLoading(true)
+    showLoading && setLoading(true);
     axios
       .get('/api/message/list')
       .then((res) => {
-        setSourceData(res.data)
+        setSourceData(res.data);
       })
       .finally(() => {
-        showLoading && setLoading(false)
-      })
+        showLoading && setLoading(false);
+      });
   }
 
   function readMessage(data: MessageListType) {
-    const ids = data.map((item) => item.id)
+    const ids = data.map((item) => item.id);
     axios
       .post('/api/message/read', {
         ids,
       })
       .then(() => {
-        fetchSourceData()
-      })
+        fetchSourceData();
+      });
   }
 
   useEffect(() => {
-    fetchSourceData()
-  }, [])
+    fetchSourceData();
+  }, []);
 
   useEffect(() => {
-    const groupData: { [key: string]: MessageListType } = groupBy(
-      sourceData,
-      'type',
-    )
-    setGroupData(groupData)
-  }, [sourceData])
+    const groupData: { [key: string]: MessageListType } = groupBy(sourceData, 'type');
+    setGroupData(groupData);
+  }, [sourceData]);
 
   const tabList = [
     {
@@ -71,7 +73,7 @@ function DropContent() {
         </Avatar>
       ),
     },
-  ]
+  ];
 
   return (
     <div className={styles['message-box']}>
@@ -88,9 +90,9 @@ function DropContent() {
           }
         >
           {tabList.map((item) => {
-            const { key, title, avatar } = item
-            const data = groupData[key] || []
-            const unReadData = data.filter((item) => !item.status)
+            const { key, title, avatar } = item;
+            const data = groupData[key] || [];
+            const unReadData = data.filter((item) => !item.status);
             return (
               <Tabs.TabPane
                 key={key}
@@ -105,19 +107,19 @@ function DropContent() {
                   data={data}
                   unReadData={unReadData}
                   onItemClick={(item) => {
-                    readMessage([item])
+                    readMessage([item]);
                   }}
                   onAllBtnClick={(unReadData) => {
-                    readMessage(unReadData)
+                    readMessage(unReadData);
                   }}
                 />
               </Tabs.TabPane>
-            )
+            );
           })}
         </Tabs>
       </Spin>
     </div>
-  )
+  );
 }
 
 function MessageBox({ children }) {
@@ -133,7 +135,7 @@ function MessageBox({ children }) {
         {children}
       </Badge>
     </Trigger>
-  )
+  );
 }
 
-export default MessageBox
+export default MessageBox;

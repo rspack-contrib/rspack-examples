@@ -1,46 +1,43 @@
-import useLocale from '@/utils/useLocale'
-import { Card, Grid, Input, Tabs, Typography } from '@arco-design/web-react'
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-import AddCard from './card-add'
-import CardBlock from './card-block'
-import { BasicCard, QualityInspection } from './interface'
-import locale from './locale'
-import './mock'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import { Card, Grid, Input, Tabs, Typography } from '@arco-design/web-react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import AddCard from './card-add';
+import CardBlock from './card-block';
+import { BasicCard, QualityInspection } from './interface';
+import locale from './locale';
+import './mock';
+import styles from './style/index.module.less';
 
-const { Title } = Typography
-const { Row, Col } = Grid
+const { Title } = Typography;
+const { Row, Col } = Grid;
 
-const defaultList = new Array(10).fill({})
+const defaultList = new Array(10).fill({});
 export default function ListCard() {
-  const t = useLocale(locale)
-  const [loading, setLoading] = useState(true)
+  const t = useLocale(locale);
+  const [loading, setLoading] = useState(true);
   const [data, setData] = useState({
     quality: defaultList,
     service: defaultList,
     rules: defaultList,
-  })
+  });
 
-  const [activeKey, setActiveKey] = useState('all')
+  const [activeKey, setActiveKey] = useState('all');
 
   const getData = () => {
     axios
       .get('/api/cardList')
       .then((res) => {
-        setData(res.data)
+        setData(res.data);
       })
-      .finally(() => setLoading(false))
-  }
+      .finally(() => setLoading(false));
+  };
 
   useEffect(() => {
-    getData()
-  }, [])
-  7
-  const getCardList = (
-    list: Array<BasicCard & QualityInspection>,
-    type: keyof typeof data,
-  ) => {
+    getData();
+  }, []);
+  7;
+  const getCardList = (list: Array<BasicCard & QualityInspection>, type: keyof typeof data) => {
     return (
       <Row gutter={24} className={styles['card-content']}>
         {type === 'quality' && (
@@ -54,8 +51,8 @@ export default function ListCard() {
           </Col>
         ))}
       </Row>
-    )
-  }
+    );
+  };
 
   return (
     <Card>
@@ -77,21 +74,19 @@ export default function ListCard() {
         <Tabs.TabPane key="rules" title={t['cardList.tab.title.rules']} />
       </Tabs>
       <div className={styles.container}>
-        {activeKey === 'all'
-          ? (
-            Object.entries(data).map(([key, list]) => (
-              <div key={key}>
-                <Title heading={6}>{t[`cardList.tab.title.${key}`]}</Title>
-                {getCardList(list, key as keyof typeof data)}
-              </div>
-            ))
-          )
-          : (
-            <div className={styles['single-content']}>
-              {getCardList(data[activeKey], activeKey as keyof typeof data)}
+        {activeKey === 'all' ? (
+          Object.entries(data).map(([key, list]) => (
+            <div key={key}>
+              <Title heading={6}>{t[`cardList.tab.title.${key}`]}</Title>
+              {getCardList(list, key as keyof typeof data)}
             </div>
-          )}
+          ))
+        ) : (
+          <div className={styles['single-content']}>
+            {getCardList(data[activeKey], activeKey as keyof typeof data)}
+          </div>
+        )}
       </div>
     </Card>
-  )
+  );
 }

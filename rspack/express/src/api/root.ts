@@ -1,3 +1,3 @@
 export function rootHandler(req, res) {
-	res.send("Hello Rspack");
+  res.send('Hello Rspack');
 }

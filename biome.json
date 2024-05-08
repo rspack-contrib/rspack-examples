@@ -1,0 +1,64 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+  "organizeImports": {
+    "enabled": false
+  },
+  "vcs": {
+    "enabled": true,
+    "defaultBranch": "main",
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "include": ["**/*.js", "**/*.ts", "**/*.json", "**/*.jsonc", "**/*.jsx", "**/*.tsx"],
+    "ignoreUnknown": true,
+    "ignore": ["**/auto-imports.d.ts", "**/components.d.ts"]
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100,
+    "lineEnding": "lf"
+  },
+  "linter": {
+    "rules": {
+      "recommended": false,
+      "suspicious": {
+        "recommended": true,
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "off"
+      },
+      "correctness": {
+        "recommended": true,
+        "useExhaustiveDependencies": "off"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "include": [
+        "**/.vscode/*.json",
+        "**/tsconfig.json",
+        "**/tsconfig.*.json",
+        "**/tsconfig-*.json"
+      ],
+      "json": { "parser": { "allowComments": true, "allowTrailingCommas": true } }
+    },
+    {
+      "include": ["**/worker.js", "**/*-worker.js"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noGlobalAssign": "off"
+          }
+        }
+      }
+    }
+  ]
+}

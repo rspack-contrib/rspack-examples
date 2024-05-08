@@ -1,56 +1,56 @@
-const path = require("path")
-const ReactRefreshPlugin = require("@rspack/plugin-react-refresh")
-const rspack = require("@rspack/core")
+const path = require('path');
+const ReactRefreshPlugin = require('@rspack/plugin-react-refresh');
+const rspack = require('@rspack/core');
 
-const isProduction = process.env.NODE_ENV === "production"
+const isProduction = process.env.NODE_ENV === 'production';
 
 /** @type {import('@rspack/core').Configuration} */
 module.exports = {
-  mode: isProduction ? "production" : "development",
+  mode: isProduction ? 'production' : 'development',
   entry: {},
   context: __dirname,
   output: {
     // set uniqueName explicitly to make react-refresh works
-    uniqueName: "lib2"
+    uniqueName: 'lib2',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        include: path.resolve(__dirname, "src"),
+        include: path.resolve(__dirname, 'src'),
         use: {
-          loader: "builtin:swc-loader",
+          loader: 'builtin:swc-loader',
           options: {
             jsc: {
-							parser: {
-								syntax: "ecmascript",
-								jsx: true
-							},
-							transform: {
-								react: {
-									runtime: "automatic",
+              parser: {
+                syntax: 'ecmascript',
+                jsx: true,
+              },
+              transform: {
+                react: {
+                  runtime: 'automatic',
                   refresh: !isProduction,
-								}
-							}
-						}
-          }
-        }
-      }
-    ]
+                },
+              },
+            },
+          },
+        },
+      },
+    ],
   },
   plugins: [
     new rspack.container.ModuleFederationPlugin({
-      name: "mfeCCC",
+      name: 'mfeCCC',
 
       exposes: {
-        "./Component": "./src/Component",
-        "./Component2": "./src/LazyComponent"
+        './Component': './src/Component',
+        './Component2': './src/LazyComponent',
       },
 
       shared: [
         // All (used) requests within lodash are shared.
-        "lodash/",
-        "date-fns",
+        'lodash/',
+        'date-fns',
         {
           react: {
             // Do not load our own version.
@@ -59,10 +59,10 @@ module.exports = {
             // but it opts-out of possible fallbacks and runtime version upgrade.
             // import: false,
             import: false,
-            singleton: true
-          }
-        }
-      ]
+            singleton: true,
+          },
+        },
+      ],
     }),
     !isProduction && new ReactRefreshPlugin(),
   ],
@@ -71,6 +71,6 @@ module.exports = {
     // add CORS header for HMR chunk (xxx.hot-update.json and xxx.hot-update.js)
     headers: {
       'Access-Control-Allow-Origin': '*',
-    }
-  }
-}
+    },
+  },
+};

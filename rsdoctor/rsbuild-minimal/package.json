@@ -2,11 +2,7 @@
   "name": "@examples/doctor-rsbuild-minimal",
   "version": "0.0.1",
   "description": "",
-  "files": [
-    "dist",
-    "src",
-    "package.json"
-  ],
+  "files": ["dist", "src", "package.json"],
   "scripts": {
     "build:analysis": "RSDOCTOR=true rsbuild build",
     "build": "rsbuild build"

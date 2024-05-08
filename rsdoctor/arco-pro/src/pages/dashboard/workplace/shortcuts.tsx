@@ -1,12 +1,18 @@
-import useLocale from '@/utils/useLocale'
-import { Card, Divider, Link, Message, Typography } from '@arco-design/web-react'
-import { IconFile, IconFire, IconMobile, IconSettings, IconStorage } from '@arco-design/web-react/icon'
-import React from 'react'
-import locale from './locale'
-import styles from './style/shortcuts.module.less'
+import useLocale from '@/utils/useLocale';
+import { Card, Divider, Link, Message, Typography } from '@arco-design/web-react';
+import {
+  IconFile,
+  IconFire,
+  IconMobile,
+  IconSettings,
+  IconStorage,
+} from '@arco-design/web-react/icon';
+import React from 'react';
+import locale from './locale';
+import styles from './style/shortcuts.module.less';
 
 function Shortcuts() {
-  const t = useLocale(locale)
+  const t = useLocale(locale);
 
   const shortcuts = [
     {
@@ -34,7 +40,7 @@ function Shortcuts() {
       key: 'Marketing',
       icon: <IconFire />,
     },
-  ]
+  ];
 
   const recentShortcuts = [
     {
@@ -52,7 +58,7 @@ function Shortcuts() {
       key: 'Advanced Management',
       icon: <IconSettings />,
     },
-  ]
+  ];
 
   function onClickShortcut(key) {
     Message.info({
@@ -61,15 +67,13 @@ function Shortcuts() {
           You clicked <b>{key}</b>
         </span>
       ),
-    })
+    });
   }
 
   return (
     <Card>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <Typography.Title heading={6}>
-          {t['workplace.shortcuts']}
-        </Typography.Title>
+        <Typography.Title heading={6}>{t['workplace.shortcuts']}</Typography.Title>
         <Link>{t['workplace.seeMore']}</Link>
       </div>
       <div className={styles.shortcuts}>
@@ -99,7 +103,7 @@ function Shortcuts() {
         ))}
       </div>
     </Card>
-  )
+  );
 }
 
-export default Shortcuts
+export default Shortcuts;

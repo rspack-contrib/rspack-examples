@@ -1,17 +1,17 @@
-import useLocale from '@/utils/useLocale'
-import { Button } from '@arco-design/web-react'
-import cs from 'classnames'
-import React from 'react'
-import { useSelector } from 'react-redux'
-import locale from './locale'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import { Button } from '@arco-design/web-react';
+import cs from 'classnames';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import locale from './locale';
+import styles from './style/index.module.less';
 
 function Security() {
-  const t = useLocale(locale)
+  const t = useLocale(locale);
 
   const userInfo = useSelector((state: any) => {
-    return state.userInfo || {}
-  })
+    return state.userInfo || {};
+  });
 
   const data = [
     {
@@ -34,7 +34,7 @@ function Security() {
       value: '',
       placeholder: t['userSetting.security.email.placeholder'],
     },
-  ]
+  ];
 
   return (
     <div className={styles['security']}>
@@ -52,16 +52,14 @@ function Security() {
 
             <span>
               <Button type="text">
-                {item.value
-                  ? t['userSetting.btn.edit']
-                  : t['userSetting.btn.set']}
+                {item.value ? t['userSetting.btn.edit'] : t['userSetting.btn.set']}
               </Button>
             </span>
           </div>
         </div>
       ))}
     </div>
-  )
+  );
 }
 
-export default Security
+export default Security;

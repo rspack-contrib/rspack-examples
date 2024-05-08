@@ -16,7 +16,7 @@
   "dependencies": {
     "express": "4.18.2"
   },
-  "sideEffects": ["**/*.css","**/*.less","**/*.scss"],
+  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
   "keywords": [],
   "author": "",
   "license": "MIT"

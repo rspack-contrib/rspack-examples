@@ -1,14 +1,14 @@
-import Logo from '@/assets/logo.svg'
-import Footer from '@/components/Footer'
-import React, { useEffect } from 'react'
-import LoginBanner from './banner'
-import LoginForm from './form'
-import styles from './style/index.module.less'
+import Logo from '@/assets/logo.svg';
+import Footer from '@/components/Footer';
+import React, { useEffect } from 'react';
+import LoginBanner from './banner';
+import LoginForm from './form';
+import styles from './style/index.module.less';
 
 function Login() {
   useEffect(() => {
-    document.body.setAttribute('arco-theme', 'light')
-  }, [])
+    document.body.setAttribute('arco-theme', 'light');
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -30,8 +30,8 @@ function Login() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-Login.displayName = 'LoginPage'
+Login.displayName = 'LoginPage';
 
-export default Login
+export default Login;

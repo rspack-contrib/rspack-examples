@@ -1,4 +1,4 @@
-import useLocale from '@/utils/useLocale'
+import useLocale from '@/utils/useLocale';
 import {
   Button,
   Card,
@@ -12,35 +12,35 @@ import {
   Steps,
   Switch,
   Typography,
-} from '@arco-design/web-react'
-import React, { useState } from 'react'
-import locale from './locale'
-import styles from './style/index.module.less'
+} from '@arco-design/web-react';
+import React, { useState } from 'react';
+import locale from './locale';
+import styles from './style/index.module.less';
 
-const { Title, Paragraph } = Typography
+const { Title, Paragraph } = Typography;
 function StepForm() {
-  const t = useLocale(locale)
-  const [current, setCurrent] = useState(1)
+  const t = useLocale(locale);
+  const [current, setCurrent] = useState(1);
 
-  const [form] = Form.useForm()
+  const [form] = Form.useForm();
 
   const viewForm = () => {
-    const values = form.getFields()
-    form.setFields(values)
-    setCurrent(1)
-  }
+    const values = form.getFields();
+    form.setFields(values);
+    setCurrent(1);
+  };
 
   const reCreateForm = () => {
-    form.resetFields()
-    setCurrent(1)
-  }
+    form.resetFields();
+    setCurrent(1);
+  };
 
   const toNext = async () => {
     try {
-      await form.validate()
-      setCurrent(current + 1)
+      await form.validate();
+      setCurrent(current + 1);
     } catch (_) {}
-  }
+  };
   return (
     <div className={styles.container}>
       <Card>
@@ -75,15 +75,13 @@ function StepForm() {
                     {
                       validator: (value: string, callback) => {
                         if (!/^[\u4e00-\u9fa5a-zA-Z0-9]{1,20}$/g.test(value)) {
-                          callback(t['stepForm.basicInfo.name.placeholder'])
+                          callback(t['stepForm.basicInfo.name.placeholder']);
                         }
                       },
                     },
                   ]}
                 >
-                  <Input
-                    placeholder={t['stepForm.basicInfo.name.placeholder']}
-                  />
+                  <Input placeholder={t['stepForm.basicInfo.name.placeholder']} />
                 </Form.Item>
                 <Form.Item
                   label={t['stepForm.basicInfo.channelType']}
@@ -124,9 +122,7 @@ function StepForm() {
                   initialValue={'https://arco.design'}
                   rules={[{ required: true }]}
                 >
-                  <Input
-                    placeholder={t['stepForm.basicInfo.link.placeholder']}
-                  />
+                  <Input placeholder={t['stepForm.basicInfo.link.placeholder']} />
                 </Form.Item>
               </Form.Item>
             )}
@@ -143,9 +139,7 @@ function StepForm() {
                     },
                   ]}
                 >
-                  <Input
-                    placeholder={t['stepForm.channel.source.placeholder']}
-                  />
+                  <Input placeholder={t['stepForm.channel.source.placeholder']} />
                 </Form.Item>
                 <Form.Item
                   label={t['stepForm.channel.media']}
@@ -158,9 +152,7 @@ function StepForm() {
                     },
                   ]}
                 >
-                  <Input
-                    placeholder={t['stepForm.channel.media.placeholder']}
-                  />
+                  <Input placeholder={t['stepForm.channel.media.placeholder']} />
                 </Form.Item>
                 <Form.Item
                   label={t['stepForm.channel.keywords']}
@@ -193,53 +185,42 @@ function StepForm() {
                     },
                   ]}
                 >
-                  <Input.TextArea
-                    placeholder={t['stepForm.channel.content.placeholder']}
-                  />
+                  <Input.TextArea placeholder={t['stepForm.channel.content.placeholder']} />
                 </Form.Item>
               </Form.Item>
             )}
-            {current !== 3
-              ? (
-                <Form.Item label=" ">
-                  <Space>
-                    {current === 2 && (
-                      <Button
-                        size="large"
-                        onClick={() => setCurrent(current - 1)}
-                      >
-                        {t['stepForm.prev']}
-                      </Button>
-                    )}
-                    {current !== 3 && (
-                      <Button type="primary" size="large" onClick={toNext}>
-                        {t['stepForm.next']}
-                      </Button>
-                    )}
-                  </Space>
-                </Form.Item>
-              )
-              : (
-                <Form.Item noStyle>
-                  <Result
-                    status="success"
-                    title={t['stepForm.created.success.title']}
-                    subTitle={t['stepForm.created.success.desc']}
-                    extra={[
-                      <Button
-                        key="reset"
-                        style={{ marginRight: 16 }}
-                        onClick={viewForm}
-                      >
-                        {t['stepForm.created.success.view']}
-                      </Button>,
-                      <Button key="again" type="primary" onClick={reCreateForm}>
-                        {t['stepForm.created.success.again']}
-                      </Button>,
-                    ]}
-                  />
-                </Form.Item>
-              )}
+            {current !== 3 ? (
+              <Form.Item label=" ">
+                <Space>
+                  {current === 2 && (
+                    <Button size="large" onClick={() => setCurrent(current - 1)}>
+                      {t['stepForm.prev']}
+                    </Button>
+                  )}
+                  {current !== 3 && (
+                    <Button type="primary" size="large" onClick={toNext}>
+                      {t['stepForm.next']}
+                    </Button>
+                  )}
+                </Space>
+              </Form.Item>
+            ) : (
+              <Form.Item noStyle>
+                <Result
+                  status="success"
+                  title={t['stepForm.created.success.title']}
+                  subTitle={t['stepForm.created.success.desc']}
+                  extra={[
+                    <Button key="reset" style={{ marginRight: 16 }} onClick={viewForm}>
+                      {t['stepForm.created.success.view']}
+                    </Button>,
+                    <Button key="again" type="primary" onClick={reCreateForm}>
+                      {t['stepForm.created.success.again']}
+                    </Button>,
+                  ]}
+                />
+              </Form.Item>
+            )}
           </Form>
         </div>
         {current === 3 && (
@@ -253,7 +234,7 @@ function StepForm() {
         )}
       </Card>
     </div>
-  )
+  );
 }
 
-export default StepForm
+export default StepForm;

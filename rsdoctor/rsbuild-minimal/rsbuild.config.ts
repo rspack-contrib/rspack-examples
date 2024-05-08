@@ -7,6 +7,6 @@ export default defineConfig({
   tools: {
     bundlerChain: (chain) => {
       process.env.RSDOCTOR === 'true' && chain.plugin('Rsdoctor').use(RsdoctorRspackPlugin, [{}]);
-    }
+    },
   },
 });

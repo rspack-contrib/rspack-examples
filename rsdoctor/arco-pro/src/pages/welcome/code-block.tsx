@@ -1,15 +1,15 @@
-import clipboard from '@/utils/clipboard'
-import { Button, Message, Tooltip } from '@arco-design/web-react'
-import { IconCopy } from '@arco-design/web-react/icon'
-import React from 'react'
-import styles from './style/code-block.module.less'
+import clipboard from '@/utils/clipboard';
+import { Button, Message, Tooltip } from '@arco-design/web-react';
+import { IconCopy } from '@arco-design/web-react/icon';
+import React from 'react';
+import styles from './style/code-block.module.less';
 
 interface CodeBlockProps {
-  code: string
+  code: string;
 }
 
 export default function CodeBlock(props: CodeBlockProps) {
-  const { code } = props
+  const { code } = props;
   return (
     <pre className={styles['code-block']}>
       <code className={styles['code-block-content']}>{code}</code>
@@ -19,11 +19,11 @@ export default function CodeBlock(props: CodeBlockProps) {
           className={styles['code-block-copy-btn']}
           icon={<IconCopy />}
           onClick={() => {
-            clipboard(code)
-            Message.success('复制成功')
+            clipboard(code);
+            Message.success('复制成功');
           }}
         />
       </Tooltip>
     </pre>
-  )
+  );
 }

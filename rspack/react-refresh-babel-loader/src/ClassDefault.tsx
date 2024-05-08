@@ -1,9 +1,9 @@
-import { Component } from 'react'
+import { Component } from 'react';
 
 class ClassDefault extends Component {
   render() {
-    return <h1>Default Export Class</h1>
+    return <h1>Default Export Class</h1>;
   }
 }
 
-export default ClassDefault
+export default ClassDefault;

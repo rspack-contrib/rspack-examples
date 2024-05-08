@@ -1,36 +1,34 @@
-import useLocale from '@/utils/useLocale'
-import { Card, Spin, Typography } from '@arco-design/web-react'
-import axios from 'axios'
-import { DonutChart } from 'bizcharts'
-import React, { useEffect, useState } from 'react'
-import locale from './locale'
+import useLocale from '@/utils/useLocale';
+import { Card, Spin, Typography } from '@arco-design/web-react';
+import axios from 'axios';
+import { DonutChart } from 'bizcharts';
+import React, { useEffect, useState } from 'react';
+import locale from './locale';
 
 function PopularContent() {
-  const t = useLocale(locale)
-  const [data, setData] = useState([])
-  const [loading, setLoading] = useState(true)
+  const t = useLocale(locale);
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const fetchData = () => {
-    setLoading(true)
+    setLoading(true);
     axios
       .get('/api/workplace/content-percentage')
       .then((res) => {
-        setData(res.data)
+        setData(res.data);
       })
       .finally(() => {
-        setLoading(false)
-      })
-  }
+        setLoading(false);
+      });
+  };
 
   useEffect(() => {
-    fetchData()
-  }, [])
+    fetchData();
+  }, []);
 
   return (
     <Card>
-      <Typography.Title heading={6}>
-        {t['workplace.contentPercentage']}
-      </Typography.Title>
+      <Typography.Title heading={6}>{t['workplace.contentPercentage']}</Typography.Title>
       <Spin loading={loading} style={{ display: 'block' }}>
         <DonutChart
           autoFit
@@ -74,15 +72,15 @@ function PopularContent() {
                 color: 'rgb(--var(color-text-1))',
               },
               formatter: (_, data) => {
-                const sum = data.reduce((a, b) => a + b.count, 0)
-                return Number(sum).toLocaleString()
+                const sum = data.reduce((a, b) => a + b.count, 0);
+                return Number(sum).toLocaleString();
               },
             },
           }}
         />
       </Spin>
     </Card>
-  )
+  );
 }
 
-export default PopularContent
+export default PopularContent;

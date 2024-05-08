@@ -13,7 +13,7 @@
     "@rspack/core": "latest",
     "ts-node": "10.9.2"
   },
-  "sideEffects": ["**/*.css","**/*.less","**/*.scss"],
+  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
   "keywords": [],
   "author": "",
   "license": "MIT"

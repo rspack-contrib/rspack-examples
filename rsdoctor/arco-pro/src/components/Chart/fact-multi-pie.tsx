@@ -1,11 +1,11 @@
-import useBizTheme from '@/utils/useChartTheme'
-import { Chart, Facet, Legend } from 'bizcharts'
-import React from 'react'
+import useBizTheme from '@/utils/useChartTheme';
+import { Chart, Facet, Legend } from 'bizcharts';
+import React from 'react';
 
 interface FactMultiPieProps {
-  data: any[]
-  loading: boolean
-  height: number
+  data: any[];
+  loading: boolean;
+  height: number;
 }
 function FactMultiPie(props: FactMultiPieProps) {
   return (
@@ -23,28 +23,22 @@ function FactMultiPie(props: FactMultiPieProps) {
         type="rect"
         showTitle={false}
         eachView={(view, facet) => {
-          const data = facet.data
+          const data = facet.data;
           view.coordinate({
             type: 'theta',
             cfg: {
               radius: 0.8,
               innerRadius: 0.7,
             },
-          })
+          });
           view
             .interval()
             .adjust('stack')
             .position('value')
-            .color('type', [
-              '#249eff',
-              '#846BCE',
-              '#21CCFF',
-              ' #86DF6C',
-              '#0E42D2',
-            ])
+            .color('type', ['#249eff', '#846BCE', '#21CCFF', ' #86DF6C', '#0E42D2'])
             .label('value', {
               content: (content) => {
-                return `${(content.value * 100).toFixed(2)} %`
+                return `${(content.value * 100).toFixed(2)} %`;
               },
             }),
             view.annotation().text({
@@ -56,12 +50,12 @@ function FactMultiPie(props: FactMultiPieProps) {
                 textAlign: 'center',
               },
               offsetY: 10,
-            })
-          view.interaction('element-single-selected')
+            });
+          view.interaction('element-single-selected');
         }}
       />
     </Chart>
-  )
+  );
 }
 
-export default FactMultiPie
+export default FactMultiPie;

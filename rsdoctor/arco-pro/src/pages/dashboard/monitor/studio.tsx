@@ -1,28 +1,25 @@
-import useLocale from '@/utils/useLocale'
-import { Avatar, Card, Grid, Space, Typography } from '@arco-design/web-react'
-import { IconMore } from '@arco-design/web-react/icon'
-import React from 'react'
-import locale from './locale'
-import styles from './style/index.module.less'
+import useLocale from '@/utils/useLocale';
+import { Avatar, Card, Grid, Space, Typography } from '@arco-design/web-react';
+import { IconMore } from '@arco-design/web-react/icon';
+import React from 'react';
+import locale from './locale';
+import styles from './style/index.module.less';
 
 interface StudioProps {
   userInfo: {
-    name?: string
-    avatar?: string
-  }
+    name?: string;
+    avatar?: string;
+  };
 }
 
 export default function Studio(props: StudioProps) {
-  const t = useLocale(locale)
-  const { userInfo } = props
+  const t = useLocale(locale);
+  const { userInfo } = props;
   return (
     <Card>
       <Grid.Row>
         <Grid.Col span={16}>
-          <Typography.Title
-            style={{ marginTop: 0, marginBottom: 16 }}
-            heading={6}
-          >
+          <Typography.Title style={{ marginTop: 0, marginBottom: 16 }} heading={6}>
             {t['monitor.title.studioPreview']}
           </Typography.Title>
         </Grid.Col>
@@ -55,5 +52,5 @@ export default function Studio(props: StudioProps) {
         </div>
       </div>
     </Card>
-  )
+  );
 }

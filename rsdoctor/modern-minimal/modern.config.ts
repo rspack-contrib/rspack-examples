@@ -19,9 +19,11 @@ export default defineConfig<'rspack'>({
       },
     },
   },
-  plugins: [appTools({
-    bundler: 'experimental-rspack'
-  })],
+  plugins: [
+    appTools({
+      bundler: 'experimental-rspack',
+    }),
+  ],
   tools: {
     rspack: (config, { appendPlugins }) => {
       if (process.env.RSDOCTOR === 'true') {

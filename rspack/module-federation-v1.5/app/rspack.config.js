@@ -1,51 +1,51 @@
-const path = require("path")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-const ReactRefreshPlugin = require("@rspack/plugin-react-refresh")
-const rspack = require("@rspack/core")
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ReactRefreshPlugin = require('@rspack/plugin-react-refresh');
+const rspack = require('@rspack/core');
 
-const isProduction = process.env.NODE_ENV === "production"
+const isProduction = process.env.NODE_ENV === 'production';
 
 /** @type {import('@rspack/core').Configuration} */
 module.exports = {
-  mode: isProduction ? "production" : "development",
-  entry: "./src/index.js",
+  mode: isProduction ? 'production' : 'development',
+  entry: './src/index.js',
   context: __dirname,
   output: {
     // set uniqueName explicitly to make react-refresh works
-    uniqueName: "app"
+    uniqueName: 'app',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        include: path.resolve(__dirname, "src"),
+        include: path.resolve(__dirname, 'src'),
         use: {
-          loader: "builtin:swc-loader",
+          loader: 'builtin:swc-loader',
           options: {
             jsc: {
-							parser: {
-								syntax: "ecmascript",
-								jsx: true
-							},
-							transform: {
-								react: {
-									runtime: "automatic",
+              parser: {
+                syntax: 'ecmascript',
+                jsx: true,
+              },
+              transform: {
+                react: {
+                  runtime: 'automatic',
                   refresh: !isProduction,
-								}
-							}
-						}
-          }
-        }
-      }
-    ]
+                },
+              },
+            },
+          },
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin(),
     new rspack.container.ModuleFederationPlugin({
       // List of remotes with URLs
       remotes: {
-        "mfe-b": "mfeBBB@http://localhost:8081/mfeBBB.js",
-        "mfe-c": "mfeCCC@http://localhost:8082/mfeCCC.js"
+        'mfe-b': 'mfeBBB@http://localhost:8081/mfeBBB.js',
+        'mfe-c': 'mfeCCC@http://localhost:8082/mfeCCC.js',
       },
 
       // list of shared modules with optional options
@@ -58,17 +58,15 @@ module.exports = {
         // from package.json, while providing it's own version to others.
         react: {
           singleton: true, // make sure only a single react module is used
-        }
+        },
       },
 
       // list of runtime plugin modules (feature of MF1.5)
-      runtimePlugins: [
-        "./src/runtimePlugins/logger.js",
-      ],
+      runtimePlugins: ['./src/runtimePlugins/logger.js'],
     }),
     !isProduction && new ReactRefreshPlugin(),
   ],
   devServer: {
     port: 8080,
-  }
-}
+  },
+};

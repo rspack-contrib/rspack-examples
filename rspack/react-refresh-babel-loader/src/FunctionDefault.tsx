@@ -1,5 +1,5 @@
 function FunctionDefault() {
-  return <h1>Default Export Function</h1>
+  return <h1>Default Export Function</h1>;
 }
 
-export default FunctionDefault
+export default FunctionDefault;

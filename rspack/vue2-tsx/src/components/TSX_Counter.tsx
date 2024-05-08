@@ -1,14 +1,14 @@
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
   setup() {
-    const count = ref<number>(0)
+    const count = ref<number>(0);
 
     function add() {
-      count.value++
+      count.value++;
     }
 
-    return { count, add }
+    return { count, add };
   },
 
   render() {
@@ -17,6 +17,6 @@ export default defineComponent({
         <span>TSX_Counter: </span>
         <strong>{this.count}</strong>
       </button>
-    )
+    );
   },
-})
+});
