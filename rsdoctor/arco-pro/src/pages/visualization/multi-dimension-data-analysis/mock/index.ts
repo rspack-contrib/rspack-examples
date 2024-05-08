@@ -66,6 +66,7 @@ setupMock({
         ],
       });
       let list = [];
+      // biome-ignore lint/suspicious/noAssignInExpressions: it's fine
       legend.forEach((name, index) => (list = list.concat(getLineData(name, index))));
       return {
         overviewData,

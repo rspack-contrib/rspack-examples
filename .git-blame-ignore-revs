@@ -1,0 +1,10 @@
+###
+# Commit list to be skipped on blame view.
+# To use this locally, please run:
+#
+#   git config blame.ignoreRevsFile .git-blame-ignore-revs
+#
+###
+
+# Code Re-format
+eb796f13662bb6793da3612797314d0536271a59

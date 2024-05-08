@@ -13,6 +13,7 @@ interface AreaPolarProps {
 function AreaPolar(props: AreaPolarProps) {
   const { data, loading, fields, height } = props;
 
+  // biome-ignore lint/suspicious/noShadowRestrictedNames: it's fine
   const { DataView } = DataSet;
   const dv = new DataView().source(data);
   dv.transform({

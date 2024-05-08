@@ -21,8 +21,8 @@ timed('js fibonacci', () => fibonacciJavascript(22));
 function timed(name, fn) {
   if (!console.time || !console.timeEnd) return fn();
   // warmup
-  for (var i = 0; i < 10; i++) fn();
+  for (let i = 0; i < 10; i++) fn();
   console.time(name);
-  for (var i = 0; i < 5000; i++) fn();
+  for (let i = 0; i < 5000; i++) fn();
   console.timeEnd(name);
 }

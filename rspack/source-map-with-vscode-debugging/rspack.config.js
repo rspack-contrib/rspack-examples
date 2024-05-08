@@ -8,6 +8,7 @@ const config = {
   },
   devtool: 'source-map',
   output: {
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
     devtoolModuleFilenameTemplate: 'file:///[absolute-resource-path]', // map to source with absolute file path not webpack:// protocol
   },
@@ -45,8 +46,5 @@ const config = {
       template: './index.html',
     }),
   ],
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-  },
 };
 module.exports = config;
