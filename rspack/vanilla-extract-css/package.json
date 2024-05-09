@@ -9,7 +9,7 @@
     "webpack:start": "webpack serve",
     "webpack:build": "webpack",
     "start": "rspack serve",
-    "build": "echo success"
+    "build": "rspack build"
   },
   "private": true,
   "dependencies": {
