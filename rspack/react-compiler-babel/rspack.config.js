@@ -36,10 +36,7 @@ const config = {
           {
             loader: 'babel-loader',
             options: {
-              plugins: ['babel-plugin-react-compiler'],
-              parserOpts: {
-                plugins: ['jsx'],
-              },
+              plugins: ['babel-plugin-react-compiler', '@babel/plugin-syntax-jsx'],
             },
           },
         ],
