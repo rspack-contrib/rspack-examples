@@ -5,7 +5,7 @@ const config = {
   context: __dirname,
   target: 'node',
   entry: {
-    main: ['webpack/hot/poll?100', './src/main.ts'],
+    main: ['@rspack/core/hot/poll?100', './src/main.ts'],
   },
   resolve: {
     extensions: ['...', '.ts', '.tsx', '.jsx'],
