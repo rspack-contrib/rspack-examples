@@ -1,8 +1,7 @@
 {
   "name": "rspack-examples",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Repository for examples of Rspack / Rsbuild / Repress / Rsdoctor",
   "scripts": {
     "build:example": "pnpm --filter \"example-*\" build",
     "prepare": "husky 2>/dev/null || true"
@@ -14,8 +13,7 @@
     "@biomejs/biome": "^1.7.3",
     "cross-env": "7.0.3",
     "husky": "9.0.11",
-    "lint-staged": "15.2.2",
-    "webpack": "5.89.0"
+    "lint-staged": "15.2.2"
   },
   "packageManager": "pnpm@8.9.2",
   "pnpm": {
