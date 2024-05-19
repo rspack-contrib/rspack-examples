@@ -14,12 +14,12 @@
     "solid-js": "1.6.9",
     "babel-preset-solid": "1.6.9",
     "solid-refresh": "0.5.2",
-    "@rspack/cli": "latest"
+    "@rspack/cli": "^0.6.5"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@rspack/core": "latest"
+    "@rspack/core": "^0.6.5"
   }
 }

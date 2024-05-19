@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "@modern-js/storybook": "^2.48.4",
-    "@rspack/cli": "latest",
-    "@rspack/core": "latest",
+    "@rspack/cli": "^0.6.5",
+    "@rspack/core": "^0.6.5",
     "@storybook/addon-essentials": "^7.0.0",
     "@storybook/addon-interactions": "^7.0.0",
     "@storybook/addon-links": "^7.0.0",

@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Repository for examples of Rspack / Rsbuild / Repress / Rsdoctor",
   "scripts": {
-    "build:example": "pnpm --filter \"example-*\" build",
+    "build:rspack": "pnpm --filter \"example-*\" build",
+    "build:rsbuild": "pnpm --filter \"rsbuild-*\" build",
+    "build:rspress": "pnpm --filter \"rspress-*\" build",
+    "build:rsdoctor": "pnpm --filter \"rsdoctor-*\" build",
     "prepare": "husky 2>/dev/null || true"
   },
   "keywords": [],

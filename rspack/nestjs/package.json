@@ -18,8 +18,8 @@
     "rxjs": "^7.5.5"
   },
   "devDependencies": {
-    "@rspack/cli": "latest",
-    "@rspack/core": "latest",
+    "@rspack/cli": "^0.6.5",
+    "@rspack/core": "^0.6.5",
     "cross-env": "7.0.3"
   },
   "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
