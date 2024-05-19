@@ -9,8 +9,8 @@
     "build": "rspack build"
   },
   "devDependencies": {
-    "@rspack/cli": "latest",
-    "@rspack/core": "latest",
+    "@rspack/cli": "^0.6.5",
+    "@rspack/core": "^0.6.5",
     "ts-node": "10.9.2"
   },
   "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],

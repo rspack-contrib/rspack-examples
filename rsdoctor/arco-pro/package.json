@@ -39,10 +39,10 @@
     "regenerator-runtime": "0.13.9"
   },
   "devDependencies": {
-    "@rspack/cli": "latest",
-    "@rspack/core": "latest",
-    "@rspack/plugin-html": "latest",
-    "@rspack/plugin-react-refresh": "latest",
+    "@rspack/cli": "^0.6.5",
+    "@rspack/core": "^0.6.5",
+    "@rspack/plugin-html": "^0.5.8",
+    "@rspack/plugin-react-refresh": "^0.6.5",
     "@svgr/webpack": "^6.5.1",
     "@swc/core": "^1.3.14",
     "bundle-stats": "^4.1.2",

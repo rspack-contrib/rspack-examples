@@ -12,8 +12,8 @@
     "core-js": "3.30.1"
   },
   "devDependencies": {
-    "@rspack/cli": "latest",
-    "@rspack/core": "latest"
+    "@rspack/cli": "^0.6.5",
+    "@rspack/core": "^0.6.5"
   },
   "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
   "keywords": [],

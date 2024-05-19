@@ -15,7 +15,7 @@
     "react": "18.2.0"
   },
   "devDependencies": {
-    "@rspack/cli": "latest",
+    "@rspack/cli": "^0.6.5",
     "babel-loader": "9.1.2",
     "@babel/preset-env": "7.20.2",
     "sass-loader": "13.2.0",
@@ -37,7 +37,7 @@
     "ts-loader": "9.4.2",
     "svg-react-loader": "0.4.6",
     "node-loader": "2.0.0",
-    "@rspack/core": "latest",
+    "@rspack/core": "^0.6.5",
     "file-loader": "6.2.0",
     "sass": "1.69.7"
   }
