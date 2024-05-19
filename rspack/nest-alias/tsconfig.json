@@ -7,10 +7,10 @@
   "include": ["src"],
   "references": [
     {
-      "path": "../../libs/lib1"
+      "path": "../common-libs/lib1"
     },
     {
-      "path": "../../libs/lib2"
+      "path": "../common-libs/lib2"
     }
   ]
 }
