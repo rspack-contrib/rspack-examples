@@ -1,5 +1,6 @@
 const rspack = require('@rspack/core');
-const polyfillPlugin = require('@rspack/plugin-node-polyfill');
+const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
+
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
   context: __dirname,
@@ -7,7 +8,7 @@ const config = {
     main: './src/index.js',
   },
   plugins: [
-    new polyfillPlugin(),
+    new NodePolyfillPlugin(),
     new rspack.HtmlRspackPlugin({
       template: './index.html',
     }),
