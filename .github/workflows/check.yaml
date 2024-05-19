@@ -3,8 +3,14 @@ name: Daily CI
 on:
   schedule:
     - cron: '0 1 * * *'
+
   workflow_dispatch:
+
   pull_request:
+
+  push:
+    branches: [main]
+
 jobs:
   daily-build:
     runs-on: ubuntu-latest
@@ -25,6 +31,18 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build Example
+      - name: Build Rspack
         run: |
-          pnpm build:example
+          pnpm build:rspack
+
+      - name: Build Rsbuild
+        run: |
+          pnpm build:rsbuild
+
+      - name: Build Rspress
+        run: |
+          pnpm build:pspress
+
+      - name: Build Rsdoctor
+        run: |
+          pnpm build:rsdoctor
