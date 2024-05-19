@@ -7,10 +7,10 @@
   "include": ["src"],
   "references": [
     {
-      "path": "../nest-alias-libs/lib1"
+      "path": "../common-libs/lib1"
     },
     {
-      "path": "../nest-alias-libs/lib2"
+      "path": "../common-libs/lib2"
     }
   ]
 }

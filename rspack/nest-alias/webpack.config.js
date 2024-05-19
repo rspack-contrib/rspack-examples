@@ -11,10 +11,7 @@ module.exports = {
       new TsconfigPathsPlugin({
         configFile: './tsconfig.json',
         extensions: ['.ts', '.tsx'],
-        references: [
-          '../nest-alias-libs/lib1/tsconfig.json',
-          '../nest-alias-libs/lib2/tsconfig.json',
-        ],
+        references: ['../common-libs/lib1/tsconfig.json', '../common-libs/lib2/tsconfig.json'],
       }),
     ],
   },

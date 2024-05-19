@@ -3,4 +3,3 @@ packages:
   - "rsbuild/**"
   - "rspress/**"
   - "rsdoctor/**"
-  - "libs/**"
