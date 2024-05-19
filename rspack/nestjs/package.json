@@ -1,29 +1,26 @@
 {
   "name": "example-nestjs",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
+  "license": "MIT",
+  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
+  "main": "index.js",
   "scripts": {
+    "build": "cross-env BUILD=true rspack build",
     "dev": "rspack serve",
-    "start": "node dist/main.js",
-    "build": "cross-env BUILD=true rspack build"
+    "start": "node dist/main.js"
   },
   "dependencies": {
-    "run-script-webpack-plugin": "0.2.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.5",
     "@nestjs/platform-express": "^9.0.0",
     "reflect-metadata": "^0.1.13",
+    "run-script-webpack-plugin": "0.2.0",
     "rxjs": "^7.5.5"
   },
   "devDependencies": {
     "@rspack/cli": "^0.6.5",
     "@rspack/core": "^0.6.5",
     "cross-env": "7.0.3"
-  },
-  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  }
 }

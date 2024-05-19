@@ -1,16 +1,13 @@
 {
   "name": "example-rspack-react-refresh",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
-  "scripts": {
-    "dev": "rspack serve ",
-    "build": "cross-env NODE_ENV=production rspack build"
-  },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rspack build",
+    "dev": "rspack serve "
+  },
   "dependencies": {
     "react": "18.0.0",
     "react-dom": "18.0.0"

@@ -1,15 +1,24 @@
 {
   "name": "example-arco-design-pro",
   "version": "1.0.0",
-  "description": "Arco Design Pro",
   "private": true,
+  "description": "Arco Design Pro",
   "scripts": {
-    "dev": "rspack serve",
-    "build:analysis": "RSDOCTOR=true rspack serve",
-    "build": "rspack build",
     "analyze": "pnpm run build --analyze",
-    "preview": "cd dist && serve -s",
-    "bundle-stats": "rspack build --json ./rspack-stats.json"
+    "build": "rspack build",
+    "build:analysis": "RSDOCTOR=true rspack serve",
+    "bundle-stats": "rspack build --json ./rspack-stats.json",
+    "dev": "rspack serve",
+    "preview": "cd dist && serve -s"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   },
   "dependencies": {
     "@antv/data-set": "^0.11.8",
@@ -39,6 +48,7 @@
     "regenerator-runtime": "0.13.9"
   },
   "devDependencies": {
+    "@rsdoctor/rspack-plugin": "^0.1.8",
     "@rspack/cli": "^0.6.5",
     "@rspack/core": "^0.6.5",
     "@rspack/plugin-react-refresh": "^0.6.5",
@@ -53,17 +63,7 @@
     "react-refresh": "^0.14.0",
     "serve": "14.1.2",
     "style-loader": "^3.3.1",
-    "swc-loader": "^0.2.3",
-    "@rsdoctor/rspack-plugin": "^0.1.8"
-  },
-  "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "swc-loader": "^0.2.3"
   },
   "rspack": {}
 }

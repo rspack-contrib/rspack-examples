@@ -1,15 +1,12 @@
 {
   "name": "source-map-with-vscode-debugging",
   "version": "1.0.0",
-  "description": "",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "rspack build",
     "dev": "rspack serve"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "@swc/helpers": "0.5.1",
     "react": "17.0.0",

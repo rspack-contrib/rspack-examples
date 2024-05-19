@@ -1,25 +1,22 @@
 {
   "name": "example-react",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
-  "scripts": {
-    "dev": "rspack serve",
-    "build": "rspack build"
-  },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "rspack build",
+    "dev": "rspack serve"
+  },
   "dependencies": {
     "@rspack/cli": "^0.6.5",
     "@swc/helpers": "0.5.1",
     "preact": "10.19.3"
   },
   "devDependencies": {
-    "@rspack/core": "^0.6.5",
     "@prefresh/babel-plugin": "0.5.1",
-    "@prefresh/webpack": "4.0.0"
+    "@prefresh/webpack": "4.0.0",
+    "@rspack/core": "^0.6.5"
   },
   "resolve": {
     "alias": {

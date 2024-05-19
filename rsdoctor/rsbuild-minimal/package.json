@@ -1,14 +1,12 @@
 {
   "name": "@examples/doctor-rsbuild-minimal",
   "version": "0.0.1",
-  "description": "",
+  "license": "MIT",
   "files": ["dist", "src", "package.json"],
   "scripts": {
-    "build:analysis": "RSDOCTOR=true rsbuild build",
-    "build": "rsbuild build"
+    "build": "rsbuild build",
+    "build:analysis": "RSDOCTOR=true rsbuild build"
   },
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

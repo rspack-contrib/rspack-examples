@@ -1,20 +1,17 @@
 {
   "name": "example-basic",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
+  "license": "MIT",
+  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
+  "main": "index.js",
   "scripts": {
-    "dev": "rspack serve",
-    "build": "rspack build"
+    "build": "rspack build",
+    "dev": "rspack serve"
   },
   "devDependencies": {
-    "esbuild": "0.19.3",
     "@rspack/cli": "^0.6.5",
-    "@rspack/core": "^0.6.5"
-  },
-  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+    "@rspack/core": "^0.6.5",
+    "esbuild": "0.19.3"
+  }
 }

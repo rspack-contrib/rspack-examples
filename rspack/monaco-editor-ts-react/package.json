@@ -1,16 +1,13 @@
 {
   "name": "example-monaco-editor-ts-react",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
-  "scripts": {
-    "dev": "rspack serve",
-    "build:local": "rspack build"
-  },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build:local": "rspack build",
+    "dev": "rspack serve"
+  },
   "dependencies": {
     "@rspack/cli": "^0.6.5",
     "monaco-editor": "^0.39.0",
@@ -19,9 +16,9 @@
     "react-refresh": "0.13.0"
   },
   "devDependencies": {
+    "@rspack/core": "^0.6.5",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
-    "typescript": "^5.1.6",
-    "@rspack/core": "^0.6.5"
+    "typescript": "^5.1.6"
   }
 }

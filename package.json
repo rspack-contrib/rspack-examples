@@ -2,16 +2,20 @@
   "name": "rspack-examples",
   "version": "1.0.0",
   "description": "Repository for examples of Rspack / Rsbuild / Repress / Rsdoctor",
+  "license": "MIT",
   "scripts": {
-    "build:rspack": "pnpm --filter \"example-*\" build",
     "build:rsbuild": "pnpm --filter \"rsbuild-*\" build",
-    "build:rspress": "pnpm --filter \"rspress-*\" build",
     "build:rsdoctor": "pnpm --filter \"rsdoctor-*\" build",
-    "prepare": "husky 2>/dev/null || true"
+    "build:rspack": "pnpm --filter \"example-*\" build",
+    "build:rspress": "pnpm --filter \"rspress-*\" build",
+    "prepare": "husky 2>/dev/null || true",
+    "sort-package-json": "npx sort-package-json \"rspack/*/package.json\" \"rsbuild/*/package.json\" \"rspress/*/package.json\" \"rsdoctor/*/package.json\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "lint-staged": {
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+      "npx @biomejs/biome check --apply --no-errors-on-unmatched --colors=force --diagnostic-level=error"
+    ]
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
     "cross-env": "7.0.3",
@@ -23,10 +27,5 @@
     "overrides": {
       "react-focus-lock": "2.11.3"
     }
-  },
-  "lint-staged": {
-    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
-      "npx @biomejs/biome check --apply --no-errors-on-unmatched --colors=force --diagnostic-level=error"
-    ]
   }
 }

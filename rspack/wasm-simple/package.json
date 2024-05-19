@@ -2,12 +2,12 @@
   "name": "example-wasm-complex",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "main": "example.js",
   "scripts": {
-    "dev": "rspack serve",
-    "build": "rspack build"
+    "build": "rspack build",
+    "dev": "rspack serve"
   },
-  "license": "MIT",
   "dependencies": {
     "@rspack/cli": "^0.6.5"
   },
