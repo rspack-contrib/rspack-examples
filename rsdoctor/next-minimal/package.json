@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "build:analysis": "npm run doctor && npx rsdoctor analyze --profile ./.next/.rsdoctor/manifest.json",
+    "dev": "next dev",
     "doctor": "RSDOCTOR=true next build",
-    "start": "next start",
     "lint": "next lint",
-    "build:analysis": "npm run doctor && npx rsdoctor analyze --profile ./.next/.rsdoctor/manifest.json"
+    "start": "next start"
   },
   "dependencies": {
     "next": "14.1.0",

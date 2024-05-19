@@ -1,7 +1,6 @@
 {
   "name": "example-module-federation-interop-webpack-mf",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -9,8 +8,6 @@
     "build": "cross-env NODE_ENV=production webpack",
     "start": "serve ./dist -p 8082"
   },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
   "dependencies": {
     "react": "18.0.0",

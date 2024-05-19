@@ -1,21 +1,18 @@
 {
   "name": "example-perfsee",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
+  "license": "MIT",
+  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
+  "main": "index.js",
   "scripts": {
-    "dev": "rspack serve",
+    "analyze": "PERFSEE_AUDIT=true rspack build",
     "build": "cross-env PERFSEE_NO_UPLOAD=true rspack build",
-    "analyze": "PERFSEE_AUDIT=true rspack build"
+    "dev": "rspack serve"
   },
   "devDependencies": {
-    "@rspack/cli": "^0.6.5",
     "@perfsee/webpack": "1.6.0",
+    "@rspack/cli": "^0.6.5",
     "@rspack/core": "^0.6.5"
-  },
-  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  }
 }

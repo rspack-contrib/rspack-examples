@@ -1,16 +1,13 @@
 {
   "name": "example-react-compiler-babel",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
-  "scripts": {
-    "dev": "rspack serve",
-    "build": "rspack build"
-  },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "rspack build",
+    "dev": "rspack serve"
+  },
   "dependencies": {
     "@swc/helpers": "0.5.1",
     "react": "19.0.0-rc-915b914b3a-20240515",

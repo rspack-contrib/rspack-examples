@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "rspress dev",
     "build": "rspress build",
+    "dev": "rspress dev",
     "preview": "rspress preview"
   },
   "dependencies": {
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@types/node": "^16",
-    "react": "^18.3.1",
-    "@types/react": "^18.3.1"
+    "@types/react": "^18.3.1",
+    "react": "^18.3.1"
   }
 }

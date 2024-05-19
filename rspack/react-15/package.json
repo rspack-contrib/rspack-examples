@@ -1,16 +1,13 @@
 {
   "name": "example-react-15",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
-  "scripts": {
-    "dev": "rspack serve",
-    "build": "rspack build"
-  },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "rspack build",
+    "dev": "rspack serve"
+  },
   "dependencies": {
     "@rspack/cli": "^0.6.5",
     "@swc/helpers": "0.5.1",

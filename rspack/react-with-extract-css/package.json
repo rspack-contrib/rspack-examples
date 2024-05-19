@@ -1,16 +1,13 @@
 {
   "name": "example-react-example-css-extract",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
+  "license": "MIT",
+  "main": "index.js",
   "scripts": {
     "build": "rspack build",
     "dev": "rspack serve"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "@rspack/cli": "^0.6.5",
     "@swc/helpers": "0.5.1",

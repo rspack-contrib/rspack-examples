@@ -1,22 +1,19 @@
 {
   "name": "example-extract-license",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "private": true,
+  "license": "MIT",
+  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
+  "main": "index.js",
   "scripts": {
-    "dev": "rspack serve",
-    "build": "echo success"
-  },
-  "devDependencies": {
-    "@rspack/cli": "^0.6.5",
-    "@rspack/core": "^0.6.5"
+    "build": "echo success",
+    "dev": "rspack serve"
   },
   "dependencies": {
     "lodash": "4.17.21"
   },
-  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "devDependencies": {
+    "@rspack/cli": "^0.6.5",
+    "@rspack/core": "^0.6.5"
+  }
 }

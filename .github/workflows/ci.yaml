@@ -1,4 +1,4 @@
-name: Daily CI
+name: CI
 
 on:
   schedule:
@@ -12,7 +12,7 @@ on:
     branches: [main]
 
 jobs:
-  daily-build:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -41,7 +41,7 @@ jobs:
 
       - name: Build Rspress
         run: |
-          pnpm build:pspress
+          pnpm build:rspress
 
       - name: Build Rsdoctor
         run: |

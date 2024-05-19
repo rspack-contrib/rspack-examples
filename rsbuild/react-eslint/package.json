@@ -1,12 +1,12 @@
 {
   "name": "rsbuild-react-eslint",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "rsbuild dev --open",
     "build": "rsbuild build",
-    "preview": "rsbuild preview",
-    "lint": "eslint . --ext js,jsx,ts,tsx,mjs,cjs,mts,cts"
+    "dev": "rsbuild dev --open",
+    "lint": "eslint . --ext js,jsx,ts,tsx,mjs,cjs,mts,cts",
+    "preview": "rsbuild preview"
   },
   "dependencies": {
     "react": "^18.2.0",
