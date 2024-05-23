@@ -1,0 +1,15 @@
+{
+  "name": "rsbuild-umd",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rsbuild build",
+    "dev": "rsbuild dev --open",
+    "preview": "rsbuild preview"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^0.6.15",
+    "@rsbuild/plugin-umd": "^0.6.15",
+    "typescript": "^5.3.0"
+  }
+}
