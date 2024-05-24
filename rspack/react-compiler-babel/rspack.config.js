@@ -10,6 +10,24 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        exclude: [/[\\/]node_modules[\\/]/],
+        use: [
+          {
+            loader: 'builtin:swc-loader',
+            options: {
+              sourceMap: true,
+              jsc: {
+                parser: {
+                  syntax: 'ecmascript',
+                },
+                externalHelpers: true,
+              },
+            },
+          },
+        ],
+      },
+      {
         test: /\.jsx$/,
         use: [
           {
@@ -22,12 +40,9 @@ const config = {
                   jsx: true,
                 },
                 externalHelpers: true,
-                preserveAllComments: false,
                 transform: {
                   react: {
                     runtime: 'automatic',
-                    throwIfNamespace: true,
-                    useBuiltins: false,
                   },
                 },
               },
@@ -35,12 +50,8 @@ const config = {
           },
           {
             loader: 'babel-loader',
-            options: {
-              plugins: ['babel-plugin-react-compiler', '@babel/plugin-syntax-jsx'],
-            },
           },
         ],
-        type: 'javascript/auto',
       },
       {
         test: /\.(png|svg|jpg)$/,
@@ -54,4 +65,5 @@ const config = {
     }),
   ],
 };
+
 module.exports = config;
