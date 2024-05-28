@@ -11,8 +11,8 @@
     "dev:loader": "rspack serve -c rspack.config.loader.js"
   },
   "devDependencies": {
-    "@rspack/cli": "^0.6.5",
-    "@rspack/core": "^0.6.5",
+    "@rspack/cli": "^0.7.0",
+    "@rspack/core": "^0.7.0",
     "eslint": "8",
     "eslint-rspack-plugin": "^4.0.0-alpha"
   }

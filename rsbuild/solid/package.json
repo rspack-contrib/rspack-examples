@@ -11,9 +11,9 @@
     "solid-js": "^1.8.5"
   },
   "devDependencies": {
-    "@rsbuild/core": "^0.6.15",
-    "@rsbuild/plugin-babel": "^0.6.15",
-    "@rsbuild/plugin-solid": "^0.6.15",
+    "@rsbuild/core": "^0.7.0",
+    "@rsbuild/plugin-babel": "^0.7.0",
+    "@rsbuild/plugin-solid": "^0.7.0",
     "typescript": "^5.3.0"
   }
 }

@@ -10,8 +10,8 @@
     "dev": "rspack serve"
   },
   "devDependencies": {
-    "@rspack/cli": "^0.6.5",
-    "@rspack/core": "^0.6.5",
+    "@rspack/cli": "^0.7.0",
+    "@rspack/core": "^0.7.0",
     "esbuild": "0.19.3"
   }
 }
