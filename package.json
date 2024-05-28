@@ -4,6 +4,7 @@
   "description": "Repository for examples of Rspack / Rsbuild / Repress / Rsdoctor",
   "license": "MIT",
   "scripts": {
+    "bump": "taze",
     "build:rsbuild": "pnpm --filter \"rsbuild-*\" build",
     "build:rsdoctor": "pnpm --filter \"rsdoctor-*\" build",
     "build:rspack": "pnpm --filter \"example-*\" build",
@@ -20,7 +21,8 @@
     "@biomejs/biome": "^1.7.3",
     "cross-env": "7.0.3",
     "husky": "9.0.11",
-    "lint-staged": "15.2.2"
+    "lint-staged": "15.2.2",
+    "taze": "^0.13.8"
   },
   "packageManager": "pnpm@8.9.2",
   "pnpm": {

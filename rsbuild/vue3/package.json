@@ -11,8 +11,8 @@
     "vue": "^3.4.19"
   },
   "devDependencies": {
-    "@rsbuild/core": "^0.6.15",
-    "@rsbuild/plugin-vue": "^0.6.15",
+    "@rsbuild/core": "^0.7.0",
+    "@rsbuild/plugin-vue": "^0.7.0",
     "typescript": "^5.3.0"
   }
 }

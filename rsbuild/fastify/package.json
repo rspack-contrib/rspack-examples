@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@fastify/middie": "^8.3.0",
-    "@rsbuild/core": "^0.6.15",
+    "@rsbuild/core": "^0.7.0",
     "fastify": "^4.26.2",
     "typescript": "^5.3.0"
   }
