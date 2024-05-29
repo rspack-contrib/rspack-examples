@@ -32,9 +32,9 @@ const config = {
                 runtime: 'automatic',
               },
             },
-          },
-          rspackExperiments: {
-            emotion: true,
+            experimental: {
+              plugins: [['@swc/plugin-emotion', {}]],
+            },
           },
         },
         type: 'javascript/auto',

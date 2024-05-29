@@ -11,8 +11,10 @@ export default defineConfig({
   ],
   tools: {
     swc: {
-      rspackExperiments: {
-        emotion: true,
+      jsc: {
+        experimental: {
+          plugins: [['@swc/plugin-emotion', {}]],
+        },
       },
     },
   },
