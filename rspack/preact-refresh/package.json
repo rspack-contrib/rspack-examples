@@ -1,0 +1,33 @@
+{
+  "name": "example-preact-refresh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@swc/helpers": "0.5.1",
+    "preact": "10.19.3"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^0.7.3",
+    "@rspack/core": "^0.7.3",
+    "@rspack/plugin-preact-refresh": "^0.7.3",
+    "@prefresh/babel-plugin": "0.5.1",
+    "@prefresh/webpack": "4.0.0"
+  },
+  "resolve": {
+    "alias": {
+      "react": "preact/compat",
+      "react-dom/test-utils": "preact/test-utils",
+      "react-dom": "preact/compat",
+      "react/jsx-runtime": "preact/jsx-runtime"
+    }
+  }
+}

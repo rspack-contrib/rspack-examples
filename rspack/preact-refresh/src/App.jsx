@@ -6,9 +6,12 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(1);
   useEffect(() => {
-    setInterval(() => {
+    const timer = setInterval(() => {
       setCount((x) => x + 1);
     }, 1000);
+    return () => {
+      clearInterval(timer);
+    };
   }, []);
   return (
     <div className="App">
