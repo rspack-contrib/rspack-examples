@@ -1,6 +1,6 @@
 const rspack = require('@rspack/core');
 const dev = process.env.NODE_ENV === 'development';
-const PreactRefreshPlugin = require('/Users/bytedance/rspack-dev/rspack/packages/rspack-plugin-preact-refresh');
+const PreactRefreshPlugin = require('@rspack/plugin-preact-refresh');
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
   entry: {
@@ -11,7 +11,7 @@ const config = {
     alias: {
       react: 'preact/compat',
       'react-dom/test-utils': 'preact/test-utils',
-      'react-dom': 'preact/compat', // Must be below test-utils
+      'react-dom': 'preact/compat',
       'react/jsx-runtime': 'preact/jsx-runtime',
     },
   },

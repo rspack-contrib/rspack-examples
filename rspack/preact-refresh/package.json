@@ -12,13 +12,13 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@rspack/cli": "latest",
     "@swc/helpers": "0.5.1",
     "preact": "10.19.3"
   },
   "devDependencies": {
-    "@rspack/core": "^0.7.2",
-    "@rspack/plugin-preact-refresh": "^0.7.2",
+    "@rspack/cli": "^0.7.3",
+    "@rspack/core": "^0.7.3",
+    "@rspack/plugin-preact-refresh": "^0.7.3",
     "@prefresh/babel-plugin": "0.5.1",
     "@prefresh/webpack": "4.0.0"
   },
