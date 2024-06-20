@@ -10,7 +10,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
-    tsConfigPath: path.resolve(__dirname, 'tsconfig.json'),
+    tsConfig: path.resolve(__dirname, 'tsconfig.json'),
   },
   output: {
     globalObject: 'self',
