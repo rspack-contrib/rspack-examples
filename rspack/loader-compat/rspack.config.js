@@ -9,6 +9,9 @@ const config = {
   resolve: {
     extensions: ['...', '.ts', '.tsx', '.jsx'],
   },
+  experiments: {
+    css: true,
+  },
   module: {
     rules: [
       {

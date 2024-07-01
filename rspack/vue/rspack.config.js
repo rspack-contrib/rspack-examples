@@ -7,6 +7,9 @@ const config = {
   entry: {
     main: './src/main.js',
   },
+  experiments: {
+    css: true,
+  },
   devServer: {
     historyApiFallback: true,
   },

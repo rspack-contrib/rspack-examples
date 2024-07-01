@@ -8,6 +8,9 @@ module.exports = {
   entry: {
     main: './src/main.jsx',
   },
+  experiments: {
+    css: true,
+  },
   plugins: [
     new rspack.HtmlRspackPlugin({
       template: './index.html',

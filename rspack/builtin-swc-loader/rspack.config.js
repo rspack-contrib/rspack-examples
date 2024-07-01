@@ -5,6 +5,9 @@ const config = {
   entry: {
     main: './src/index.jsx',
   },
+  experiments: {
+    css: true,
+  },
   resolve: {
     extensions: ['...', '.jsx'],
     alias: {

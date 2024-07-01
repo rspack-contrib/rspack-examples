@@ -7,6 +7,9 @@ const config = {
   entry: {
     main: './src/main.tsx',
   },
+  experiments: {
+    css: true,
+  },
   resolve: {
     extensions: ['...', '.ts', '.tsx', '.jsx'],
   },

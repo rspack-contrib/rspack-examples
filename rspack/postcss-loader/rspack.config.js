@@ -6,6 +6,9 @@ const config = {
   entry: {
     main: './src/index.js',
   },
+  experiments: {
+    css: true,
+  },
   module: {
     rules: [
       {
