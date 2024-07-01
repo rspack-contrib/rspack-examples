@@ -17,6 +17,9 @@ const config = {
     webSocketServer: 'sockjs',
     historyApiFallback: true,
   },
+  experiments: {
+    css: true,
+  },
   module: {
     rules: [
       {

@@ -5,6 +5,9 @@ const config = {
   entry: {
     main: './src/index.js',
   },
+  experiments: {
+    css: true,
+  },
   plugins: [new rspack.HtmlRspackPlugin()],
   optimization: {
     minimize: false,

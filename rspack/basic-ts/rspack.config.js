@@ -5,7 +5,7 @@ const rspack = require('@rspack/core');
 const config = {
   entry: './src/index.ts',
   resolve: {
-    tsConfigPath: path.resolve(__dirname, 'tsconfig.json'),
+    tsConfig: path.resolve(__dirname, 'tsconfig.json'),
     extensions: ['...', '.ts'],
   },
   plugins: [

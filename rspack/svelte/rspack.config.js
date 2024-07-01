@@ -16,6 +16,9 @@ const config = {
     extensions: ['.mjs', '.js', '.ts', '.svelte'],
     mainFields: ['svelte', 'browser', 'module', 'main'],
   },
+  experiments: {
+    css: true,
+  },
   output: {
     path: path.join(__dirname, '/dist'),
     filename: '[name].js',
