@@ -4,6 +4,9 @@ const config = {
   entry: {
     main: './src/index.tsx',
   },
+  experiments: {
+    css: true,
+  },
   resolve: {
     extensions: ['...', '.jsx', '.tsx', '.ts'],
   },
