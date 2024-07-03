@@ -1,6 +1,5 @@
 import Fastify from "fastify";
-import { createRsbuild } from "@rsbuild/core";
-import { loadConfig } from "@rsbuild/core";
+import { createRsbuild, loadConfig } from "@rsbuild/core";
 
 export async function startDevServer() {
   const { content } = await loadConfig({});

@@ -1,6 +1,21 @@
 import express from "express";
 import { createRsbuild, loadConfig } from "@rsbuild/core";
 
+const serverRender = (serverAPI) => async (_req, res, _next) => {
+  const indexModule = await serverAPI.environments.ssr.loadBundle("index");
+
+  const markup = indexModule.render();
+
+  const template = await serverAPI.environments.web.getTransformedHtml("index");
+
+  const html = template.replace("<!--app-content-->", markup);
+
+  res.writeHead(200, {
+    "Content-Type": "text/html",
+  });
+  res.end(html);
+};
+
 export async function startDevServer() {
   const { content } = await loadConfig({});
 
@@ -13,6 +28,17 @@ export async function startDevServer() {
 
   // Create Rsbuild DevServer instance
   const rsbuildServer = await rsbuild.createDevServer();
+
+  const serverRenderMiddleware = serverRender(rsbuildServer);
+
+  app.get("/", async (req, res, next) => {
+    try {
+      await serverRenderMiddleware(req, res, next);
+    } catch (err) {
+      logger.error("SSR render error, downgrade to CSR...\n", err);
+      next();
+    }
+  });
 
   // Apply Rsbuild’s built-in middlewares
   app.use(rsbuildServer.middlewares);
