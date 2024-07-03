@@ -1,7 +1,7 @@
 import express from "express";
 import { createRsbuild, loadConfig } from "@rsbuild/core";
 
-const serverRender = (serverAPI) => async (_req, res, _next) => {
+const serverRender = (serverAPI) => async (_req, res) => {
   const indexModule = await serverAPI.environments.ssr.loadBundle("index");
 
   const markup = indexModule.render();
