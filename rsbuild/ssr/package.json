@@ -1,0 +1,21 @@
+{
+  "name": "rsbuild-ssr",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rsbuild build",
+    "dev": "rsbuild dev --open",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "1.0.0-alpha.0",
+    "@rsbuild/plugin-react": "1.0.0-alpha.0",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "typescript": "^5.3.0"
+  }
+}
