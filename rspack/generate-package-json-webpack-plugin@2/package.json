@@ -1,0 +1,11 @@
+{
+  "name": "example-generate-package-json-webpack-plugin_2",
+  "private": true,
+  "scripts": {
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.0.0-alpha.0",
+    "generate-package-json-webpack-plugin": "^2.6.0"
+  }
+}

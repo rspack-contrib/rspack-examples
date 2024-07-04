@@ -1,0 +1,12 @@
+{
+  "name": "example-copy-webpack-plugin_5",
+  "private": true,
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.0.0-alpha.0",
+    "copy-webpack-plugin": "^5.1.2"
+  }
+}

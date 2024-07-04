@@ -1,0 +1,12 @@
+{
+  "name": "example-terser-webpack-plugin_5",
+  "private": true,
+  "scripts": {
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "1.0.0-alpha.0",
+    "@rspack/core": "1.0.0-alpha.0",
+    "terser-webpack-plugin": "5.3.10"
+  }
+}
