@@ -2,7 +2,8 @@
   "name": "example-rspack-manifest-plugin_4",
   "private": true,
   "scripts": {
-    "build": "rspack build"
+    "build": "rspack build",
+    "test": "node ./test.js"
   },
   "devDependencies": {
     "@rspack/cli": "^1.0.0-alpha.0",
