@@ -33,7 +33,7 @@ const config = {
   },
   plugins: [
     new rspack.HtmlRspackPlugin({ template: './index.html' }),
-    new rspack.DefinePlugin({ 'process.env.NODE_ENV': "'development'" }),
+    new rspack.DefinePlugin({ 'process.env.NODE_ENV': '"development"' }),
     !isProduction && new ReactRefreshPlugin(),
   ].filter(Boolean),
 };

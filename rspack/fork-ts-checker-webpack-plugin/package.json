@@ -6,7 +6,7 @@
     "build": "rspack build || echo 'make-ci-happy'"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.0.0-alpha.0",
+    "@rspack/cli": "^1.0.0-alpha.3",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
     "typescript": "^5.3.3"
   }

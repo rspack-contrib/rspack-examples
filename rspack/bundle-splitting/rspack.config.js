@@ -31,7 +31,7 @@ const config = {
   plugins: [
     new rspack.HtmlRspackPlugin(),
     new rspack.DefinePlugin({
-      'process.env.NODE_ENV': "'development'",
+      'process.env.NODE_ENV': '"development"',
     }),
   ],
 };
