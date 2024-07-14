@@ -5,7 +5,7 @@
     "build": "rspack build"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.0.0-alpha.0",
+    "@rspack/cli": "^1.0.0-alpha.3",
     "generate-package-json-webpack-plugin": "^2.6.0"
   }
 }

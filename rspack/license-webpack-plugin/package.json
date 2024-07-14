@@ -5,9 +5,9 @@
     "build": "rspack build"
   },
   "devDependencies": {
+    "@rspack/cli": "^1.0.0-alpha.3",
+    "license-webpack-plugin": "^4.0.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "@rspack/cli": "^1.0.0-alpha.0",
-    "license-webpack-plugin": "^4.0.2"
+    "react-dom": "18.2.0"
   }
 }

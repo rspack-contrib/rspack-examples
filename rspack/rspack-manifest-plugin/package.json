@@ -6,7 +6,7 @@
     "test": "node ./test.js"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.0.0-alpha.0",
+    "@rspack/cli": "^1.0.0-alpha.3",
     "rspack-manifest-plugin": "5.0.0-alpha0"
   }
 }
