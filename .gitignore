@@ -131,7 +131,6 @@ dist
 .pnp.*
 
 # ignore lock to test more
-pnpm-lock.yaml
 yarn.lock
 package-lock.json
 
