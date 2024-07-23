@@ -13,7 +13,7 @@
   "devDependencies": {
     "@rspack/cli": "^1.0.0-alpha.5",
     "@rspack/core": "^1.0.0-alpha.5",
-    "eslint": "8",
+    "eslint": "^8.57.0",
     "eslint-rspack-plugin": "^4.0.0-alpha"
   }
 }
