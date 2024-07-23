@@ -13,7 +13,7 @@
     "core-js": "3.30.1"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.0.0-alpha.3",
-    "@rspack/core": "^1.0.0-alpha.3"
+    "@rspack/cli": "^1.0.0-alpha.5",
+    "@rspack/core": "^1.0.0-alpha.5"
   }
 }
