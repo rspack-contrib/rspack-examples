@@ -20,6 +20,9 @@ const config = {
       {
         test: /\.module.css$/,
         type: 'css/module',
+        parser: {
+          namedExports: false,
+        },
       },
       {
         test: /\.svg$/,

@@ -8,7 +8,6 @@ const containerName = 'Webpack_MF';
 
 /** @type {import('webpack').Configuration} */
 module.exports = {
-  mode: isProduction ? 'production' : 'development',
   entry: './src/index.js',
   context: __dirname,
   devtool: false,

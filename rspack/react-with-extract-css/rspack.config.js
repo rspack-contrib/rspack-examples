@@ -4,7 +4,6 @@ const path = require('path');
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
   context: __dirname,
-  mode: 'development',
   entry: {
     main: ['./src/index.jsx'],
   },

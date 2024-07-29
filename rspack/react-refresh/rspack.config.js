@@ -5,7 +5,6 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
-  mode: isProduction ? 'production' : 'development',
   entry: { main: './src/index.tsx' },
   devtool: 'source-map',
   resolve: {
@@ -45,7 +44,6 @@ const config = {
   },
   plugins: [
     new rspack.HtmlRspackPlugin({ template: './index.html' }),
-    new rspack.DefinePlugin({ 'process.env.NODE_ENV': '"development"' }),
     !isProduction && new ReactRefreshPlugin(),
   ].filter(Boolean),
 };

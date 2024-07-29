@@ -1,7 +1,7 @@
 const rspack = require('@rspack/core');
+
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
-  mode: 'development',
   entry: {
     index: './index.js',
     second: './second.js',
@@ -20,4 +20,5 @@ const config = {
     }),
   ],
 };
+
 module.exports = config;
