@@ -6,7 +6,6 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 /** @type {import('@rspack/core').Configuration} */
 module.exports = {
-  mode: isProduction ? 'production' : 'development',
   entry: {},
   context: __dirname,
   output: {

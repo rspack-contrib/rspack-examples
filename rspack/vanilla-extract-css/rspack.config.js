@@ -6,7 +6,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 /** @type {import('@rspack/core').Configuration} */
 module.exports = {
   entry: path.join(__dirname, './src/index.tsx'),
-  mode: 'development',
   resolve: {
     extensions: ['.js', '.json', '.ts', '.tsx'],
   },

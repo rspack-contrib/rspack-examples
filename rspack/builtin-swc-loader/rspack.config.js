@@ -1,5 +1,8 @@
 const rspack = require('@rspack/core');
 const path = require('path');
+
+const isProduction = process.env.NODE_ENV === 'production';
+
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
   entry: {
@@ -21,23 +24,16 @@ const config = {
         use: {
           loader: 'builtin:swc-loader',
           options: {
-            // Enable source map
-            sourceMap: true,
-            target: 'es5',
             jsc: {
               parser: {
                 syntax: 'ecmascript',
                 jsx: true,
               },
-              externalHelpers: true,
-              preserveAllComments: false,
               transform: {
                 react: {
                   runtime: 'automatic',
-                  pragma: 'React.createElement',
-                  pragmaFrag: 'React.Fragment',
-                  throwIfNamespace: true,
-                  useBuiltins: false,
+                  development: !isProduction,
+                  refresh: !isProduction,
                 },
               },
               experimental: {

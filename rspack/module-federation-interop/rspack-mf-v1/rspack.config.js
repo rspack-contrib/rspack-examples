@@ -8,7 +8,6 @@ const containerName = 'Rspack_MF_v1';
 
 /** @type {import('@rspack/core').Configuration} */
 module.exports = {
-  mode: isProduction ? 'production' : 'development',
   entry: './src/index.js',
   context: __dirname,
   devtool: false,

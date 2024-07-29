@@ -4,7 +4,6 @@ const config = {
   entry: {
     main: './example.js',
   },
-  mode: 'development',
   output: {
     webassemblyModuleFilename: '[hash].wasm',
   },
