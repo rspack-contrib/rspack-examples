@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "build:local": "rspack build",
+    "build": "rspack build",
     "dev": "rspack serve"
   },
   "dependencies": {
