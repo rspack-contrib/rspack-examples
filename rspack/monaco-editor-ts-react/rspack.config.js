@@ -17,11 +17,56 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  experiments: {
+    css: true,
+  },
   module: {
     rules: [
       {
         test: /\.ttf$/,
         type: 'asset/resource',
+      },
+      {
+        test: /\.tsx$/,
+        use: {
+          loader: 'builtin:swc-loader',
+          options: {
+            sourceMap: true,
+            jsc: {
+              parser: {
+                syntax: 'typescript',
+                jsx: true,
+              },
+              externalHelpers: true,
+              preserveAllComments: false,
+              transform: {
+                react: {
+                  runtime: 'automatic',
+                  throwIfNamespace: true,
+                  useBuiltins: false,
+                },
+              },
+            },
+          },
+        },
+        type: 'javascript/auto',
+      },
+      {
+        test: /\.ts$/,
+        use: {
+          loader: 'builtin:swc-loader',
+          options: {
+            sourceMap: true,
+            jsc: {
+              parser: {
+                syntax: 'typescript',
+              },
+              externalHelpers: true,
+              preserveAllComments: false,
+            },
+          },
+        },
+        type: 'javascript/auto',
       },
     ],
   },
