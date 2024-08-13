@@ -1457,6 +1457,15 @@ importers:
         specifier: ^5.5.3
         version: 5.6.0(@rspack/core@1.0.0-beta.1(@swc/helpers@0.5.11))(webpack@5.93.0)
 
+  rspack/library-cjs:
+    devDependencies:
+      '@rspack/cli':
+        specifier: ^1.0.0-beta.4
+        version: 1.0.0-beta.4(@rspack/core@1.0.0-beta.4(@swc/helpers@0.5.11))(@types/express@4.17.21)(webpack@5.93.0)
+      '@rspack/core':
+        specifier: ^1.0.0-beta.4
+        version: 1.0.0-beta.4(@swc/helpers@0.5.11)
+
   rspack/library-esm:
     devDependencies:
       '@rspack/cli':
