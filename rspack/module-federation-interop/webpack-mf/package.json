@@ -21,7 +21,7 @@
     "html-webpack-plugin": "^5.5.0",
     "react-refresh": "^0.14.0",
     "serve": "14.1.2",
-    "webpack": "5.89.0",
+    "webpack": "^5.93.0",
     "webpack-cli": "4.10.0"
   }
 }
