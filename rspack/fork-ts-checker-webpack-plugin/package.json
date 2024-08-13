@@ -9,6 +9,7 @@
     "@rspack/cli": "^1.0.0-beta.1",
     "@rspack/core": "^1.0.0-beta.1",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "webpack": "^5.93.0",
     "typescript": "^5.3.3"
   }
 }
