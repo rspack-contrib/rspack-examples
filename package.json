@@ -4,7 +4,7 @@
   "description": "Repository for examples of Rspack / Rsbuild / Repress / Rsdoctor",
   "license": "MIT",
   "scripts": {
-    "bump": "taze",
+    "bump": "taze -l",
     "build:rsbuild": "pnpm --filter \"rsbuild-*\" build",
     "build:rsdoctor": "pnpm --filter \"rsdoctor-*\" build",
     "build:rspack": "pnpm --filter \"example-*\" build",

@@ -17,8 +17,8 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@rsdoctor/cli": "^0.3.10",
-    "@rsdoctor/webpack-plugin": "^0.3.10",
+    "@rsdoctor/cli": "^0.3.11",
+    "@rsdoctor/webpack-plugin": "^0.3.11",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
