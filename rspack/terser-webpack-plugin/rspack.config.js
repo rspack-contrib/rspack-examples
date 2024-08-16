@@ -5,6 +5,6 @@ const rspack = require('@rspack/core');
 module.exports = defineConfig({
   plugins: [new StatsWriterPlugin()],
   optimization: {
-    minimizer: [new terserPlugin(), new rspack.SwcCssMinimizerRspackPlugin()],
+    minimizer: [new terserPlugin(), new rspack.LightningCssMinimizerRspackPlugin()],
   },
 });
