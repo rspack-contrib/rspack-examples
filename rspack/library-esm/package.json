@@ -1,0 +1,16 @@
+{
+  "name": "example-library-esm",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
+  "main": "index.js",
+  "scripts": {
+    "build": "rspack build",
+    "dev": "rspack build --watch"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.0.0-beta.5",
+    "@rspack/core": "^1.0.0-beta.5"
+  }
+}

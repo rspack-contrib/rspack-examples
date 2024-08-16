@@ -1,5 +1,5 @@
 {
-  "name": "example-library",
+  "name": "example-library-cjs",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
@@ -7,10 +7,10 @@
   "main": "index.js",
   "scripts": {
     "build": "rspack build",
-    "dev": "rspack serve"
+    "dev": "rspack build --watch"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.0.0-beta.1",
-    "@rspack/core": "^1.0.0-beta.1"
+    "@rspack/cli": "^1.0.0-beta.5",
+    "@rspack/core": "^1.0.0-beta.5"
   }
 }
