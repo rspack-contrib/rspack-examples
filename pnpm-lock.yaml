@@ -304,8 +304,8 @@ importers:
         specifier: ^1.0.1-beta.14
         version: 1.0.1-beta.14
       '@rsbuild/plugin-eslint':
-        specifier: ^1.0.0
-        version: 1.0.0(@rsbuild/core@1.0.1-beta.14)(eslint@8.57.0)
+        specifier: ^1.0.2
+        version: 1.0.2(@rsbuild/core@1.0.1-beta.14)(eslint@8.57.0)
       '@rsbuild/plugin-react':
         specifier: ^1.0.1-beta.14
         version: 1.0.1-beta.14(@rsbuild/core@1.0.1-beta.14)
@@ -863,8 +863,8 @@ importers:
         specifier: ^1.0.1-beta.14
         version: 1.0.1-beta.14
       '@rsbuild/plugin-eslint':
-        specifier: ^1.0.0
-        version: 1.0.0(@rsbuild/core@1.0.1-beta.14)(eslint@8.57.0)
+        specifier: ^1.0.2
+        version: 1.0.2(@rsbuild/core@1.0.1-beta.14)(eslint@8.57.0)
       '@rsbuild/plugin-vue':
         specifier: ^1.0.1-beta.14
         version: 1.0.1-beta.14(@rsbuild/core@1.0.1-beta.14)(vue@3.4.19(typescript@5.4.5))
@@ -1383,8 +1383,8 @@ importers:
         specifier: ^8.57.0
         version: 8.57.0
       eslint-rspack-plugin:
-        specifier: ^4.0.0-alpha
-        version: 4.0.0-alpha(eslint@8.57.0)(webpack@5.93.0)
+        specifier: ^4.0.2
+        version: 4.2.0(eslint@8.57.0)(webpack@5.93.0)
 
   rspack/express:
     dependencies:
@@ -5437,8 +5437,8 @@ packages:
     peerDependencies:
       '@rsbuild/core': ^0.5.1
 
-  '@rsbuild/plugin-eslint@1.0.0':
-    resolution: {integrity: sha512-EW0vukPlVsShfYwfj2UbxdtnZqjPwKwm91ZNsAor0x7AWKAuVQDeZrOvsql0mEOzXBA2q3x1zfAlS+DG7H0Jpw==}
+  '@rsbuild/plugin-eslint@1.0.2':
+    resolution: {integrity: sha512-ypCWWCzZeN2dgkcHXNzahsF5ID8BmyJp3autEyN+YNGSh42dMuklqy76zPCGxJ+DLPFQ9ukxEtmD9bZ9ily/RQ==}
     peerDependencies:
       '@rsbuild/core': 1.x
       eslint: ^8.0.0 || ^9.0.0
@@ -9415,11 +9415,11 @@ packages:
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
 
-  eslint-rspack-plugin@4.0.0-alpha:
-    resolution: {integrity: sha512-lpnH2SjvWPWOxrU2+wslp0q9VjFSKfbrpHX/WwS+Tp+NAvJ6CRgzuvOwYwC65DweOkJb+Q/quq/3qQGBudVIFg==}
-    engines: {node: '>= 14.15.0'}
+  eslint-rspack-plugin@4.2.0:
+    resolution: {integrity: sha512-N+aOSi5OT5FHRngQJkff0xdiNGd7L9INieFVkzEfjN7M1VNXVwYStyP3AiLp4RnL4MyAKakN80Ct5Bv+x5upNw==}
+    engines: {node: '>= 16.0.0'}
     peerDependencies:
-      eslint: ^8.0.0
+      eslint: ^8.0.0 || ^9.0.0
       webpack: ^5.0.0
 
   eslint-scope@5.1.1:
@@ -9433,13 +9433,6 @@ packages:
   eslint-visitor-keys@3.4.3:
     resolution: {integrity: sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-
-  eslint-webpack-plugin@4.2.0:
-    resolution: {integrity: sha512-rsfpFQ01AWQbqtjgPRr2usVRxhWDuG0YDYcG8DJOteD3EFnpeuYuOwk0PQiN7PRBTqS6ElNdtPZPggj8If9WnA==}
-    engines: {node: '>= 14.15.0'}
-    peerDependencies:
-      eslint: ^8.0.0 || ^9.0.0
-      webpack: ^5.0.0
 
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
@@ -19143,10 +19136,10 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@rsbuild/plugin-eslint@1.0.0(@rsbuild/core@1.0.1-beta.14)(eslint@8.57.0)':
+  '@rsbuild/plugin-eslint@1.0.2(@rsbuild/core@1.0.1-beta.14)(eslint@8.57.0)':
     dependencies:
       eslint: 8.57.0
-      eslint-webpack-plugin: 4.2.0(eslint@8.57.0)(webpack@5.93.0)
+      eslint-rspack-plugin: 4.2.0(eslint@8.57.0)(webpack@5.93.0)
       webpack: 5.93.0
     optionalDependencies:
       '@rsbuild/core': 1.0.1-beta.14
@@ -25341,7 +25334,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-rspack-plugin@4.0.0-alpha(eslint@8.57.0)(webpack@5.93.0):
+  eslint-rspack-plugin@4.2.0(eslint@8.57.0)(webpack@5.93.0):
     dependencies:
       '@types/eslint': 8.56.10
       eslint: 8.57.0
@@ -25362,16 +25355,6 @@ snapshots:
       estraverse: 5.3.0
 
   eslint-visitor-keys@3.4.3: {}
-
-  eslint-webpack-plugin@4.2.0(eslint@8.57.0)(webpack@5.93.0):
-    dependencies:
-      '@types/eslint': 8.56.10
-      eslint: 8.57.0
-      jest-worker: 29.7.0
-      micromatch: 4.0.5
-      normalize-path: 3.0.0
-      schema-utils: 4.2.0
-      webpack: 5.93.0
 
   eslint@8.57.0:
     dependencies:
