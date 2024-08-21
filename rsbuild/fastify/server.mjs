@@ -28,8 +28,7 @@ export async function startDevServer() {
   // Notify Rsbuild that the custom server has started
   await rsbuildServer.afterListen();
 
-  // Subscribe to the server's http upgrade event to handle WebSocket upgrades
-  fastify.server.on("upgrade", rsbuildServer.onHTTPUpgrade);
+  rsbuildServer.connectWebSocket({ server: fastify.server });
 }
 
 startDevServer(process.cwd());

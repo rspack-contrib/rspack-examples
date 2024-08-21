@@ -48,8 +48,7 @@ export async function startDevServer() {
     await rsbuildServer.afterListen();
   });
 
-  // Subscribe to the server's http upgrade event to handle WebSocket upgrades
-  httpServer.on("upgrade", rsbuildServer.onHTTPUpgrade);
+  rsbuildServer.connectWebSocket({ server: httpServer });
 
   return {
     close: async () => {
