@@ -11,16 +11,16 @@
     "start": "node dist/main.js"
   },
   "dependencies": {
-    "@nestjs/common": "^9.0.0",
-    "@nestjs/core": "^9.0.5",
-    "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/common": "^9.4.3",
+    "@nestjs/core": "^9.4.3",
+    "@nestjs/platform-express": "^9.4.3",
     "reflect-metadata": "^0.1.13",
     "run-script-webpack-plugin": "0.2.0",
-    "rxjs": "^7.5.5"
+    "rxjs": "^7.8.1"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.0.0-beta.5",
-    "@rspack/core": "^1.0.0-beta.5",
+    "@rspack/cli": "^1.0.0-rc.1",
+    "@rspack/core": "^1.0.0-rc.1",
     "cross-env": "7.0.3"
   }
 }
