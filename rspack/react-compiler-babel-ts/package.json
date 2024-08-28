@@ -17,8 +17,8 @@
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.24.7",
     "@babel/plugin-syntax-typescript": "^7.24.1",
-    "@rspack/cli": "^1.0.0-rc.1",
-    "@rspack/core": "^1.0.0-rc.1",
+    "@rspack/cli": "^1.0.0",
+    "@rspack/core": "^1.0.0",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "babel-loader": "^9.1.3",

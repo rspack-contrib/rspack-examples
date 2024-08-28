@@ -9,13 +9,13 @@
     "dev": "rspack serve"
   },
   "dependencies": {
-    "@rspack/cli": "^1.0.0-rc.1",
+    "@rspack/cli": "^1.0.0",
     "@swc/helpers": "0.5.1",
     "react": "15.7.0",
     "react-dom": "15.7.0",
     "react-refresh": "0.14.2"
   },
   "devDependencies": {
-    "@rspack/core": "^1.0.0-rc.1"
+    "@rspack/core": "^1.0.0"
   }
 }
