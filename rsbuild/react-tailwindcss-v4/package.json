@@ -13,8 +13,8 @@
     "tailwindcss": "4.0.0-alpha.20"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.0.1-beta.16",
-    "@rsbuild/plugin-react": "^1.0.1-beta.16",
+    "@rsbuild/core": "^1.0.1-rc.0",
+    "@rsbuild/plugin-react": "^1.0.1-rc.0",
     "@tailwindcss/postcss": "4.0.0-alpha.20",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",

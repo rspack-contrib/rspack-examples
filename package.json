@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "bump": "taze -l",
+    "build": "npm run build:rspack && npm run build:rsbuild && npm run build:rspress && npm run build:rsdoctor",
     "build:rsbuild": "pnpm --filter \"rsbuild-*\" build",
     "build:rsdoctor": "pnpm --filter \"rsdoctor-*\" build",
     "build:rspack": "pnpm --filter \"example-*\" build",

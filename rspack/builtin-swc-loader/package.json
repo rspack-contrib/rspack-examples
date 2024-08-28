@@ -15,8 +15,8 @@
     "react-refresh": "0.14.2"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.0.0-rc.1",
-    "@rspack/core": "^1.0.0-rc.1",
+    "@rspack/cli": "^1.0.0",
+    "@rspack/core": "^1.0.0",
     "@swc/helpers": "0.5.1",
     "@swc/plugin-remove-console": "^2.0.10"
   }
