@@ -10,10 +10,10 @@
     "dev": "rspack serve"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.0.0-beta.5",
-    "@rspack/core": "^1.0.0-beta.5",
-    "autoprefixer": "10.4.14",
-    "postcss": "8.4.21",
+    "@rspack/cli": "^1.0.0-rc.1",
+    "@rspack/core": "^1.0.0-rc.1",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.41",
     "postcss-loader": "7.2.3",
     "tailwindcss": "3.3.1"
   }

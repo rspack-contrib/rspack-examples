@@ -12,14 +12,14 @@
   },
   "dependencies": {
     "@swc/helpers": "0.5.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.0.0-beta.5",
-    "@rspack/core": "^1.0.0-beta.5",
+    "@rspack/cli": "^1.0.0-rc.1",
+    "@rspack/core": "^1.0.0-rc.1",
     "@rspack/plugin-react-refresh": "^1.0.0",
-    "react-refresh": "^0.14.0",
+    "react-refresh": "^0.14.2",
     "web-vitals": "^2.1.4"
   }
 }
