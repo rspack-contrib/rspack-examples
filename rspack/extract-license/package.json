@@ -6,7 +6,7 @@
   "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
   "main": "index.js",
   "scripts": {
-    "build": "echo success",
+    "build": "rspack build",
     "dev": "rspack serve"
   },
   "dependencies": {
