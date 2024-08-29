@@ -1445,8 +1445,6 @@ importers:
         specifier: ^2.6.0
         version: 2.6.0
 
-  rspack/generate-package-json-webpack-plugin@2/dist: {}
-
   rspack/html-webpack-plugin:
     devDependencies:
       '@rspack/cli':
