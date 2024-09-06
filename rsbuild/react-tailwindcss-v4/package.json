@@ -10,13 +10,13 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwindcss": "4.0.0-alpha.20"
+    "tailwindcss": "4.0.0-alpha.23"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.0.1-rc.0",
-    "@rsbuild/plugin-react": "^1.0.1-rc.0",
-    "@tailwindcss/postcss": "4.0.0-alpha.20",
-    "@types/react": "^18.3.4",
+    "@rsbuild/core": "^1.0.1-rc.5",
+    "@rsbuild/plugin-react": "^1.0.1-rc.5",
+    "@tailwindcss/postcss": "4.0.0-alpha.23",
+    "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.3.0"
   }
