@@ -72,6 +72,8 @@
 		"@types/node",
 		"node",
 		// does not follow semver
-		"babel-plugin-react-compiler"
+		"babel-plugin-react-compiler",
+		// canary package
+		"@tailwindcss/postcss"
 	]
 }
