@@ -12,9 +12,9 @@
   },
   "devDependencies": {
     "@module-federation/enhanced": "^0.1.10",
-    "@rsbuild/core": "^1.0.1-rc.0",
-    "@rsbuild/plugin-react": "^1.0.1-rc.0",
-    "@types/react": "^18.3.4",
+    "@rsbuild/core": "^1.0.1-rc.5",
+    "@rsbuild/plugin-react": "^1.0.1-rc.5",
+    "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.4.5"
   }

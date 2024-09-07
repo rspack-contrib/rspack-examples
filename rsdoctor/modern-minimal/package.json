@@ -18,7 +18,7 @@
     "@modern-js/runtime": "2.48.3",
     "@rsdoctor/rspack-plugin": "^0.3.11",
     "@types/node": "^20",
-    "@types/react": "^18.3.4",
+    "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "ts-loader": "9.4.2",
     "tslib": "2.4.1",
