@@ -13,7 +13,7 @@
     "react": "18.2.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "7.20.2",
+    "@babel/preset-env": "7.25.4",
     "@mdx-js/loader": "2.2.1",
     "@rspack/cli": "^1.0.3",
     "@rspack/core": "^1.0.3",
