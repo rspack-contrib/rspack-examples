@@ -3,3 +3,4 @@ packages:
   - "rsbuild/**"
   - "rspress/**"
   - "rsdoctor/**"
+  - "!**/dist"
