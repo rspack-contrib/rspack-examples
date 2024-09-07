@@ -51,7 +51,6 @@
 		// manually update some packages
 		"pnpm",
 		"esbuild",
-		"typescript",
 		// related to the SWC version built into Rspack
 		"@swc/helpers",
 		// vue 2 and vue-loader v15

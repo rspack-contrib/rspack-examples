@@ -1,7 +1,6 @@
 const path = require('path');
 const { VanillaExtractPlugin } = require('@vanilla-extract/webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 /** @type {import('@rspack/core').Configuration} */
 module.exports = {
@@ -47,6 +46,5 @@ module.exports = {
       },
     ],
   },
-  cache: false,
   plugins: [new HtmlWebpackPlugin(), new VanillaExtractPlugin()],
 };
