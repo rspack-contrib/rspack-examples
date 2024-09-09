@@ -9,7 +9,7 @@
     "dev": "rspack serve"
   },
   "dependencies": {
-    "@node-rs/crc32": "1.7.0",
+    "@node-rs/crc32": "1.10.3",
     "react": "18.2.0"
   },
   "devDependencies": {
