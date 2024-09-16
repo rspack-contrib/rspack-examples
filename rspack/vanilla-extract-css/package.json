@@ -8,8 +8,8 @@
     "start": "rspack serve"
   },
   "dependencies": {
-    "@rspack/cli": "^1.0.3",
-    "@rspack/core": "^1.0.3",
+    "@rspack/cli": "^1.0.5",
+    "@rspack/core": "^1.0.5",
     "@vanilla-extract/css": "1.14.0",
     "@vanilla-extract/sprinkles": "^1.6.3",
     "@vanilla-extract/webpack-plugin": "^2.3.13",
@@ -20,7 +20,7 @@
     "tailwindcss": "3.3.1"
   },
   "devDependencies": {
-    "@types/react": "^18.3.5",
+    "@types/react": "^18.3.6",
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.3.0"
   }

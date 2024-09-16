@@ -9,15 +9,15 @@
     "dev": "rspack serve"
   },
   "dependencies": {
-    "@rspack/cli": "^1.0.3",
+    "@rspack/cli": "^1.0.5",
     "monaco-editor": "^0.39.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-refresh": "0.13.0"
   },
   "devDependencies": {
-    "@rspack/core": "^1.0.3",
-    "@types/react": "^18.3.5",
+    "@rspack/core": "^1.0.5",
+    "@types/react": "^18.3.6",
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.1.6"
   }
