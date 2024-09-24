@@ -1,0 +1,16 @@
+{
+  "name": "example-hooks-after-resolve",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "sideEffects": ["**/*.css", "**/*.less", "**/*.scss"],
+  "main": "index.js",
+  "scripts": {
+    "build": "rspack build",
+    "dev": "rspack serve"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.0.3",
+    "@rspack/core": "^1.0.3"
+  }
+}
