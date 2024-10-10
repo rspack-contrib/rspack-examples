@@ -11,10 +11,10 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@module-federation/enhanced": "^0.6.4",
-    "@rsbuild/core": "^1.0.4",
-    "@rsbuild/plugin-react": "^1.0.2",
-    "@types/react": "^18.3.6",
+    "@module-federation/enhanced": "^0.6.10",
+    "@rsbuild/core": "^1.0.12",
+    "@rsbuild/plugin-react": "^1.0.3",
+    "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.4.5"
   }
