@@ -16,19 +16,19 @@
     "vue": "3.5.8"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.0.5",
-    "@rspack/core": "^1.0.5",
+    "@rspack/cli": "^1.0.13",
+    "@rspack/core": "^1.0.13",
     "@swc/helpers": "0.5.1",
     "@swc/plugin-remove-console": "^2.0.10",
     "@lingui/swc-plugin": "^4.0.10",
-    "swc-plugin-css-modules": "0.1.18",
-    "@swc/plugin-prefresh": "^2.0.8",
+    "swc-plugin-css-modules": "0.1.21",
+    "@swc/plugin-prefresh": "^2.0.10",
     "swc-plugin-vue-jsx": "^0.3.2",
-    "@swc/plugin-emotion": "^3.0.10",
-    "@swc/plugin-loadable-components": "^1.0.10",
-    "@swc/plugin-relay": "^2.0.13",
-    "@swc/plugin-styled-components": "^2.0.10",
-    "@swc/plugin-styled-jsx": "^2.0.14",
-    "@swc/plugin-transform-imports": "^2.0.10"
+    "@swc/plugin-emotion": "^3.0.13",
+    "@swc/plugin-loadable-components": "^1.0.12",
+    "@swc/plugin-relay": "^2.0.15",
+    "@swc/plugin-styled-components": "^2.0.12",
+    "@swc/plugin-styled-jsx": "^2.0.16",
+    "@swc/plugin-transform-imports": "^2.0.12"
   }
 }
