@@ -721,8 +721,8 @@ importers:
   rsbuild/vanilla-extract:
     dependencies:
       '@vanilla-extract/css':
-        specifier: ^1.15.5
-        version: 1.15.5(babel-plugin-macros@3.1.0)
+        specifier: ^1.16.0
+        version: 1.16.0(babel-plugin-macros@3.1.0)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -2694,11 +2694,11 @@ importers:
         specifier: ^1.0.13
         version: 1.0.13(@swc/helpers@0.5.13)
       '@vanilla-extract/css':
-        specifier: 1.14.0
-        version: 1.14.0
+        specifier: 1.16.0
+        version: 1.16.0(babel-plugin-macros@3.1.0)
       '@vanilla-extract/sprinkles':
         specifier: ^1.6.3
-        version: 1.6.3(@vanilla-extract/css@1.14.0)
+        version: 1.6.3(@vanilla-extract/css@1.16.0(babel-plugin-macros@3.1.0))
       '@vanilla-extract/webpack-plugin':
         specifier: ^2.3.14
         version: 2.3.14(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.1.3)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.29.2)(webpack@5.95.0)
@@ -7668,20 +7668,11 @@ packages:
   '@vanilla-extract/babel-plugin-debug-ids@1.1.0':
     resolution: {integrity: sha512-Zy9bKjaL2P5zsrFYQJ8IjWGlFODmZrpvFmjFE0Zv8om55Pz1JtpJtL6DvlxlWUxbVaP1HKCqsmEfFOZN8fX/ZQ==}
 
-  '@vanilla-extract/css@1.14.0':
-    resolution: {integrity: sha512-rYfm7JciWZ8PFzBM/HDiE2GLnKI3xJ6/vdmVJ5BSgcCZ5CxRlM9Cjqclni9lGzF3eMOijnUhCd/KV8TOzyzbMA==}
-
-  '@vanilla-extract/css@1.15.5':
-    resolution: {integrity: sha512-N1nQebRWnXvlcmu9fXKVUs145EVwmWtMD95bpiEKtvehHDpUhmO1l2bauS7FGYKbi3dU1IurJbGpQhBclTr1ng==}
-
   '@vanilla-extract/css@1.16.0':
     resolution: {integrity: sha512-05JTbvG1E0IrSZKZ5el2EM9CmAX0XSdsNY+d4aRZxDvYf3/hwxomvFFEz2b/awjgg9yTVHW83Wq19wE4OoTEMg==}
 
   '@vanilla-extract/integration@7.1.10':
     resolution: {integrity: sha512-EXe8l0u51ta2H78kksf7gJENkdYnvDW9c+18FUvKfxtjHmpc4KthXnUTuALt5k9wbAjfFakIR4IsqzvOP43cDQ==}
-
-  '@vanilla-extract/private@1.0.4':
-    resolution: {integrity: sha512-8FGD6AejeC/nXcblgNCM5rnZb9KXa4WNkR03HCWtdJBpANjTgjHEglNLFnhuvdQ78tC6afaxBPI+g7F2NX3tgg==}
 
   '@vanilla-extract/private@1.0.6':
     resolution: {integrity: sha512-ytsG/JLweEjw7DBuZ/0JCN4WAQgM9erfSTdS1NQY778hFQSZ6cfCDEZZ0sgVm4k54uNz6ImKB33AYvSR//fjxw==}
@@ -12903,9 +12894,6 @@ packages:
 
   os-browserify@0.3.0:
     resolution: {integrity: sha512-gjcpUc3clBf9+210TRaDWbf+rZZZEshZ+DlXMRCeAjp0xhTrnQsKHypIy1J3d5hKdUzj69t708EHtU8P6bUn0A==}
-
-  outdent@0.8.0:
-    resolution: {integrity: sha512-KiOAIsdpUTcAXuykya5fnVVT+/5uS0Q1mrkRHcF89tpieSmY33O/tmc54CqwA+bfhbtEfZUNLHaPUiB9X3jt1A==}
 
   p-cancelable@1.1.0:
     resolution: {integrity: sha512-s73XxOZ4zpt1edZYZzvhqFa6uvQc1vwUa0K0BdtIZgQMAJj9IbebH+JkgKZc9h+B05PKHLOTl4ajG1BmNrVZlw==}
@@ -19377,7 +19365,7 @@ snapshots:
   '@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.2.0))(babel-plugin-macros@3.1.0)(typescript@5.4.5)':
     dependencies:
       '@babel/runtime': 7.24.4
-      '@babel/types': 7.25.6
+      '@babel/types': 7.25.8
       '@lingui/conf': 4.11.4(typescript@5.4.5)
       '@lingui/core': 4.11.4
       '@lingui/message-utils': 4.11.4
@@ -19878,7 +19866,7 @@ snapshots:
       postcss-page-break: 3.0.4(postcss@8.4.47)
       react-refresh: 0.14.2
       rspack-manifest-plugin: 5.0.0-alpha0(webpack@5.94.0(esbuild@0.17.19))
-      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0)
+      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0(esbuild@0.17.19))
       ts-loader: 9.4.4(typescript@5.4.5)(webpack@5.94.0(esbuild@0.17.19))
       webpack: 5.94.0(esbuild@0.17.19)
       webpack-manifest-plugin: 5.0.0(webpack@5.94.0(esbuild@0.17.19))
@@ -24019,37 +24007,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vanilla-extract/css@1.14.0':
-    dependencies:
-      '@emotion/hash': 0.9.1
-      '@vanilla-extract/private': 1.0.4
-      chalk: 4.1.2
-      css-what: 6.1.0
-      cssesc: 3.0.0
-      csstype: 3.1.3
-      deep-object-diff: 1.1.9
-      deepmerge: 4.3.1
-      media-query-parser: 2.0.2
-      modern-ahocorasick: 1.0.1
-      outdent: 0.8.0
-
-  '@vanilla-extract/css@1.15.5(babel-plugin-macros@3.1.0)':
-    dependencies:
-      '@emotion/hash': 0.9.1
-      '@vanilla-extract/private': 1.0.6
-      css-what: 6.1.0
-      cssesc: 3.0.0
-      csstype: 3.1.3
-      dedent: 1.5.3(babel-plugin-macros@3.1.0)
-      deep-object-diff: 1.1.9
-      deepmerge: 4.3.1
-      lru-cache: 10.4.3
-      media-query-parser: 2.0.2
-      modern-ahocorasick: 1.0.1
-      picocolors: 1.0.1
-    transitivePeerDependencies:
-      - babel-plugin-macros
-
   '@vanilla-extract/css@1.16.0(babel-plugin-macros@3.1.0)':
     dependencies:
       '@emotion/hash': 0.9.1
@@ -24092,13 +24049,11 @@ snapshots:
       - supports-color
       - terser
 
-  '@vanilla-extract/private@1.0.4': {}
-
   '@vanilla-extract/private@1.0.6': {}
 
-  '@vanilla-extract/sprinkles@1.6.3(@vanilla-extract/css@1.14.0)':
+  '@vanilla-extract/sprinkles@1.6.3(@vanilla-extract/css@1.16.0(babel-plugin-macros@3.1.0))':
     dependencies:
-      '@vanilla-extract/css': 1.14.0
+      '@vanilla-extract/css': 1.16.0(babel-plugin-macros@3.1.0)
 
   '@vanilla-extract/webpack-plugin@2.3.14(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.1.3)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.29.2)(webpack@5.95.0)':
     dependencies:
@@ -30796,8 +30751,6 @@ snapshots:
 
   os-browserify@0.3.0: {}
 
-  outdent@0.8.0: {}
-
   p-cancelable@1.1.0: {}
 
   p-limit@2.3.0:
@@ -33573,7 +33526,7 @@ snapshots:
     optionalDependencies:
       '@swc/core': 1.4.8(@swc/helpers@0.5.13)
 
-  terser-webpack-plugin@5.3.10(esbuild@0.17.19)(webpack@5.94.0):
+  terser-webpack-plugin@5.3.10(esbuild@0.17.19)(webpack@5.94.0(esbuild@0.17.19)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
@@ -34886,7 +34839,7 @@ snapshots:
       sockjs: 0.3.24
       spdy: 4.0.2
       webpack-dev-middleware: 5.3.3(webpack@5.94.0)
-      ws: 8.17.1
+      ws: 8.18.0
     optionalDependencies:
       webpack: 5.94.0(esbuild@0.17.19)
     transitivePeerDependencies:
@@ -35377,7 +35330,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0)
+      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0(esbuild@0.17.19))
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:
