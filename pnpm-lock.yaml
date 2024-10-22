@@ -896,11 +896,11 @@ importers:
         specifier: ^0.4.0
         version: 0.4.0
       '@arco-design/web-react':
-        specifier: 2.29.2
-        version: 2.29.2(@types/react@18.3.11)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        specifier: 2.64.0
+        version: 2.64.0(@types/react@18.3.11)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       '@arco-themes/react-arco-pro':
         specifier: ^0.0.7
-        version: 0.0.7(@arco-design/web-react@2.29.2(@types/react@18.3.11)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))
+        version: 0.0.7(@arco-design/web-react@2.64.0(@types/react@18.3.11)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))
       '@loadable/component':
         specifier: ^5.16.4
         version: 5.16.4(react@17.0.2)
@@ -3109,8 +3109,8 @@ packages:
   '@arco-design/color@0.4.0':
     resolution: {integrity: sha512-s7p9MSwJgHeL8DwcATaXvWT3m2SigKpxx4JA1BGPHL4gfvaQsmQfrLBDpjOJFJuJ2jG2dMt3R3P8Pm9E65q18g==}
 
-  '@arco-design/web-react@2.29.2':
-    resolution: {integrity: sha512-nDMIWfuvYKlxc8lFBtaLPPDURtAJLmXu77r0KCH0Y6GB3S8mUQb7hs0hCC/K+1Pp5yzuVr05ESrEYovM8O5AvQ==}
+  '@arco-design/web-react@2.64.0':
+    resolution: {integrity: sha512-2CSRUqpD1obc84OQnZLdTE54Pb5OJe7OmgToUAbY9jlQiapMWIn2GZRJs12jkMTvAkzOv19sRU+UyoC/OYBNrg==}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
@@ -16764,7 +16764,7 @@ snapshots:
     dependencies:
       color: 3.2.1
 
-  '@arco-design/web-react@2.29.2(@types/react@18.3.11)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+  '@arco-design/web-react@2.64.0(@types/react@18.3.11)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
       '@arco-design/color': 0.4.0
       '@babel/runtime': 7.24.4
@@ -16777,6 +16777,7 @@ snapshots:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
       react-focus-lock: 2.11.3(@types/react@18.3.11)(react@17.0.2)
+      react-is: 18.2.0
       react-transition-group: 4.4.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
       resize-observer-polyfill: 1.5.1
       scroll-into-view-if-needed: 2.2.20
@@ -16784,9 +16785,9 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@arco-themes/react-arco-pro@0.0.7(@arco-design/web-react@2.29.2(@types/react@18.3.11)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))':
+  '@arco-themes/react-arco-pro@0.0.7(@arco-design/web-react@2.64.0(@types/react@18.3.11)(react-dom@17.0.2(react@17.0.2))(react@17.0.2))':
     dependencies:
-      '@arco-design/web-react': 2.29.2(@types/react@18.3.11)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      '@arco-design/web-react': 2.64.0(@types/react@18.3.11)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
 
   '@babel/code-frame@7.24.7':
     dependencies:
@@ -19377,7 +19378,7 @@ snapshots:
   '@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.2.0))(babel-plugin-macros@3.1.0)(typescript@5.4.5)':
     dependencies:
       '@babel/runtime': 7.24.4
-      '@babel/types': 7.25.6
+      '@babel/types': 7.25.8
       '@lingui/conf': 4.11.4(typescript@5.4.5)
       '@lingui/core': 4.11.4
       '@lingui/message-utils': 4.11.4
@@ -19878,7 +19879,7 @@ snapshots:
       postcss-page-break: 3.0.4(postcss@8.4.47)
       react-refresh: 0.14.2
       rspack-manifest-plugin: 5.0.0-alpha0(webpack@5.94.0(esbuild@0.17.19))
-      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0)
+      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0(esbuild@0.17.19))
       ts-loader: 9.4.4(typescript@5.4.5)(webpack@5.94.0(esbuild@0.17.19))
       webpack: 5.94.0(esbuild@0.17.19)
       webpack-manifest-plugin: 5.0.0(webpack@5.94.0(esbuild@0.17.19))
@@ -33573,7 +33574,7 @@ snapshots:
     optionalDependencies:
       '@swc/core': 1.4.8(@swc/helpers@0.5.13)
 
-  terser-webpack-plugin@5.3.10(esbuild@0.17.19)(webpack@5.94.0):
+  terser-webpack-plugin@5.3.10(esbuild@0.17.19)(webpack@5.94.0(esbuild@0.17.19)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
@@ -34886,7 +34887,7 @@ snapshots:
       sockjs: 0.3.24
       spdy: 4.0.2
       webpack-dev-middleware: 5.3.3(webpack@5.94.0)
-      ws: 8.17.1
+      ws: 8.18.0
     optionalDependencies:
       webpack: 5.94.0(esbuild@0.17.19)
     transitivePeerDependencies:
@@ -35377,7 +35378,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0)
+      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0(esbuild@0.17.19))
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:
