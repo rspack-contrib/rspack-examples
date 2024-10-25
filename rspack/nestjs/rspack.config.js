@@ -1,4 +1,5 @@
 const { RunScriptWebpackPlugin } = require('run-script-webpack-plugin');
+const rspack = require('@rspack/core');
 
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
@@ -33,7 +34,23 @@ const config = {
     ],
   },
   optimization: {
-    minimize: false,
+    minimizer: [
+      new rspack.SwcJsMinimizerRspackPlugin({
+        minimizerOptions: {
+          // We need to disable mangling and compression for class names and function names for Nest.js to work properly
+          // The execution context class returns a reference to the class/handler function, which is for example used for applying metadata using decorators
+          // https://docs.nestjs.com/fundamentals/execution-context#executioncontext-class
+          compress: {
+            keep_classnames: true,
+            keep_fnames: true,
+          },
+          mangle: {
+            keep_classnames: true,
+            keep_fnames: true,
+          },
+        },
+      }),
+    ],
   },
   externalsType: 'commonjs',
   plugins: [
