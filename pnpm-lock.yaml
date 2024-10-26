@@ -662,8 +662,8 @@ importers:
   rsbuild/stylex:
     dependencies:
       '@stylexjs/stylex':
-        specifier: ^0.5.1
-        version: 0.5.1
+        specifier: ^0.8.0
+        version: 0.8.0
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -688,7 +688,7 @@ importers:
         version: 5.4.5
       unplugin-stylex:
         specifier: ^0.4.2
-        version: 0.4.2(@stylexjs/stylex@0.5.1)(rollup@4.12.0)
+        version: 0.4.2(@stylexjs/stylex@0.8.0)(rollup@4.12.0)
 
   rsbuild/svelte:
     dependencies:
@@ -6638,6 +6638,9 @@ packages:
 
   '@stylexjs/stylex@0.5.1':
     resolution: {integrity: sha512-KO55dRB1+LhUo9OxfHqH5FwO2F0HdTe4g6fyRJb7JT5FiWEA/vYJ9MY7W8NdMSprW/7FeQKnSg6u5WlHU2ji2g==}
+
+  '@stylexjs/stylex@0.8.0':
+    resolution: {integrity: sha512-b9W6tFkX7RRo08UeY25cE5zhRREbg/8tj7oQNJPTvZaYZOWIj1ij3VTwNwI7bYG1RdNJO6bi2mjar9wsEV/Szw==}
 
   '@surma/rollup-plugin-off-main-thread@2.2.3':
     resolution: {integrity: sha512-lR8q/9W7hZpMWweNiAKU7NQerBnzQQLvi8qnTDU/fxItPhtZVMbPV3lbCwjhIlNBe9Bbr5V+KHshvWmVSG9cxQ==}
@@ -19924,7 +19927,7 @@ snapshots:
       postcss-page-break: 3.0.4(postcss@8.4.47)
       react-refresh: 0.14.2
       rspack-manifest-plugin: 5.0.0-alpha0(webpack@5.94.0(esbuild@0.17.19))
-      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0(esbuild@0.17.19))
+      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0)
       ts-loader: 9.4.4(typescript@5.4.5)(webpack@5.94.0(esbuild@0.17.19))
       webpack: 5.94.0(esbuild@0.17.19)
       webpack-manifest-plugin: 5.0.0(webpack@5.94.0(esbuild@0.17.19))
@@ -22426,6 +22429,12 @@ snapshots:
       invariant: 2.2.4
       styleq: 0.1.3
       utility-types: 3.11.0
+
+  '@stylexjs/stylex@0.8.0':
+    dependencies:
+      css-mediaquery: 0.1.2
+      invariant: 2.2.4
+      styleq: 0.1.3
 
   '@surma/rollup-plugin-off-main-thread@2.2.3':
     dependencies:
@@ -33667,7 +33676,7 @@ snapshots:
     optionalDependencies:
       '@swc/core': 1.7.39(@swc/helpers@0.5.13)
 
-  terser-webpack-plugin@5.3.10(esbuild@0.17.19)(webpack@5.94.0(esbuild@0.17.19)):
+  terser-webpack-plugin@5.3.10(esbuild@0.17.19)(webpack@5.94.0):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
@@ -34192,7 +34201,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  unplugin-stylex@0.4.2(@stylexjs/stylex@0.5.1)(rollup@4.12.0):
+  unplugin-stylex@0.4.2(@stylexjs/stylex@0.8.0)(rollup@4.12.0):
     dependencies:
       '@babel/core': 7.25.2
       '@babel/plugin-syntax-flow': 7.24.7(@babel/core@7.25.2)
@@ -34200,7 +34209,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.24.7(@babel/core@7.25.2)
       '@rollup/pluginutils': 5.1.0(rollup@4.12.0)
       '@stylexjs/babel-plugin': 0.5.1
-      '@stylexjs/stylex': 0.5.1
+      '@stylexjs/stylex': 0.8.0
       unplugin: 1.11.0
     transitivePeerDependencies:
       - rollup
@@ -35476,7 +35485,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0(esbuild@0.17.19))
+      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.94.0)
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:
