@@ -10,7 +10,7 @@
   "dependencies": {
     "@rspack/cli": "^1.0.13",
     "@rspack/core": "^1.0.13",
-    "@vanilla-extract/css": "1.14.0",
+    "@vanilla-extract/css": "1.16.0",
     "@vanilla-extract/sprinkles": "^1.6.3",
     "@vanilla-extract/webpack-plugin": "^2.3.14",
     "html-webpack-plugin": "^5.6.2",
