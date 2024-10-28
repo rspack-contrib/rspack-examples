@@ -1,6 +1,6 @@
 const rspack = require('@rspack/core');
-const dev = process.env.NODE_ENV === 'development';
 const PreactRefreshPlugin = require('@rspack/plugin-preact-refresh');
+const dev = process.env.NODE_ENV === 'development';
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
   entry: {
@@ -26,10 +26,15 @@ const config = {
           loader: 'builtin:swc-loader',
           options: {
             sourceMap: true,
-            rspackExperiments: {
-              preact: {}, // enable preact swc plugin
-            },
             jsc: {
+              experimental: {
+                plugins: [
+                  [
+                    '@swc/plugin-prefresh', // enable prefresh specific transformation
+                    {},
+                  ],
+                ],
+              },
               parser: {
                 syntax: 'ecmascript',
                 jsx: true,
@@ -43,7 +48,8 @@ const config = {
                   pragmaFrag: 'Fragment',
                   throwIfNamespace: true,
                   useBuiltins: false,
-                  refresh: true, // enable react hooks hmr compatiblity
+                  development: dev,
+                  refresh: dev, // enable react hooks hmr compatiblity
                 },
               },
             },

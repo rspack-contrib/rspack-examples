@@ -2136,8 +2136,11 @@ importers:
         specifier: ^1.0.14
         version: 1.0.14(@swc/helpers@0.5.1)
       '@rspack/plugin-preact-refresh':
-        specifier: ^1.0.1
-        version: 1.0.1(@prefresh/core@1.5.2(preact@10.19.3))(@prefresh/utils@1.2.0)
+        specifier: ^1.1.0
+        version: 1.1.0(@prefresh/core@1.5.2(preact@10.19.3))(@prefresh/utils@1.2.0)
+      '@swc/plugin-prefresh':
+        specifier: ^3.0.3
+        version: 3.0.3
 
   rspack/proxy:
     devDependencies:
@@ -6440,8 +6443,8 @@ packages:
     resolution: {integrity: sha512-VynGOEsVw2s8TAlLf/uESfrgfrq2+rcXB1muPJYBWbsm1Oa6r5qVQhjA5ggM6z/coYPrsVMgovl3Ff7Q7OCp1w==}
     engines: {node: '>=16.0.0'}
 
-  '@rspack/plugin-preact-refresh@1.0.1':
-    resolution: {integrity: sha512-KS4N2frFQ2egj9VcZX7nmP59OEKgxzvNC8wf0ztGvl9YQp8VdCOheoS4/YGWyby3KQoacY7o54PwoRFgBmzOXA==}
+  '@rspack/plugin-preact-refresh@1.1.0':
+    resolution: {integrity: sha512-WQpJZWyypMn/RLog+nKJMXW3LmGl0UDrvLv6OS+/BT1Iy53mdw3quOB1lVaKRlJ4MxZ1TTb/TeYUYZJQzyBVgQ==}
     peerDependencies:
       '@prefresh/core': ^1.5.0
       '@prefresh/utils': ^1.2.0
@@ -6887,6 +6890,9 @@ packages:
 
   '@swc/plugin-prefresh@2.0.10':
     resolution: {integrity: sha512-ZmeTyleFpfX5urJRdudVJxD7hJpdRw3e/84X5UC1C6C4/eFbaCTIBhJ3YO0xvccHaRqAYHmcxVL5iEO1GSZWCQ==}
+
+  '@swc/plugin-prefresh@3.0.3':
+    resolution: {integrity: sha512-HXRBKFwGcUuEgPsYz4tEfZ97nM0V8raDvn322tSx7vBWSxN+XdtJx4xtoIlLZNr+YSV/NXV9UpfskQZ1Dfa9bQ==}
 
   '@swc/plugin-relay@2.0.15':
     resolution: {integrity: sha512-yASUc/ggP/+F18/2kRYLYM/M3QN7R8PzR0d+fSFgzErD0WkCOHS4cZyp26EBDLFfGm2H3ZqYPbfmVkvhZWLe6Q==}
@@ -22141,7 +22147,7 @@ snapshots:
 
   '@rspack/lite-tapable@1.0.1': {}
 
-  '@rspack/plugin-preact-refresh@1.0.1(@prefresh/core@1.5.2(preact@10.19.3))(@prefresh/utils@1.2.0)':
+  '@rspack/plugin-preact-refresh@1.1.0(@prefresh/core@1.5.2(preact@10.19.3))(@prefresh/utils@1.2.0)':
     dependencies:
       '@prefresh/core': 1.5.2(preact@10.19.3)
       '@prefresh/utils': 1.2.0
@@ -22692,6 +22698,10 @@ snapshots:
       '@swc/counter': 0.1.3
 
   '@swc/plugin-prefresh@2.0.10':
+    dependencies:
+      '@swc/counter': 0.1.3
+
+  '@swc/plugin-prefresh@3.0.3':
     dependencies:
       '@swc/counter': 0.1.3
 
