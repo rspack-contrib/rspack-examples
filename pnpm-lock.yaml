@@ -1541,8 +1541,8 @@ importers:
         specifier: 7.25.8
         version: 7.25.8(@babel/core@7.25.8)
       '@mdx-js/loader':
-        specifier: 2.2.1
-        version: 2.2.1(webpack@5.95.0)
+        specifier: 2.3.0
+        version: 2.3.0(webpack@5.95.0)
       '@rspack/cli':
         specifier: ^1.0.14
         version: 1.0.14(@rspack/core@1.0.14(@swc/helpers@0.5.13))(@types/express@4.17.21)(webpack@5.95.0)
@@ -5192,11 +5192,6 @@ packages:
   '@lukeed/csprng@1.1.0':
     resolution: {integrity: sha512-Z7C/xXCiGWsg0KuKsHTKJxbWhpI3Vs5GwLfOean7MGyVFGqdRgBbAjOCh6u4bbjPc/8MJ2pZmK/0DLdCbivLDA==}
     engines: {node: '>=8'}
-
-  '@mdx-js/loader@2.2.1':
-    resolution: {integrity: sha512-J4E8A5H+xtk4otZiEZ5AXl61Tj04Avm5MqLQazITdI3+puVXVnTTuZUKM1oNHTtfDIfOl0uMt+o/Ij+x6Fvf+g==}
-    peerDependencies:
-      webpack: '>=4'
 
   '@mdx-js/loader@2.3.0':
     resolution: {integrity: sha512-IqsscXh7Q3Rzb+f5DXYk0HU71PK+WuFsEhf+mSV3fOhpLcEpgsHvTQ2h0T6TlZ5gHOaBeFjkXwB52by7ypMyNg==}
@@ -19495,14 +19490,6 @@ snapshots:
       webpack: 5.94.0(esbuild@0.17.19)
 
   '@lukeed/csprng@1.1.0': {}
-
-  '@mdx-js/loader@2.2.1(webpack@5.95.0)':
-    dependencies:
-      '@mdx-js/mdx': 2.3.0
-      source-map: 0.7.4
-      webpack: 5.95.0
-    transitivePeerDependencies:
-      - supports-color
 
   '@mdx-js/loader@2.3.0(webpack@5.95.0)':
     dependencies:
