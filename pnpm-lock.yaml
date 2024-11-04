@@ -1193,8 +1193,8 @@ importers:
         version: 3.5.8(typescript@5.4.5)
     devDependencies:
       '@lingui/swc-plugin':
-        specifier: ^4.0.10
-        version: 4.0.10(@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.2.0))(babel-plugin-macros@3.1.0)(typescript@5.4.5))(@swc/core@1.7.40(@swc/helpers@0.5.1))
+        specifier: ^4.1.0
+        version: 4.1.0(@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.2.0))(babel-plugin-macros@3.1.0)(typescript@5.4.5))(@swc/core@1.7.40(@swc/helpers@0.5.1))
       '@rspack/cli':
         specifier: ^1.0.14
         version: 1.0.14(@rspack/core@1.0.14(@swc/helpers@0.5.1))(@types/express@4.17.21)(webpack@5.95.0(@swc/core@1.7.40(@swc/helpers@0.5.1)))
@@ -5135,8 +5135,8 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
 
-  '@lingui/swc-plugin@4.0.10':
-    resolution: {integrity: sha512-CPZkywUdG8HsEIxsRAAvx30KZmfxzh126yCvHq0suyvZZRLOVoNdlrUw1N9MfsB7YJsPLgD+XLGjRkeyo7ZduQ==}
+  '@lingui/swc-plugin@4.1.0':
+    resolution: {integrity: sha512-LBiSbDJoYlB5pT3qtOwZzmqAXSSuhSTx9Zxfhfmfo2NZ6otCDYULCYj0YoXjOCyL1WOWQ72CwAhdxUS8WIt/OQ==}
     peerDependencies:
       '@lingui/macro': '4'
       '@swc/core': '*'
@@ -19443,7 +19443,7 @@ snapshots:
       '@lingui/core': 4.11.4
       react: 18.2.0
 
-  '@lingui/swc-plugin@4.0.10(@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.2.0))(babel-plugin-macros@3.1.0)(typescript@5.4.5))(@swc/core@1.7.40(@swc/helpers@0.5.1))':
+  '@lingui/swc-plugin@4.1.0(@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.2.0))(babel-plugin-macros@3.1.0)(typescript@5.4.5))(@swc/core@1.7.40(@swc/helpers@0.5.1))':
     dependencies:
       '@lingui/macro': 4.11.4(@lingui/react@4.11.4(react@18.2.0))(babel-plugin-macros@3.1.0)(typescript@5.4.5)
     optionalDependencies:
