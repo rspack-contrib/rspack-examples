@@ -12,9 +12,9 @@
     "react-dom": "19.0.0-rc-fb9a90fa48-20240614"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.0.18",
-    "@rsbuild/plugin-babel": "^1.0.2",
-    "@rsbuild/plugin-react": "^1.0.5",
+    "@rsbuild/core": "^1.0.19",
+    "@rsbuild/plugin-babel": "^1.0.3",
+    "@rsbuild/plugin-react": "^1.0.6",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "babel-plugin-react-compiler": "0.0.0-experimental-4690415-20240515",
