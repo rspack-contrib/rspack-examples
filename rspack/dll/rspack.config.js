@@ -8,7 +8,7 @@ const config = {
     extensions: ['...', '.ts', '.tsx', '.js', '.jsx'],
   },
   entry: {
-    alpha: ["./alpha", "./a"],
+    alpha: ["./alpha", "./a", "lodash"],
     beta: ["./beta", "./b", "./c"],
   },
   output: {

@@ -1352,6 +1352,10 @@ importers:
         version: 14.2.1(@rspack/core@1.0.14(@swc/helpers@0.5.13))(sass-embedded@1.77.8)(sass@1.69.7)(webpack@5.95.0)
 
   rspack/dll:
+    dependencies:
+      lodash:
+        specifier: 4.17.21
+        version: 4.17.21
     devDependencies:
       '@rspack/cli':
         specifier: 1.1.1
@@ -1371,6 +1375,9 @@ importers:
       '@rspack/core':
         specifier: 1.1.1
         version: 1.1.1(@swc/helpers@0.5.13)
+      lodash:
+        specifier: 4.17.21
+        version: 4.17.21
       typescript:
         specifier: ^5.3.3
         version: 5.4.5
