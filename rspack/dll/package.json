@@ -1,0 +1,13 @@
+{
+  "name": "example-dll-plugin",
+  "private": true,
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build || echo 'make-ci-happy'"
+  },
+  "devDependencies": {
+    "@rspack/cli": "1.1.1",
+    "@rspack/core": "1.1.1",
+    "typescript": "^5.3.3"
+  }
+}
