@@ -597,6 +597,37 @@ importers:
         specifier: ^5.3.0
         version: 5.4.5
 
+  rsbuild/ssr-express-with-manifest:
+    dependencies:
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+    devDependencies:
+      '@rsbuild/core':
+        specifier: 1.1.0
+        version: 1.1.0
+      '@rsbuild/plugin-react':
+        specifier: 1.0.6
+        version: 1.0.6(@rsbuild/core@1.1.0)
+      '@types/express':
+        specifier: ^4.17.21
+        version: 4.17.21
+      '@types/react':
+        specifier: ^18.3.12
+        version: 18.3.12
+      '@types/react-dom':
+        specifier: ^18.3.1
+        version: 18.3.1
+      express:
+        specifier: ^4.19.2
+        version: 4.19.2
+      typescript:
+        specifier: ^5.3.0
+        version: 5.4.5
+
   rsbuild/styled-components:
     dependencies:
       react:
@@ -6114,6 +6145,11 @@ packages:
     engines: {node: '>=16.7.0'}
     hasBin: true
 
+  '@rsbuild/core@1.1.0':
+    resolution: {integrity: sha512-SyQlJjWgR1VwLt4nuiY0g6L9INv2koH232TeDZuopvNgbRytskD3kJ8bbGWBBXsQjZjtqBEh5ishqf8CIfF8dQ==}
+    engines: {node: '>=16.7.0'}
+    hasBin: true
+
   '@rsbuild/monorepo-utils@0.5.1':
     resolution: {integrity: sha512-WcdTU0TCCpw1UPn0cIzID3O+/L51G+oWVN3f5kZg4OBKVtpFNptcoDhkG5T9lWCO40r/yyETt0rEbrXdMOzEpg==}
     deprecated: deprecated
@@ -6205,6 +6241,11 @@ packages:
     resolution: {integrity: sha512-c9TyoM+y8tJkmPAfnqC0u8FxuOxCXIjdGhYeAFUniVJrBEwZfJ+O/SvzqjbCtPF+3AhWJAYwDdecq0GhDN2FmQ==}
     peerDependencies:
       '@rsbuild/core': ^1.0.1-beta.16
+
+  '@rsbuild/plugin-react@1.0.6':
+    resolution: {integrity: sha512-k2VS7nvNm74DlVQROK+w+Ua1j60n3qSnVFva8zjmj6uakLCxxp85aRwfEHzaVP/YdDLffweypROuQPYvTZ57ew==}
+    peerDependencies:
+      '@rsbuild/core': 1.x
 
   '@rsbuild/plugin-react@1.0.7':
     resolution: {integrity: sha512-t7T/GqDwodusTAnxGpqVRnQ/G+HYh98zk71qIg19WkjVJJGv57AC1Ppx0/6zzbZAbxU60bfK8TeEEXjhXCdSxA==}
@@ -9510,6 +9551,9 @@ packages:
 
   core-js@3.38.1:
     resolution: {integrity: sha512-OP35aUorbU3Zvlx7pjsFdu1rGNnD4pgw/CWoYzRY3t2EzoVT7shKHY1dlAy3f41cGIO7ZDPQimhGFTlEYkG/Hw==}
+
+  core-js@3.39.0:
+    resolution: {integrity: sha512-raM0ew0/jJUqkJ0E6e8UDtl+y/7ktFivgWvqw8dNSQeNWoSDLvQ1H/RN3aPXB9tBd4/FhyR4RDPGhsNIMsAn7g==}
 
   core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
@@ -20384,7 +20428,7 @@ snapshots:
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@5.4.5)
       jest-validate: 29.7.0
-      jiti: 1.21.0
+      jiti: 1.21.6
       lodash.get: 4.4.2
     transitivePeerDependencies:
       - typescript
@@ -21634,6 +21678,15 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  '@rsbuild/core@1.1.0':
+    dependencies:
+      '@rspack/core': 1.1.1(@swc/helpers@0.5.13)
+      '@rspack/lite-tapable': 1.0.1
+      '@swc/helpers': 0.5.13
+      core-js: 3.39.0
+    optionalDependencies:
+      fsevents: 2.3.3
+
   '@rsbuild/monorepo-utils@0.5.1(@swc/helpers@0.5.3)':
     dependencies:
       '@rsbuild/shared': 0.5.1(@swc/helpers@0.5.3)
@@ -21811,6 +21864,12 @@ snapshots:
   '@rsbuild/plugin-react@1.0.1-beta.16(@rsbuild/core@1.0.1-beta.16)':
     dependencies:
       '@rsbuild/core': 1.0.1-beta.16
+      '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.2)
+      react-refresh: 0.14.2
+
+  '@rsbuild/plugin-react@1.0.6(@rsbuild/core@1.1.0)':
+    dependencies:
+      '@rsbuild/core': 1.1.0
       '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.2)
       react-refresh: 0.14.2
 
@@ -27131,6 +27190,8 @@ snapshots:
   core-js@3.36.1: {}
 
   core-js@3.38.1: {}
+
+  core-js@3.39.0: {}
 
   core-util-is@1.0.3: {}
 

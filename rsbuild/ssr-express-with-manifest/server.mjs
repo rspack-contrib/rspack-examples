@@ -1,14 +1,22 @@
 import express from "express";
+import fs from 'node:fs';
 import { createRsbuild, loadConfig, logger } from "@rsbuild/core";
+
+const templateHtml = fs.readFileSync('./template.html', 'utf-8');
 
 const serverRender = (serverAPI) => async (_req, res) => {
   const indexModule = await serverAPI.environments.ssr.loadBundle("index");
 
   const markup = indexModule.render();
 
-  const template = await serverAPI.environments.web.getTransformedHtml("index");
+  const { entries } = JSON.parse(fs.readFileSync('./dist/manifest.json', 'utf-8'));
 
-  const html = template.replace("<!--app-content-->", markup);
+  const { js, css } = entries['index'].initial;
+
+  const scriptTags = js.map(file => `<script src="${file}" defer></script>`).join('\n');
+  const styleTags = css.map(file => `<link rel="stylesheet" href="${file}">`).join('\n');  
+
+  const html = templateHtml.replace("<!--app-content-->", markup).replace('<!--app-head-->', `${scriptTags}\n${styleTags}`);
 
   res.writeHead(200, {
     "Content-Type": "text/html",
