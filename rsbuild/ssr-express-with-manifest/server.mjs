@@ -4,17 +4,23 @@ import { createRsbuild, loadConfig, logger } from "@rsbuild/core";
 
 const templateHtml = fs.readFileSync('./template.html', 'utf-8');
 
+let manifest;
+
 const serverRender = (serverAPI) => async (_req, res) => {
   const indexModule = await serverAPI.environments.ssr.loadBundle("index");
 
   const markup = indexModule.render();
 
-  const { entries } = JSON.parse(fs.readFileSync('./dist/manifest.json', 'utf-8'));
+  const { entries } = JSON.parse(manifest);
 
-  const { js, css } = entries['index'].initial;
+  const { js = [], css = []} = entries['index'].initial;
 
-  const scriptTags = js.map(file => `<script src="${file}" defer></script>`).join('\n');
-  const styleTags = css.map(file => `<link rel="stylesheet" href="${file}">`).join('\n');  
+  const scriptTags = js
+    .map((url) => `<script src="${url}" defer></script>`)
+    .join('\n');
+  const styleTags = css
+    .map((file) => `<link rel="stylesheet" href="${file}">`)
+    .join('\n');
 
   const html = templateHtml.replace("<!--app-content-->", markup).replace('<!--app-head-->', `${scriptTags}\n${styleTags}`);
 
@@ -31,6 +37,11 @@ export async function startDevServer() {
   const rsbuild = await createRsbuild({
     rsbuildConfig: content,
   });
+
+  rsbuild.onDevCompileDone(async () => {
+    // update manifest info when rebuild
+    manifest = await fs.promises.readFile('./dist/manifest.json', 'utf-8');
+  })
 
   const app = express();
 
@@ -54,6 +65,8 @@ export async function startDevServer() {
   const httpServer = app.listen(rsbuildServer.port, () => {
     // Notify Rsbuild that the custom server has started
     rsbuildServer.afterListen();
+
+    console.log(`Server started at http://localhost:${rsbuildServer.port}`);
   });
 
   rsbuildServer.connectWebSocket({ server: httpServer });
