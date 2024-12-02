@@ -607,11 +607,11 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@rsbuild/core':
-        specifier: 1.1.6
-        version: 1.1.6
+        specifier: 1.1.7
+        version: 1.1.7
       '@rsbuild/plugin-react':
         specifier: 1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.6)
+        version: 1.0.7(@rsbuild/core@1.1.7)
       '@types/express':
         specifier: ^4.17.21
         version: 4.17.21
@@ -6150,8 +6150,8 @@ packages:
     engines: {node: '>=16.7.0'}
     hasBin: true
 
-  '@rsbuild/core@1.1.6':
-    resolution: {integrity: sha512-u9Elj+xfgIPRD8rEXioE6xBJOdEGt0Pw1iJiGm/gU28FmH3QmOEFq2Jvo70RsOISNOy18kEM9y0RsqVgtVrpNw==}
+  '@rsbuild/core@1.1.7':
+    resolution: {integrity: sha512-YI8qGKa37e5X3av4cB4i06MZv89URW39SrfNqTR6Td7VPznX+n4pHcrYqj86sEM2/XPX57/UL9Hi/Nhu+A003g==}
     engines: {node: '>=16.7.0'}
     hasBin: true
 
@@ -16939,12 +16939,12 @@ snapshots:
       '@antv/color-util': 2.0.6
       '@antv/scale': 0.3.18
       '@antv/util': 2.0.17
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@antv/color-util@2.0.6':
     dependencies:
       '@antv/util': 2.0.17
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@antv/component@0.8.35':
     dependencies:
@@ -16962,7 +16962,7 @@ snapshots:
     dependencies:
       '@antv/matrix-util': 3.1.0-beta.3
       '@antv/util': 2.0.17
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@antv/data-set@0.11.8':
     dependencies:
@@ -16985,7 +16985,7 @@ snapshots:
 
   '@antv/dom-util@2.0.4':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@antv/event-emitter@0.1.3': {}
 
@@ -17001,7 +17001,7 @@ snapshots:
       d3-interpolate: 3.0.1
       d3-timer: 1.0.10
       detect-browser: 5.3.0
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@antv/g-canvas@0.5.14':
     dependencies:
@@ -17011,7 +17011,7 @@ snapshots:
       '@antv/path-util': 2.0.15
       '@antv/util': 2.0.17
       gl-matrix: 3.4.3
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@antv/g-math@0.1.9':
     dependencies:
@@ -17024,7 +17024,7 @@ snapshots:
       '@antv/g-math': 0.1.9
       '@antv/util': 2.0.17
       detect-browser: 5.3.0
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@antv/g2@4.1.32':
     dependencies:
@@ -17063,25 +17063,25 @@ snapshots:
     dependencies:
       '@antv/util': 2.0.17
       gl-matrix: 3.4.3
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@antv/matrix-util@3.1.0-beta.3':
     dependencies:
       '@antv/util': 2.0.17
       gl-matrix: 3.4.3
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@antv/path-util@2.0.15':
     dependencies:
       '@antv/matrix-util': 3.0.4
       '@antv/util': 2.0.17
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@antv/scale@0.3.18':
     dependencies:
       '@antv/util': 2.0.17
       fecha: 4.2.3
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@antv/util@2.0.17':
     dependencies:
@@ -19846,17 +19846,17 @@ snapshots:
   '@emnapi/core@1.2.0':
     dependencies:
       '@emnapi/wasi-threads': 1.0.1
-      tslib: 2.6.2
+      tslib: 2.8.1
     optional: true
 
   '@emnapi/runtime@1.2.0':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
     optional: true
 
   '@emnapi/wasi-threads@1.0.1':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
     optional: true
 
   '@emotion/babel-plugin@11.11.0':
@@ -20396,21 +20396,21 @@ snapshots:
       string-argv: 0.3.2
       type-detect: 4.0.8
 
-  '@jsonjoy.com/base64@1.1.2(tslib@2.6.2)':
+  '@jsonjoy.com/base64@1.1.2(tslib@2.8.1)':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
-  '@jsonjoy.com/json-pack@1.0.4(tslib@2.6.2)':
+  '@jsonjoy.com/json-pack@1.0.4(tslib@2.8.1)':
     dependencies:
-      '@jsonjoy.com/base64': 1.1.2(tslib@2.6.2)
-      '@jsonjoy.com/util': 1.3.0(tslib@2.6.2)
+      '@jsonjoy.com/base64': 1.1.2(tslib@2.8.1)
+      '@jsonjoy.com/util': 1.3.0(tslib@2.8.1)
       hyperdyperid: 1.2.0
-      thingies: 1.21.0(tslib@2.6.2)
-      tslib: 2.6.2
+      thingies: 1.21.0(tslib@2.8.1)
+      tslib: 2.8.1
 
-  '@jsonjoy.com/util@1.3.0(tslib@2.6.2)':
+  '@jsonjoy.com/util@1.3.0(tslib@2.8.1)':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@juggle/resize-observer@3.4.0': {}
 
@@ -21335,7 +21335,7 @@ snapshots:
 
   '@perfsee/jsonr@1.13.0':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@perfsee/plugin-utils@1.13.0(encoding@0.1.13)':
     dependencies:
@@ -21361,7 +21361,7 @@ snapshots:
 
   '@perfsee/utils@1.10.0':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@perfsee/webpack@1.13.0(encoding@0.1.13)(webpack@5.96.1)':
     dependencies:
@@ -21667,9 +21667,9 @@ snapshots:
 
   '@rsbuild/core@1.0.1-beta.16':
     dependencies:
-      '@rspack/core': 1.0.0-rc.0(@swc/helpers@0.5.13)
+      '@rspack/core': 1.0.0-rc.0(@swc/helpers@0.5.15)
       '@rspack/lite-tapable': 1.0.0
-      '@swc/helpers': 0.5.13
+      '@swc/helpers': 0.5.15
       caniuse-lite: 1.0.30001669
       core-js: 3.38.1
     optionalDependencies:
@@ -21684,7 +21684,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  '@rsbuild/core@1.1.6':
+  '@rsbuild/core@1.1.7':
     dependencies:
       '@rspack/core': 1.1.4(@swc/helpers@0.5.15)
       '@rspack/lite-tapable': 1.0.1
@@ -21877,9 +21877,9 @@ snapshots:
       '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.2)
       react-refresh: 0.14.2
 
-  '@rsbuild/plugin-react@1.0.7(@rsbuild/core@1.1.6)':
+  '@rsbuild/plugin-react@1.0.7(@rsbuild/core@1.1.7)':
     dependencies:
-      '@rsbuild/core': 1.1.6
+      '@rsbuild/core': 1.1.7
       '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.2)
       react-refresh: 0.14.2
 
@@ -23065,14 +23065,14 @@ snapshots:
     optionalDependencies:
       '@swc/helpers': 0.5.3
 
-  '@rspack/core@1.0.0-rc.0(@swc/helpers@0.5.13)':
+  '@rspack/core@1.0.0-rc.0(@swc/helpers@0.5.15)':
     dependencies:
       '@module-federation/runtime-tools': 0.5.1
       '@rspack/binding': 1.0.0-rc.0
       '@rspack/lite-tapable': 1.0.0
       caniuse-lite: 1.0.30001669
     optionalDependencies:
-      '@swc/helpers': 0.5.13
+      '@swc/helpers': 0.5.15
 
   '@rspack/core@1.0.14(@swc/helpers@0.5.1)':
     dependencies:
@@ -24796,7 +24796,7 @@ snapshots:
 
   '@tybys/wasm-util@0.9.0':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
     optional: true
 
   '@types/acorn@4.0.6':
@@ -26782,7 +26782,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   camelcase-css@2.0.1: {}
 
@@ -27906,7 +27906,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   dot-prop@5.3.0:
     dependencies:
@@ -28752,7 +28752,7 @@ snapshots:
 
   focus-lock@1.3.5:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   follow-redirects@1.15.6: {}
 
@@ -30761,7 +30761,7 @@ snapshots:
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   lowercase-keys@1.0.1: {}
 
@@ -31115,10 +31115,10 @@ snapshots:
 
   memfs@4.11.0:
     dependencies:
-      '@jsonjoy.com/json-pack': 1.0.4(tslib@2.6.2)
-      '@jsonjoy.com/util': 1.3.0(tslib@2.6.2)
-      tree-dump: 1.0.2(tslib@2.6.2)
-      tslib: 2.6.2
+      '@jsonjoy.com/json-pack': 1.0.4(tslib@2.8.1)
+      '@jsonjoy.com/util': 1.3.0(tslib@2.8.1)
+      tree-dump: 1.0.2(tslib@2.8.1)
+      tslib: 2.8.1
 
   memoize-one@6.0.0: {}
 
@@ -31853,7 +31853,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   node-abi@3.71.0:
     dependencies:
@@ -32118,7 +32118,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   parent-module@1.0.1:
     dependencies:
@@ -32181,7 +32181,7 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   path-browserify@1.0.1: {}
 
@@ -34086,7 +34086,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   socket.io-adapter@2.5.2:
     dependencies:
@@ -34979,9 +34979,9 @@ snapshots:
     dependencies:
       any-promise: 1.3.0
 
-  thingies@1.21.0(tslib@2.6.2):
+  thingies@1.21.0(tslib@2.8.1):
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   thread-loader@4.0.4(webpack@5.96.1):
     dependencies:
@@ -35065,9 +35065,9 @@ snapshots:
 
   traverse@0.6.6: {}
 
-  tree-dump@1.0.2(tslib@2.6.2):
+  tree-dump@1.0.2(tslib@2.8.1):
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   trim-lines@3.0.1: {}
 
@@ -35539,7 +35539,7 @@ snapshots:
   use-callback-ref@1.3.2(@types/react@18.3.12)(react@17.0.2):
     dependencies:
       react: 17.0.2
-      tslib: 2.6.2
+      tslib: 2.8.1
     optionalDependencies:
       '@types/react': 18.3.12
 
@@ -35547,7 +35547,7 @@ snapshots:
     dependencies:
       detect-node-es: 1.1.0
       react: 17.0.2
-      tslib: 2.6.2
+      tslib: 2.8.1
     optionalDependencies:
       '@types/react': 18.3.12
 
