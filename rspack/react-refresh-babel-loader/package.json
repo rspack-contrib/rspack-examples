@@ -1,5 +1,5 @@
 {
-  "name": "example-rspack-react-refresh",
+  "name": "example-rspack-react-refresh-with-babel-loader",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
