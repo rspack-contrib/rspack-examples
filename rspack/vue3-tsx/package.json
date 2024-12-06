@@ -16,7 +16,7 @@
     "@rspack/cli": "^1.0.14",
     "@rspack/core": "^1.0.14",
     "@vue/babel-plugin-jsx": "1.2.5",
-    "babel-loader": "9.1.3",
+    "babel-loader": "9.2.1",
     "typescript": "^5.1.3",
     "vue-loader": "^17.2.2"
   }
