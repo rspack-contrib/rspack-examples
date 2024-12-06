@@ -29,7 +29,7 @@
     "@swc/helpers": "0.5.1",
     "@turf/turf": "^6.5.0",
     "arco-design-pro": "^2.8.1",
-    "axios": "^0.24.0",
+    "axios": "^0.29.0",
     "bizcharts": "^4.1.23",
     "classnames": "^2.5.1",
     "copy-to-clipboard": "^3.3.3",
