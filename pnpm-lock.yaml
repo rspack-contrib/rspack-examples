@@ -693,8 +693,8 @@ importers:
   rsbuild/stylex:
     dependencies:
       '@stylexjs/stylex':
-        specifier: ^0.8.0
-        version: 0.8.0
+        specifier: ^0.9.3
+        version: 0.9.3
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -719,7 +719,7 @@ importers:
         version: 5.4.5
       unplugin-stylex:
         specifier: ^0.4.2
-        version: 0.4.2(@stylexjs/stylex@0.8.0)(rollup@4.12.0)
+        version: 0.4.2(@stylexjs/stylex@0.9.3)(rollup@4.12.0)
 
   rsbuild/svelte:
     dependencies:
@@ -6962,8 +6962,8 @@ packages:
   '@stylexjs/stylex@0.5.1':
     resolution: {integrity: sha512-KO55dRB1+LhUo9OxfHqH5FwO2F0HdTe4g6fyRJb7JT5FiWEA/vYJ9MY7W8NdMSprW/7FeQKnSg6u5WlHU2ji2g==}
 
-  '@stylexjs/stylex@0.8.0':
-    resolution: {integrity: sha512-b9W6tFkX7RRo08UeY25cE5zhRREbg/8tj7oQNJPTvZaYZOWIj1ij3VTwNwI7bYG1RdNJO6bi2mjar9wsEV/Szw==}
+  '@stylexjs/stylex@0.9.3':
+    resolution: {integrity: sha512-q3kYZ5bMXlVyF6Wh8b8Uwl701aSu8aEhim0AlQTaAXKMt0J6nTCWOjSwq6GNR74Ez4pcm2Ha4NDqhkYhKYGBcQ==}
 
   '@surma/rollup-plugin-off-main-thread@2.2.3':
     resolution: {integrity: sha512-lR8q/9W7hZpMWweNiAKU7NQerBnzQQLvi8qnTDU/fxItPhtZVMbPV3lbCwjhIlNBe9Bbr5V+KHshvWmVSG9cxQ==}
@@ -23640,7 +23640,7 @@ snapshots:
       styleq: 0.1.3
       utility-types: 3.11.0
 
-  '@stylexjs/stylex@0.8.0':
+  '@stylexjs/stylex@0.9.3':
     dependencies:
       css-mediaquery: 0.1.2
       invariant: 2.2.4
@@ -35450,7 +35450,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  unplugin-stylex@0.4.2(@stylexjs/stylex@0.8.0)(rollup@4.12.0):
+  unplugin-stylex@0.4.2(@stylexjs/stylex@0.9.3)(rollup@4.12.0):
     dependencies:
       '@babel/core': 7.25.2
       '@babel/plugin-syntax-flow': 7.24.7(@babel/core@7.25.2)
@@ -35458,7 +35458,7 @@ snapshots:
       '@babel/plugin-syntax-typescript': 7.24.7(@babel/core@7.25.2)
       '@rollup/pluginutils': 5.1.0(rollup@4.12.0)
       '@stylexjs/babel-plugin': 0.5.1
-      '@stylexjs/stylex': 0.8.0
+      '@stylexjs/stylex': 0.9.3
       unplugin: 1.11.0
     transitivePeerDependencies:
       - rollup
