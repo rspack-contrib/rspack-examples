@@ -53,7 +53,7 @@
     "@rspack/core": "^1.0.14",
     "@rspack/plugin-react-refresh": "^1.0.0",
     "@svgr/webpack": "^6.5.1",
-    "@swc/core": "^1.7.40",
+    "@swc/core": "^1.10.0",
     "bundle-stats": "^4.1.2",
     "css-loader": "^6.7.1",
     "html-rspack-plugin": "^6.0.2",
