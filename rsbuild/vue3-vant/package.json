@@ -15,7 +15,7 @@
     "@rsbuild/core": "^1.1.8",
     "@rsbuild/plugin-less": "^1.1.0",
     "@rsbuild/plugin-vue": "^1.0.5",
-    "@vant/auto-import-resolver": "^1.1.0",
+    "@vant/auto-import-resolver": "^1.2.1",
     "typescript": "^5.3.3",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0"
