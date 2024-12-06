@@ -1007,7 +1007,7 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.1)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.14.2)
+        version: 1.0.0(react-refresh@0.16.0)
       '@svgr/webpack':
         specifier: ^6.5.1
         version: 6.5.1
@@ -1033,8 +1033,8 @@ importers:
         specifier: 7.0.2
         version: 7.0.2(postcss@8.4.41)(webpack@5.96.1(@swc/core@1.7.40(@swc/helpers@0.5.1)))
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       serve:
         specifier: 14.1.2
         version: 14.1.2
@@ -1211,21 +1211,21 @@ importers:
         specifier: workspace:*
         version: link:../common-libs/lib3
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-refresh:
-        specifier: 0.14.2
-        version: 0.14.2
+        specifier: 0.16.0
+        version: 0.16.0
       vue:
         specifier: 3.5.8
         version: 3.5.8(typescript@5.4.5)
     devDependencies:
       '@lingui/swc-plugin':
         specifier: ^4.1.0
-        version: 4.1.0(@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.2.0))(babel-plugin-macros@3.1.0)(typescript@5.4.5))(@swc/core@1.7.40(@swc/helpers@0.5.1))
+        version: 4.1.0(@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.3.1))(babel-plugin-macros@3.1.0)(typescript@5.4.5))(@swc/core@1.7.40(@swc/helpers@0.5.1))
       '@rspack/cli':
         specifier: ^1.0.14
         version: 1.0.14(@rspack/core@1.0.14(@swc/helpers@0.5.1))(@types/express@4.17.21)(webpack@5.96.1(@swc/core@1.7.40(@swc/helpers@0.5.1)))
@@ -1334,10 +1334,10 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.1)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.14.2)
+        version: 1.0.0(react-refresh@0.16.0)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       web-vitals:
         specifier: ^2.1.4
         version: 2.1.4
@@ -1362,10 +1362,10 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.1)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.14.2)
+        version: 1.0.0(react-refresh@0.16.0)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       web-vitals:
         specifier: ^2.1.4
         version: 2.1.4
@@ -1572,11 +1572,11 @@ importers:
         specifier: ^4.0.2
         version: 4.0.2(webpack@5.96.1)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
 
   rspack/lightingcss-loader:
     devDependencies:
@@ -1596,8 +1596,8 @@ importers:
         specifier: 1.10.4
         version: 1.10.4
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
     devDependencies:
       '@babel/preset-env':
         specifier: 7.25.8
@@ -1683,11 +1683,11 @@ importers:
         specifier: ^3.0.6
         version: 3.3.1
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@rspack/cli':
         specifier: ^1.0.14
@@ -1697,13 +1697,13 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.15)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.14.2)
+        version: 1.0.0(react-refresh@0.16.0)
       html-webpack-plugin:
         specifier: ^5.6.3
         version: 5.6.3(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       serve:
         specifier: 14.1.2
         version: 14.1.2
@@ -1711,11 +1711,11 @@ importers:
   rspack/module-federation-interop/rspack-mf-v1.5:
     dependencies:
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@rspack/cli':
         specifier: ^1.0.14
@@ -1725,13 +1725,13 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.15)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.14.2)
+        version: 1.0.0(react-refresh@0.16.0)
       html-webpack-plugin:
         specifier: ^5.6.3
         version: 5.6.3(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       serve:
         specifier: 14.1.2
         version: 14.1.2
@@ -1739,11 +1739,11 @@ importers:
   rspack/module-federation-interop/webpack-mf:
     dependencies:
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.25.8
@@ -1753,7 +1753,7 @@ importers:
         version: 7.24.7(@babel/core@7.25.8)
       '@pmmmwh/react-refresh-webpack-plugin':
         specifier: ^0.5.15
-        version: 0.5.15(@types/webpack@5.28.5(webpack-cli@4.10.0(webpack-dev-server@5.0.4)(webpack@5.93.0)))(react-refresh@0.14.2)(type-fest@4.18.2)(webpack-dev-server@5.0.4(webpack-cli@4.10.0)(webpack@5.93.0))(webpack-hot-middleware@2.26.1)(webpack@5.93.0(webpack-cli@4.10.0))
+        version: 0.5.15(@types/webpack@5.28.5(webpack-cli@4.10.0(webpack-dev-server@5.0.4)(webpack@5.93.0)))(react-refresh@0.16.0)(type-fest@4.18.2)(webpack-dev-server@5.0.4(webpack-cli@4.10.0)(webpack@5.93.0))(webpack-hot-middleware@2.26.1)(webpack@5.93.0(webpack-cli@4.10.0))
       babel-loader:
         specifier: ^9.1.3
         version: 9.1.3(@babel/core@7.25.8)(webpack@5.93.0(webpack-cli@4.10.0))
@@ -1761,8 +1761,8 @@ importers:
         specifier: ^5.6.3
         version: 5.6.3(@rspack/core@1.1.4)(webpack@5.93.0(webpack-cli@4.10.0))
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       serve:
         specifier: 14.1.2
         version: 14.1.2
@@ -1783,11 +1783,11 @@ importers:
         specifier: ^3.0.6
         version: 3.3.1
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@rspack/cli':
         specifier: ^1.0.14
@@ -1797,13 +1797,13 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.15)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.14.2)
+        version: 1.0.0(react-refresh@0.16.0)
       html-webpack-plugin:
         specifier: ^5.6.3
         version: 5.6.3(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       serve:
         specifier: 14.1.2
         version: 14.1.2
@@ -1814,11 +1814,11 @@ importers:
         specifier: ^3.0.6
         version: 3.3.1
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@rspack/cli':
         specifier: ^1.0.14
@@ -1828,13 +1828,13 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.15)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.14.2)
+        version: 1.0.0(react-refresh@0.16.0)
       html-webpack-plugin:
         specifier: ^5.6.3
         version: 5.6.3(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       serve:
         specifier: 14.1.2
         version: 14.1.2
@@ -1848,11 +1848,11 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@rspack/cli':
         specifier: ^1.0.14
@@ -1862,10 +1862,10 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.15)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.14.2)
+        version: 1.0.0(react-refresh@0.16.0)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       serve:
         specifier: 14.1.2
         version: 14.1.2
@@ -1876,11 +1876,11 @@ importers:
         specifier: ^3.0.6
         version: 3.3.1
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@rspack/cli':
         specifier: ^1.0.14
@@ -1890,13 +1890,13 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.15)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.14.2)
+        version: 1.0.0(react-refresh@0.16.0)
       html-webpack-plugin:
         specifier: ^5.6.3
         version: 5.6.3(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       serve:
         specifier: 14.1.2
         version: 14.1.2
@@ -1907,11 +1907,11 @@ importers:
         specifier: ^3.0.6
         version: 3.3.1
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@rspack/cli':
         specifier: ^1.0.14
@@ -1921,13 +1921,13 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.15)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.14.2)
+        version: 1.0.0(react-refresh@0.16.0)
       html-webpack-plugin:
         specifier: ^5.6.3
         version: 5.6.3(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       serve:
         specifier: 14.1.2
         version: 14.1.2
@@ -1941,11 +1941,11 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@rspack/cli':
         specifier: ^1.0.14
@@ -1955,10 +1955,10 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.15)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.14.2)
+        version: 1.0.0(react-refresh@0.16.0)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
       serve:
         specifier: 14.1.2
         version: 14.1.2
@@ -1985,14 +1985,14 @@ importers:
         specifier: ^0.39.0
         version: 0.39.0
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-refresh:
-        specifier: 0.13.0
-        version: 0.13.0
+        specifier: 0.16.0
+        version: 0.16.0
     devDependencies:
       '@rspack/core':
         specifier: ^1.0.14
@@ -2222,14 +2222,14 @@ importers:
         specifier: 0.5.1
         version: 0.5.1
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-refresh:
-        specifier: 0.14.2
-        version: 0.14.2
+        specifier: 0.16.0
+        version: 0.16.0
     devDependencies:
       '@rspack/core':
         specifier: ^1.0.14
@@ -2250,8 +2250,8 @@ importers:
         specifier: 15.7.0
         version: 15.7.0(react@15.7.0)
       react-refresh:
-        specifier: 0.14.2
-        version: 0.14.2
+        specifier: 0.16.0
+        version: 0.16.0
     devDependencies:
       '@rspack/core':
         specifier: ^1.0.14
@@ -2263,14 +2263,14 @@ importers:
         specifier: ^1.0.14
         version: 1.0.14(@rspack/core@1.0.14(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.96.1)
       react:
-        specifier: 15.0.0
-        version: 15.0.0
+        specifier: 15.7.0
+        version: 15.7.0
       react-dom:
-        specifier: 15.0.0
-        version: 15.0.0(react@15.0.0)
+        specifier: 15.7.0
+        version: 15.7.0(react@15.7.0)
       react-refresh:
-        specifier: 0.14.2
-        version: 0.14.2
+        specifier: 0.16.0
+        version: 0.16.0
     devDependencies:
       '@rspack/core':
         specifier: ^1.0.14
@@ -2288,8 +2288,8 @@ importers:
         specifier: 19.0.0-rc-fb9a90fa48-20240614
         version: 19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614)
       react-refresh:
-        specifier: 0.14.2
-        version: 0.14.2
+        specifier: 0.16.0
+        version: 0.16.0
     devDependencies:
       '@babel/plugin-syntax-jsx':
         specifier: ^7.24.7
@@ -2319,8 +2319,8 @@ importers:
         specifier: 19.0.0-rc-fb9a90fa48-20240614
         version: 19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614)
       react-refresh:
-        specifier: 0.14.2
-        version: 0.14.2
+        specifier: 0.16.0
+        version: 0.16.0
     devDependencies:
       '@babel/plugin-syntax-jsx':
         specifier: ^7.24.7
@@ -2353,11 +2353,11 @@ importers:
   rspack/react-refresh:
     dependencies:
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@rspack/cli':
         specifier: ^1.0.14
@@ -2367,19 +2367,19 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.15)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.13.0)
+        version: 1.0.0(react-refresh@0.16.0)
       react-refresh:
-        specifier: 0.13.0
-        version: 0.13.0
+        specifier: 0.16.0
+        version: 0.16.0
 
   rspack/react-refresh-babel-loader:
     dependencies:
       react:
-        specifier: 18.0.0
-        version: 18.0.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.0.0
-        version: 18.0.0(react@18.0.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.25.8
@@ -2398,13 +2398,13 @@ importers:
         version: 1.0.14(@swc/helpers@0.5.15)
       '@rspack/plugin-react-refresh':
         specifier: ^1.0.0
-        version: 1.0.0(react-refresh@0.13.0)
+        version: 1.0.0(react-refresh@0.16.0)
       babel-loader:
         specifier: ^9.1.3
         version: 9.1.3(@babel/core@7.25.8)(webpack@5.96.1)
       react-refresh:
-        specifier: 0.13.0
-        version: 0.13.0
+        specifier: 0.16.0
+        version: 0.16.0
 
   rspack/react-with-extract-css:
     dependencies:
@@ -2434,8 +2434,8 @@ importers:
         specifier: ^1.0.14
         version: 1.0.14(@swc/helpers@0.5.1)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
 
   rspack/react-with-less:
     dependencies:
@@ -2462,8 +2462,8 @@ importers:
         specifier: ^1.0.14
         version: 1.0.14(@swc/helpers@0.5.1)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
 
   rspack/react-with-sass:
     dependencies:
@@ -2487,8 +2487,8 @@ importers:
         specifier: ^1.0.14
         version: 1.0.14(@swc/helpers@0.5.1)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
 
   rspack/rspack-manifest-plugin:
     devDependencies:
@@ -2592,8 +2592,8 @@ importers:
         specifier: ^1.0.14
         version: 1.0.14(@swc/helpers@0.5.1)
       react-refresh:
-        specifier: ^0.14.2
-        version: 0.14.2
+        specifier: ^0.16.0
+        version: 0.16.0
 
   rspack/svelte:
     devDependencies:
@@ -2646,11 +2646,11 @@ importers:
         specifier: 0.5.1
         version: 0.5.1
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@rspack/cli':
         specifier: ^1.0.14
@@ -14113,11 +14113,6 @@ packages:
     peerDependencies:
       react: '*'
 
-  react-dom@15.0.0:
-    resolution: {integrity: sha512-+qO3prkZTb6o3SSq1a9Vn8UGla88N+m4pkZyXoEWmc9paX0cscwwN0jD1czmyTqAKr1/aDULlvShwVl1+1eRFw==}
-    peerDependencies:
-      react: ^15.0.0
-
   react-dom@15.7.0:
     resolution: {integrity: sha512-mpjXqC2t1FuYsILOLCj0kg6pbg460byZkVA/80VtDmKU/pYmoTdHOtaMcTRIDiyXLz4sIur0cQ04nOC6iGndJg==}
     peerDependencies:
@@ -14127,16 +14122,6 @@ packages:
     resolution: {integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==}
     peerDependencies:
       react: 17.0.2
-
-  react-dom@18.0.0:
-    resolution: {integrity: sha512-XqX7uzmFo0pUceWFCt7Gff6IyIMzFUn7QMZrbrQfGxtaxXZIcGQzoNpRLE3fQLnS4XzLLPMZX2T9TRcSrasicw==}
-    peerDependencies:
-      react: ^18.0.0
-
-  react-dom@18.2.0:
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
-    peerDependencies:
-      react: ^18.2.0
 
   react-dom@18.3.1:
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
@@ -14207,12 +14192,12 @@ packages:
       react-native:
         optional: true
 
-  react-refresh@0.13.0:
-    resolution: {integrity: sha512-XP8A9BT0CpRBD+NYLLeIhld/RqG9+gktUjW1FkE+Vm7OCinbG1SshcK5tb9ls4kzvjZr9mOQc7HYgBngEyPAXg==}
-    engines: {node: '>=0.10.0'}
-
   react-refresh@0.14.2:
     resolution: {integrity: sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==}
+    engines: {node: '>=0.10.0'}
+
+  react-refresh@0.16.0:
+    resolution: {integrity: sha512-FPvF2XxTSikpJxcr+bHut2H4gJ17+18Uy20D5/F+SKzFap62R3cM5wH6b8WN3LyGSYeQilLEcJcR1fjBSI2S1A==}
     engines: {node: '>=0.10.0'}
 
   react-router-dom@5.3.4:
@@ -14267,24 +14252,12 @@ packages:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
 
-  react@15.0.0:
-    resolution: {integrity: sha512-ikk6A/iuBjdayJWcDk5U07Wgya84ck/3z0FiomGtE/X2pTang13AzFVfHJh2SJd+14Oc6HfqvMKHfFJF5Biwew==}
-    engines: {node: '>=0.10.0'}
-
   react@15.7.0:
     resolution: {integrity: sha512-5/MMRYmpmM0sMTHGLossnJCrmXQIiJilD6y3YN3TzAwGFj6zdnMtFv6xmi65PHKRV+pehIHpT7oy67Sr6s9AHA==}
     engines: {node: '>=0.10.0'}
 
   react@17.0.2:
     resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
-    engines: {node: '>=0.10.0'}
-
-  react@18.0.0:
-    resolution: {integrity: sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A==}
-    engines: {node: '>=0.10.0'}
-
-  react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
 
   react@18.3.1:
@@ -14843,9 +14816,6 @@ packages:
 
   scheduler@0.20.2:
     resolution: {integrity: sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==}
-
-  scheduler@0.21.0:
-    resolution: {integrity: sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==}
 
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
@@ -20451,14 +20421,14 @@ snapshots:
       '@lingui/message-utils': 4.11.4
       unraw: 3.0.0
 
-  '@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.2.0))(babel-plugin-macros@3.1.0)(typescript@5.4.5)':
+  '@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.3.1))(babel-plugin-macros@3.1.0)(typescript@5.4.5)':
     dependencies:
       '@babel/runtime': 7.24.4
       '@babel/types': 7.26.0
       '@lingui/conf': 4.11.4(typescript@5.4.5)
       '@lingui/core': 4.11.4
       '@lingui/message-utils': 4.11.4
-      '@lingui/react': 4.11.4(react@18.2.0)
+      '@lingui/react': 4.11.4(react@18.3.1)
       babel-plugin-macros: 3.1.0
     transitivePeerDependencies:
       - typescript
@@ -20468,15 +20438,15 @@ snapshots:
       '@messageformat/parser': 5.1.0
       js-sha256: 0.10.1
 
-  '@lingui/react@4.11.4(react@18.2.0)':
+  '@lingui/react@4.11.4(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.4
       '@lingui/core': 4.11.4
-      react: 18.2.0
+      react: 18.3.1
 
-  '@lingui/swc-plugin@4.1.0(@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.2.0))(babel-plugin-macros@3.1.0)(typescript@5.4.5))(@swc/core@1.7.40(@swc/helpers@0.5.1))':
+  '@lingui/swc-plugin@4.1.0(@lingui/macro@4.11.4(@lingui/react@4.11.4(react@18.3.1))(babel-plugin-macros@3.1.0)(typescript@5.4.5))(@swc/core@1.7.40(@swc/helpers@0.5.1))':
     dependencies:
-      '@lingui/macro': 4.11.4(@lingui/react@4.11.4(react@18.2.0))(babel-plugin-macros@3.1.0)(typescript@5.4.5)
+      '@lingui/macro': 4.11.4(@lingui/react@4.11.4(react@18.3.1))(babel-plugin-macros@3.1.0)(typescript@5.4.5)
     optionalDependencies:
       '@swc/core': 1.7.40(@swc/helpers@0.5.1)
 
@@ -21416,14 +21386,14 @@ snapshots:
       webpack-dev-server: 4.13.1(webpack@5.95.0)
       webpack-hot-middleware: 2.26.1
 
-  '@pmmmwh/react-refresh-webpack-plugin@0.5.15(@types/webpack@5.28.5(webpack-cli@4.10.0(webpack-dev-server@5.0.4)(webpack@5.93.0)))(react-refresh@0.14.2)(type-fest@4.18.2)(webpack-dev-server@5.0.4(webpack-cli@4.10.0)(webpack@5.93.0))(webpack-hot-middleware@2.26.1)(webpack@5.93.0(webpack-cli@4.10.0))':
+  '@pmmmwh/react-refresh-webpack-plugin@0.5.15(@types/webpack@5.28.5(webpack-cli@4.10.0(webpack-dev-server@5.0.4)(webpack@5.93.0)))(react-refresh@0.16.0)(type-fest@4.18.2)(webpack-dev-server@5.0.4(webpack-cli@4.10.0)(webpack@5.93.0))(webpack-hot-middleware@2.26.1)(webpack@5.93.0(webpack-cli@4.10.0))':
     dependencies:
       ansi-html: 0.0.9
       core-js-pure: 3.36.0
       error-stack-parser: 2.1.4
       html-entities: 2.4.0
       loader-utils: 2.0.4
-      react-refresh: 0.14.2
+      react-refresh: 0.16.0
       schema-utils: 4.2.0
       source-map: 0.7.4
       webpack: 5.93.0(webpack-cli@4.10.0)
@@ -23315,19 +23285,19 @@ snapshots:
     optionalDependencies:
       react-refresh: 0.14.2
 
-  '@rspack/plugin-react-refresh@1.0.0(react-refresh@0.13.0)':
-    dependencies:
-      error-stack-parser: 2.1.4
-      html-entities: 2.4.0
-    optionalDependencies:
-      react-refresh: 0.13.0
-
   '@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.2)':
     dependencies:
       error-stack-parser: 2.1.4
       html-entities: 2.4.0
     optionalDependencies:
       react-refresh: 0.14.2
+
+  '@rspack/plugin-react-refresh@1.0.0(react-refresh@0.16.0)':
+    dependencies:
+      error-stack-parser: 2.1.4
+      html-entities: 2.4.0
+    optionalDependencies:
+      react-refresh: 0.16.0
 
   '@rspress/core@1.28.2(webpack@5.96.1)':
     dependencies:
@@ -33027,10 +32997,6 @@ snapshots:
       reactcss: 1.2.3(react@17.0.2)
       tinycolor2: 1.6.0
 
-  react-dom@15.0.0(react@15.0.0):
-    dependencies:
-      react: 15.0.0
-
   react-dom@15.7.0(react@15.7.0):
     dependencies:
       fbjs: 0.8.18
@@ -33045,18 +33011,6 @@ snapshots:
       object-assign: 4.1.1
       react: 17.0.2
       scheduler: 0.20.2
-
-  react-dom@18.0.0(react@18.0.0):
-    dependencies:
-      loose-envify: 1.4.0
-      react: 18.0.0
-      scheduler: 0.21.0
-
-  react-dom@18.2.0(react@18.2.0):
-    dependencies:
-      loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.2
 
   react-dom@18.3.1(react@18.3.1):
     dependencies:
@@ -33134,9 +33088,9 @@ snapshots:
     optionalDependencies:
       react-dom: 17.0.2(react@17.0.2)
 
-  react-refresh@0.13.0: {}
-
   react-refresh@0.14.2: {}
+
+  react-refresh@0.16.0: {}
 
   react-router-dom@5.3.4(react@17.0.2):
     dependencies:
@@ -33217,12 +33171,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  react@15.0.0:
-    dependencies:
-      fbjs: 0.8.18
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-
   react@15.7.0:
     dependencies:
       create-react-class: 15.7.0
@@ -33235,14 +33183,6 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-
-  react@18.0.0:
-    dependencies:
-      loose-envify: 1.4.0
-
-  react@18.2.0:
-    dependencies:
-      loose-envify: 1.4.0
 
   react@18.3.1:
     dependencies:
@@ -33822,10 +33762,6 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-
-  scheduler@0.21.0:
-    dependencies:
-      loose-envify: 1.4.0
 
   scheduler@0.23.2:
     dependencies:
