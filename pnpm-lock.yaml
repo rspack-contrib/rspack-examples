@@ -43,8 +43,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@swc/plugin-emotion':
         specifier: ^3.0.13
         version: 3.0.13
@@ -116,8 +116,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -144,8 +144,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -169,8 +169,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -188,8 +188,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -223,8 +223,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -248,8 +248,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -276,8 +276,8 @@ importers:
         specifier: ^1.0.3
         version: 1.0.3(@rsbuild/core@1.1.8)
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -307,8 +307,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(@rsbuild/core@1.1.8)(eslint@8.57.1)
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -344,8 +344,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@swc/core':
         specifier: ^1.10.0
         version: 1.10.0(@swc/helpers@0.5.15)
@@ -396,8 +396,8 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2(@rsbuild/core@1.1.8)(webpack@5.96.1)
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -421,8 +421,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/node':
         specifier: ^20
         version: 20.12.12
@@ -455,8 +455,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@tailwindcss/postcss':
         specifier: 4.0.0-alpha.20
         version: 4.0.0-alpha.20(postcss@8.4.49)
@@ -504,8 +504,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/node':
         specifier: ^20
         version: 20.12.12
@@ -554,8 +554,8 @@ importers:
         specifier: 1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: 1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: 1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -579,8 +579,8 @@ importers:
         specifier: 1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: 1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: 1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/express':
         specifier: ^4.17.21
         version: 4.17.21
@@ -610,8 +610,8 @@ importers:
         specifier: 1.1.7
         version: 1.1.7
       '@rsbuild/plugin-react':
-        specifier: 1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.7)
+        specifier: 1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.7)
       '@types/express':
         specifier: ^4.17.21
         version: 4.17.21
@@ -644,8 +644,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@rsbuild/plugin-styled-components':
         specifier: ^1.1.0
         version: 1.1.0(@rsbuild/core@1.1.8)
@@ -675,8 +675,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@swc/plugin-styled-jsx':
         specifier: ^2.0.16
         version: 2.0.16
@@ -706,8 +706,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -765,8 +765,8 @@ importers:
         specifier: ^1.1.8
         version: 1.1.8
       '@rsbuild/plugin-react':
-        specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.1.8)
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.1.8)
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -6145,8 +6145,8 @@ packages:
     peerDependencies:
       '@rsbuild/core': ^1.0.1-beta.16
 
-  '@rsbuild/plugin-react@1.0.7':
-    resolution: {integrity: sha512-t7T/GqDwodusTAnxGpqVRnQ/G+HYh98zk71qIg19WkjVJJGv57AC1Ppx0/6zzbZAbxU60bfK8TeEEXjhXCdSxA==}
+  '@rsbuild/plugin-react@1.1.0':
+    resolution: {integrity: sha512-uqdRoV2V91G1XIA14dAmxqYTlTDVf0ktpE7TgwG29oQ2j+DerF1kh29WPHK9HvGE34JTfaBrsme2Zmb6bGD0cw==}
     peerDependencies:
       '@rsbuild/core': 1.x
 
@@ -21012,17 +21012,17 @@ snapshots:
       '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.2)
       react-refresh: 0.14.2
 
-  '@rsbuild/plugin-react@1.0.7(@rsbuild/core@1.1.7)':
+  '@rsbuild/plugin-react@1.1.0(@rsbuild/core@1.1.7)':
     dependencies:
       '@rsbuild/core': 1.1.7
-      '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.2)
-      react-refresh: 0.14.2
+      '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.16.0)
+      react-refresh: 0.16.0
 
-  '@rsbuild/plugin-react@1.0.7(@rsbuild/core@1.1.8)':
+  '@rsbuild/plugin-react@1.1.0(@rsbuild/core@1.1.8)':
     dependencies:
       '@rsbuild/core': 1.1.8
-      '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.2)
-      react-refresh: 0.14.2
+      '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.16.0)
+      react-refresh: 0.16.0
 
   '@rsbuild/plugin-rem@0.5.1(@rsbuild/core@0.5.1)(@swc/helpers@0.5.3)':
     dependencies:
