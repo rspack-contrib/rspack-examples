@@ -36,10 +36,10 @@
 			"groupSlug": "types"
 		},
 		{
-			"groupName": "all patch dependencies",
-			"groupSlug": "all-patch",
+			"groupName": "all non-major dependencies",
+			"groupSlug": "all-non-major",
 			"matchPackagePatterns": ["*"],
-			"matchUpdateTypes": ["patch"]
+			"matchUpdateTypes": ["patch", "minor"]
 		},
 		// manually update peer dependencies
 		{
@@ -48,16 +48,9 @@
 		}
 	],
 	"ignoreDeps": [
-		// manually update some packages
-		"pnpm",
-		"esbuild",
-		// related to the SWC version built into Rspack
-		"@swc/helpers",
 		// vue 2 and vue-loader v15
 		"vue",
 		"vue-loader",
-		// some loaders still depend on loader-utils v2
-		"loader-utils",
 		// pure esm packages can not be used now
 		"globby",
 		"open",
@@ -65,11 +58,6 @@
 		"ansi-escapes",
 		"cli-truncate",
 		"patch-console",
-		// buffer v6 has compatibility issues as node polyfill
-		"buffer",
-		// align Node.js version minimum requirements
-		"@types/node",
-		"node",
 		// does not follow semver
 		"babel-plugin-react-compiler",
 		// canary package
