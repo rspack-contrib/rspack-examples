@@ -15,7 +15,7 @@
     "@rspack/cli": "^1.1.8",
     "@rspack/core": "^1.1.8",
     "css-loader": "^6.11.0",
-    "less": "4.1.3",
+    "less": "4.2.1",
     "less-loader": "^11.1.4",
     "style-loader": "^3.3.4",
     "vue-loader": "^17.2.2"
