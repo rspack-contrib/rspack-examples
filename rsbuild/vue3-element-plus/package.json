@@ -8,7 +8,7 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "element-plus": "^2.7.2",
+    "element-plus": "^2.9.1",
     "vue": "^3.4.19"
   },
   "devDependencies": {
