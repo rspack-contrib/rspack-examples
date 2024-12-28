@@ -1052,8 +1052,8 @@ importers:
         specifier: ^4.1.2
         version: 4.10.1
       css-loader:
-        specifier: ^6.7.1
-        version: 6.10.0(@rspack/core@1.0.14(@swc/helpers@0.5.1))(webpack@5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1)))
+        specifier: ^6.11.0
+        version: 6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.1))(webpack@5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1)))
       html-rspack-plugin:
         specifier: ^6.0.2
         version: 6.0.2(@rspack/core@1.0.14(@swc/helpers@0.5.1))
@@ -1065,7 +1065,7 @@ importers:
         version: 2.8.1(webpack@5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1)))
       postcss-loader:
         specifier: 7.0.2
-        version: 7.0.2(postcss@8.4.41)(webpack@5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1)))
+        version: 7.0.2(postcss@8.4.49)(webpack@5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1)))
       react-refresh:
         specifier: ^0.16.0
         version: 0.16.0
@@ -1655,8 +1655,8 @@ importers:
         specifier: 9.2.1
         version: 9.2.1(@babel/core@7.26.0)(webpack@5.96.1)
       css-loader:
-        specifier: 6.7.3
-        version: 6.7.3(webpack@5.96.1)
+        specifier: 6.11.0
+        version: 6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
       file-loader:
         specifier: 6.2.0
         version: 6.2.0(webpack@5.96.1)
@@ -2858,8 +2858,8 @@ importers:
         specifier: ^1.0.14
         version: 1.0.14(@swc/helpers@0.5.15)
       css-loader:
-        specifier: ^6.7.4
-        version: 6.10.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
+        specifier: ^6.11.0
+        version: 6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
       less:
         specifier: 4.1.3
         version: 4.1.3
@@ -2871,7 +2871,7 @@ importers:
         version: 2.7.14
       vue-loader:
         specifier: ^15.11.0
-        version: 15.11.1(@vue/compiler-sfc@3.5.8)(css-loader@6.10.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1))(ejs@3.1.9)(handlebars@4.7.8)(lodash@4.17.21)(pug@3.0.2)(webpack@5.96.1)
+        version: 15.11.1(@vue/compiler-sfc@3.5.8)(css-loader@6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1))(ejs@3.1.9)(handlebars@4.7.8)(lodash@4.17.21)(pug@3.0.2)(webpack@5.96.1)
       vue-style-loader:
         specifier: ^4.1.3
         version: 4.1.3
@@ -2885,8 +2885,8 @@ importers:
         specifier: ^1.0.14
         version: 1.0.14(@swc/helpers@0.5.15)
       css-loader:
-        specifier: ^6.7.4
-        version: 6.10.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
+        specifier: ^6.11.0
+        version: 6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
       less:
         specifier: 4.1.3
         version: 4.1.3
@@ -2898,7 +2898,7 @@ importers:
         version: 2.7.14
       vue-loader:
         specifier: ^15.10.1
-        version: 15.11.1(@vue/compiler-sfc@3.5.8)(css-loader@6.10.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1))(ejs@3.1.9)(handlebars@4.7.8)(lodash@4.17.21)(pug@3.0.2)(webpack@5.96.1)
+        version: 15.11.1(@vue/compiler-sfc@3.5.8)(css-loader@6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1))(ejs@3.1.9)(handlebars@4.7.8)(lodash@4.17.21)(pug@3.0.2)(webpack@5.96.1)
       vue-style-loader:
         specifier: ^4.1.3
         version: 4.1.3
@@ -3003,8 +3003,8 @@ importers:
         specifier: ^1.0.14
         version: 1.0.14(@swc/helpers@0.5.15)
       css-loader:
-        specifier: ^6.8.1
-        version: 6.10.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
+        specifier: ^6.11.0
+        version: 6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
       less:
         specifier: 4.1.3
         version: 4.1.3
@@ -9917,8 +9917,8 @@ packages:
     peerDependencies:
       postcss: ^8.0.9
 
-  css-loader@6.10.0:
-    resolution: {integrity: sha512-LTSA/jWbwdMlk+rhmElbDR2vbtQoTBPr7fkJE+mxrHj+7ru0hUmHafDRzWIjIHTwpitWVaqY2/UWGRca3yUgRw==}
+  css-loader@6.11.0:
+    resolution: {integrity: sha512-CTJ+AEQJjq5NzLga5pE39qdiSV56F8ywCIsqNIRF0r7BDgWsN25aazToqAFg7ZrtA/U016xudB3ffgweORxX7g==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
       '@rspack/core': 0.x || 1.x
@@ -9928,12 +9928,6 @@ packages:
         optional: true
       webpack:
         optional: true
-
-  css-loader@6.7.3:
-    resolution: {integrity: sha512-qhOH1KlBMnZP8FzRO6YCH9UHXQhVMcEGLyNdb7Hv2cpcmJbW0YrddO+tG1ab5nT41KpHIYGsbeHqxB9xPu1pKQ==}
-    engines: {node: '>= 12.13.0'}
-    peerDependencies:
-      webpack: ^5.0.0
 
   css-loader@7.1.2:
     resolution: {integrity: sha512-6WvYYn7l/XEGN8Xu2vWFt9nVzrCn39vKyTEFf/ExEyoksJjjSZV/0/35XPlMbpnr6VGhZIUg5yJrL8tGfes/FA==}
@@ -14162,10 +14156,6 @@ packages:
 
   postcss@8.4.38:
     resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
-    engines: {node: ^10 || ^12 || >=14}
-
-  postcss@8.4.41:
-    resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.4.49:
@@ -27035,35 +27025,7 @@ snapshots:
     dependencies:
       postcss: 8.4.49
 
-  css-loader@6.10.0(@rspack/core@1.0.14(@swc/helpers@0.5.1))(webpack@5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1))):
-    dependencies:
-      icss-utils: 5.1.0(postcss@8.4.41)
-      postcss: 8.4.41
-      postcss-modules-extract-imports: 3.1.0(postcss@8.4.41)
-      postcss-modules-local-by-default: 4.0.5(postcss@8.4.41)
-      postcss-modules-scope: 3.2.0(postcss@8.4.41)
-      postcss-modules-values: 4.0.0(postcss@8.4.41)
-      postcss-value-parser: 4.2.0
-      semver: 7.6.3
-    optionalDependencies:
-      '@rspack/core': 1.0.14(@swc/helpers@0.5.1)
-      webpack: 5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1))
-
-  css-loader@6.10.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1):
-    dependencies:
-      icss-utils: 5.1.0(postcss@8.4.41)
-      postcss: 8.4.41
-      postcss-modules-extract-imports: 3.1.0(postcss@8.4.41)
-      postcss-modules-local-by-default: 4.0.5(postcss@8.4.41)
-      postcss-modules-scope: 3.2.0(postcss@8.4.41)
-      postcss-modules-values: 4.0.0(postcss@8.4.41)
-      postcss-value-parser: 4.2.0
-      semver: 7.6.3
-    optionalDependencies:
-      '@rspack/core': 1.0.14(@swc/helpers@0.5.15)
-      webpack: 5.96.1
-
-  css-loader@6.7.3(webpack@5.96.1):
+  css-loader@6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.1))(webpack@5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1))):
     dependencies:
       icss-utils: 5.1.0(postcss@8.4.49)
       postcss: 8.4.49
@@ -27073,6 +27035,22 @@ snapshots:
       postcss-modules-values: 4.0.0(postcss@8.4.49)
       postcss-value-parser: 4.2.0
       semver: 7.6.3
+    optionalDependencies:
+      '@rspack/core': 1.0.14(@swc/helpers@0.5.1)
+      webpack: 5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1))
+
+  css-loader@6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1):
+    dependencies:
+      icss-utils: 5.1.0(postcss@8.4.49)
+      postcss: 8.4.49
+      postcss-modules-extract-imports: 3.1.0(postcss@8.4.49)
+      postcss-modules-local-by-default: 4.0.5(postcss@8.4.49)
+      postcss-modules-scope: 3.2.0(postcss@8.4.49)
+      postcss-modules-values: 4.0.0(postcss@8.4.49)
+      postcss-value-parser: 4.2.0
+      semver: 7.6.3
+    optionalDependencies:
+      '@rspack/core': 1.0.14(@swc/helpers@0.5.15)
       webpack: 5.96.1
 
   css-loader@7.1.2(@rspack/core@1.0.14(@swc/helpers@0.5.1))(webpack@5.96.1):
@@ -29349,10 +29327,6 @@ snapshots:
   iconv-lite@0.6.3:
     dependencies:
       safer-buffer: 2.1.2
-
-  icss-utils@5.1.0(postcss@8.4.41):
-    dependencies:
-      postcss: 8.4.41
 
   icss-utils@5.1.0(postcss@8.4.49):
     dependencies:
@@ -32224,11 +32198,11 @@ snapshots:
       postcss: 8.4.49
       ts-node: 10.9.2(@swc/core@1.10.1(@swc/helpers@0.5.15))(@types/node@20.12.12)(typescript@5.4.5)
 
-  postcss-loader@7.0.2(postcss@8.4.41)(webpack@5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1))):
+  postcss-loader@7.0.2(postcss@8.4.49)(webpack@5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1))):
     dependencies:
       cosmiconfig: 7.1.0
       klona: 2.0.6
-      postcss: 8.4.41
+      postcss: 8.4.49
       semver: 7.6.3
       webpack: 5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1))
 
@@ -32306,20 +32280,9 @@ snapshots:
       postcss: 8.4.49
       postcss-selector-parser: 6.1.2
 
-  postcss-modules-extract-imports@3.1.0(postcss@8.4.41):
-    dependencies:
-      postcss: 8.4.41
-
   postcss-modules-extract-imports@3.1.0(postcss@8.4.49):
     dependencies:
       postcss: 8.4.49
-
-  postcss-modules-local-by-default@4.0.5(postcss@8.4.41):
-    dependencies:
-      icss-utils: 5.1.0(postcss@8.4.41)
-      postcss: 8.4.41
-      postcss-selector-parser: 6.1.2
-      postcss-value-parser: 4.2.0
 
   postcss-modules-local-by-default@4.0.5(postcss@8.4.49):
     dependencies:
@@ -32328,20 +32291,10 @@ snapshots:
       postcss-selector-parser: 6.1.2
       postcss-value-parser: 4.2.0
 
-  postcss-modules-scope@3.2.0(postcss@8.4.41):
-    dependencies:
-      postcss: 8.4.41
-      postcss-selector-parser: 6.1.2
-
   postcss-modules-scope@3.2.0(postcss@8.4.49):
     dependencies:
       postcss: 8.4.49
       postcss-selector-parser: 6.1.2
-
-  postcss-modules-values@4.0.0(postcss@8.4.41):
-    dependencies:
-      icss-utils: 5.1.0(postcss@8.4.41)
-      postcss: 8.4.41
 
   postcss-modules-values@4.0.0(postcss@8.4.49):
     dependencies:
@@ -32476,12 +32429,6 @@ snapshots:
       source-map-js: 1.2.1
 
   postcss@8.4.38:
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.1.1
-      source-map-js: 1.2.0
-
-  postcss@8.4.41:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.1.1
@@ -35494,10 +35441,10 @@ snapshots:
 
   vue-hot-reload-api@2.3.4: {}
 
-  vue-loader@15.11.1(@vue/compiler-sfc@3.5.8)(css-loader@6.10.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1))(ejs@3.1.9)(handlebars@4.7.8)(lodash@4.17.21)(pug@3.0.2)(webpack@5.96.1):
+  vue-loader@15.11.1(@vue/compiler-sfc@3.5.8)(css-loader@6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1))(ejs@3.1.9)(handlebars@4.7.8)(lodash@4.17.21)(pug@3.0.2)(webpack@5.96.1):
     dependencies:
       '@vue/component-compiler-utils': 3.3.0(ejs@3.1.9)(handlebars@4.7.8)(lodash@4.17.21)(pug@3.0.2)
-      css-loader: 6.10.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
+      css-loader: 6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.15))(webpack@5.96.1)
       hash-sum: 1.0.2
       loader-utils: 1.4.2
       vue-hot-reload-api: 2.3.4
