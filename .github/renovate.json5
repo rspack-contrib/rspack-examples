@@ -48,8 +48,6 @@
 		}
 	],
 	"ignoreDeps": [
-		// manually update some packages
-		"pnpm",
 		// vue 2 and vue-loader v15
 		"vue",
 		"vue-loader",
