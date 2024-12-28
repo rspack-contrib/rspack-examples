@@ -54,7 +54,7 @@
     "@rspack/plugin-react-refresh": "^1.0.1",
     "@svgr/webpack": "^6.5.1",
     "@swc/core": "^1.10.1",
-    "bundle-stats": "^4.1.2",
+    "bundle-stats": "^4.17.0",
     "css-loader": "^6.11.0",
     "html-rspack-plugin": "^6.0.2",
     "less-loader": "^11.1.4",

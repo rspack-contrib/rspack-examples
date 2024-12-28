@@ -1049,8 +1049,8 @@ importers:
         specifier: ^1.10.1
         version: 1.10.1(@swc/helpers@0.5.1)
       bundle-stats:
-        specifier: ^4.1.2
-        version: 4.10.1
+        specifier: ^4.17.0
+        version: 4.17.0
       css-loader:
         specifier: ^6.11.0
         version: 6.11.0(@rspack/core@1.0.14(@swc/helpers@0.5.1))(webpack@5.96.1(@swc/core@1.10.1(@swc/helpers@0.5.1)))
@@ -4604,25 +4604,25 @@ packages:
   '@bufbuild/protobuf@1.10.0':
     resolution: {integrity: sha512-QDdVFLoN93Zjg36NoQPZfsVH9tZew7wKDKyV5qRdj8ntT4wQCOradQjRaTdwMhWUYsgKsvCINKKm87FdEk96Ag==}
 
-  '@bundle-stats/cli-utils@4.10.1':
-    resolution: {integrity: sha512-7d5N2WCL/vEZjgFcoMAlOs7FmRX5hJyw/ExtvlBzF1a987JnIZHQzUeChZIpeUm2WSGp0lgV8E9i5cc3zMcA6A==}
+  '@bundle-stats/cli-utils@4.17.0':
+    resolution: {integrity: sha512-JIQBOda71sEyDOfJ0/YIIatwVnEB8UsbyFmHbTZXMqVhPU7ddnRzmYmPgmnqPkhqss3tjArTHGS+HIL9Kvs7Cw==}
     engines: {node: '>= 14.0'}
 
-  '@bundle-stats/html-templates@4.10.1':
-    resolution: {integrity: sha512-2WmFlQpg3/u1nsf6qAjT1qyD0Bb/Q3KDVr53JarLQSF62ZB7ga/IxZD7dJy+uEN8lqEJMt3I/EpOqxQGw+b/hA==}
+  '@bundle-stats/html-templates@4.17.0':
+    resolution: {integrity: sha512-B9AYHV1hyioS8S5qpWmP7vEn1npBWJHV/tSEHRFQTJOpGZdn6L0jHyzvofRvopqirTff++UpVS3TelN+Elh/tQ==}
 
-  '@bundle-stats/plugin-webpack-filter@4.10.1':
-    resolution: {integrity: sha512-iHwlas9Z1HT5mCpj6bdJl6b8iHWm2NC/0nxI/idAWLENBaNDYY+jk5UXFQUibyg8m23JlyB/7VjLnVl2/ikwMQ==}
+  '@bundle-stats/plugin-webpack-filter@4.17.0':
+    resolution: {integrity: sha512-sGC1c7oiRNKY19OLNB2Yha88Yt+UC7OJWlk8O6HBvN/OO8ACvZ6DuxRMNBXMyP0cDDAJlcY9v9rzy0bbnegzAw==}
     engines: {node: '>= 14.0'}
     peerDependencies:
       core-js: ^3.0.0
 
-  '@bundle-stats/plugin-webpack-validate@4.10.1':
-    resolution: {integrity: sha512-fw5RdvGqyb4H7Z5ErpQREqcW0VobukTJrQgVghQoGwKZWOnjwNMbvLf9EsIsioTAJgJq72f0lmZOKJ+3Akdg/Q==}
+  '@bundle-stats/plugin-webpack-validate@4.17.0':
+    resolution: {integrity: sha512-dsCAIYiQ1ohRt7wyR5gfQCT3OKLjHxRZ3F/uL0gnBO56+xnvDzO/s+A5QO4EerlXIRIUBW8JWWuYAhe8ccdFjA==}
     engines: {node: '>= 14.0'}
 
-  '@bundle-stats/utils@4.10.1':
-    resolution: {integrity: sha512-pgePVsrbZfiFYQDTprOjy29QhiO2v5y/KScwu1MVjZikBO7pLlowdm5fkhlmzVaWIhhDJYdPsgZncQkaNweSeg==}
+  '@bundle-stats/utils@4.17.0':
+    resolution: {integrity: sha512-0/8/hebdV7QzPBZW7uyKClWpSsxVsQ/DfDwmNkmXSOq45eTeVNXozyvdYgwmLz0Ff9tVMyXu0Kb6iAVL6Hpt+g==}
     engines: {node: '>= 14.0'}
     peerDependencies:
       core-js: ^3.0.0
@@ -9192,8 +9192,8 @@ packages:
     peerDependencies:
       esbuild: '>=0.18'
 
-  bundle-stats@4.10.1:
-    resolution: {integrity: sha512-YWRAUX5VY8JzvQRD0UIFeFd9J+P/sm2i39hiwNKrmhv2jFh+eIOn5VEzkaQ/HwTtDDFRGyaI9hg6jWtdNOVECg==}
+  bundle-stats@4.17.0:
+    resolution: {integrity: sha512-zs4PirBFmmYD0wGKOkYPNY+h1vpDbLY0a++gMAaC2NSQYyzGhC+v0sZThV/w4A1wPX898xjHBcwzY8t6zHh7kw==}
     engines: {node: '>= 14.0'}
     hasBin: true
 
@@ -9825,9 +9825,6 @@ packages:
   core-js@1.2.7:
     resolution: {integrity: sha512-ZiPp9pZlgxpWRu0M+YWbm6+aQ84XEfH1JRXvfOc/fILWI0VKhLC2LX13X1NYq4fULzLMq7Hfh43CSo2/aIaUPA==}
     deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
-
-  core-js@3.30.1:
-    resolution: {integrity: sha512-ZNS5nbiSwDTq4hFosEDqm65izl2CWmLz0hARJMyNQBgkUZMIF51cQiMvIQKA6hvuaeWxQDP3hEedM1JZIgTldQ==}
 
   core-js@3.36.1:
     resolution: {integrity: sha512-BTvUrwxVBezj5SZ3f10ImnX2oRByMxql3EimVqMysepbC9EeMUOpLwdy6Eoili2x6E4kf+ZUB5k/+Jv55alPfA==}
@@ -15515,6 +15512,9 @@ packages:
   stream-chain@2.2.5:
     resolution: {integrity: sha512-1TJmBx6aSWqZ4tx7aTpBDXK0/e2hhcNSTV8+CbFJtDjbb+I1mZ8lHit0Grw9GRT+6JbIrrDd8esncgBi8aBXGA==}
 
+  stream-chain@3.3.2:
+    resolution: {integrity: sha512-YvRznt2X9tLSQlQXkYxp9FGcp6uUwBG9VAyjgo53Ov+Ctk36R49xB6NUia37T7owHyi3UtvI6achAj4ufBSaNg==}
+
   stream-each@1.2.3:
     resolution: {integrity: sha512-vlMC2f8I2u/bZGqkdfLQW/13Zihpej/7PmSiMQsbYddxuTsJp8vRe2x2FvVExZg7FaOds43ROAuFJwPR4MTZLw==}
 
@@ -15725,8 +15725,8 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
-  superstruct@1.0.3:
-    resolution: {integrity: sha512-8iTn3oSS8nRGn+C2pgXSKPI3jmpm6FExNazNpjvqS6ZUJQCej3PUXEKM8NjHBOs54ExM+LPW/FBRhymrdcCiSg==}
+  superstruct@2.0.2:
+    resolution: {integrity: sha512-uV+TFRZdXsqXTL2pRvujROjdZQ4RAlBUS5BTh9IGm+jTqQntYThciG/qu57Gs69yjnVUSqdxF9YLmSnpupBW9A==}
     engines: {node: '>=14.0.0'}
 
   supports-color@2.0.0:
@@ -19313,34 +19313,34 @@ snapshots:
 
   '@bufbuild/protobuf@1.10.0': {}
 
-  '@bundle-stats/cli-utils@4.10.1(core-js@3.30.1)':
+  '@bundle-stats/cli-utils@4.17.0(core-js@3.39.0)':
     dependencies:
-      '@bundle-stats/html-templates': 4.10.1
-      '@bundle-stats/plugin-webpack-filter': 4.10.1(core-js@3.30.1)
-      '@bundle-stats/utils': 4.10.1(core-js@3.30.1)(lodash@4.17.21)
+      '@bundle-stats/html-templates': 4.17.0
+      '@bundle-stats/plugin-webpack-filter': 4.17.0(core-js@3.39.0)
+      '@bundle-stats/utils': 4.17.0(core-js@3.39.0)(lodash@4.17.21)
       find-cache-dir: 3.3.2
       lodash: 4.17.21
-      stream-chain: 2.2.5
+      stream-chain: 3.3.2
       stream-json: 1.8.0
     transitivePeerDependencies:
       - core-js
 
-  '@bundle-stats/html-templates@4.10.1': {}
+  '@bundle-stats/html-templates@4.17.0': {}
 
-  '@bundle-stats/plugin-webpack-filter@4.10.1(core-js@3.30.1)':
+  '@bundle-stats/plugin-webpack-filter@4.17.0(core-js@3.39.0)':
     dependencies:
-      core-js: 3.30.1
+      core-js: 3.39.0
 
-  '@bundle-stats/plugin-webpack-validate@4.10.1':
+  '@bundle-stats/plugin-webpack-validate@4.17.0':
     dependencies:
       lodash: 4.17.21
-      superstruct: 1.0.3
+      superstruct: 2.0.2
 
-  '@bundle-stats/utils@4.10.1(core-js@3.30.1)(lodash@4.17.21)':
+  '@bundle-stats/utils@4.17.0(core-js@3.39.0)(lodash@4.17.21)':
     dependencies:
-      '@bundle-stats/plugin-webpack-filter': 4.10.1(core-js@3.30.1)
-      '@bundle-stats/plugin-webpack-validate': 4.10.1
-      core-js: 3.30.1
+      '@bundle-stats/plugin-webpack-filter': 4.17.0(core-js@3.39.0)
+      '@bundle-stats/plugin-webpack-validate': 4.17.0
+      core-js: 3.39.0
       lodash: 4.17.21
       serialize-query-params: 2.0.2
 
@@ -26410,14 +26410,14 @@ snapshots:
       esbuild: 0.24.2
       load-tsconfig: 0.2.5
 
-  bundle-stats@4.10.1:
+  bundle-stats@4.17.0:
     dependencies:
-      '@bundle-stats/cli-utils': 4.10.1(core-js@3.30.1)
-      '@bundle-stats/plugin-webpack-filter': 4.10.1(core-js@3.30.1)
-      '@bundle-stats/plugin-webpack-validate': 4.10.1
-      '@bundle-stats/utils': 4.10.1(core-js@3.30.1)(lodash@4.17.21)
+      '@bundle-stats/cli-utils': 4.17.0(core-js@3.39.0)
+      '@bundle-stats/plugin-webpack-filter': 4.17.0(core-js@3.39.0)
+      '@bundle-stats/plugin-webpack-validate': 4.17.0
+      '@bundle-stats/utils': 4.17.0(core-js@3.39.0)(lodash@4.17.21)
       boxen: 5.1.2
-      core-js: 3.30.1
+      core-js: 3.39.0
       fs-extra: 11.2.0
       listr2: 5.0.8
       lodash: 4.17.21
@@ -26905,8 +26905,6 @@ snapshots:
   core-js-pure@3.36.0: {}
 
   core-js@1.2.7: {}
-
-  core-js@3.30.1: {}
 
   core-js@3.36.1: {}
 
@@ -30383,7 +30381,7 @@ snapshots:
       colorette: 2.0.20
       log-update: 4.0.0
       p-map: 4.0.0
-      rfdc: 1.3.1
+      rfdc: 1.4.1
       rxjs: 7.8.1
       through: 2.3.8
       wrap-ansi: 7.0.0
@@ -33999,6 +33997,8 @@ snapshots:
 
   stream-chain@2.2.5: {}
 
+  stream-chain@3.3.2: {}
+
   stream-each@1.2.3:
     dependencies:
       end-of-stream: 1.4.4
@@ -34260,7 +34260,7 @@ snapshots:
       pirates: 4.0.6
       ts-interface-checker: 0.1.13
 
-  superstruct@1.0.3: {}
+  superstruct@2.0.2: {}
 
   supports-color@2.0.0: {}
 
