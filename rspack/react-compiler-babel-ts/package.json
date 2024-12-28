@@ -9,7 +9,7 @@
     "dev": "rspack serve"
   },
   "dependencies": {
-    "@swc/helpers": "0.5.1",
+    "@swc/helpers": "^0.5.15",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-refresh": "0.16.0"
@@ -17,8 +17,8 @@
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.25.9",
     "@babel/plugin-syntax-typescript": "^7.25.9",
-    "@rspack/cli": "^1.0.14",
-    "@rspack/core": "^1.0.14",
+    "@rspack/cli": "^1.1.8",
+    "@rspack/core": "^1.1.8",
     "@types/react": "^18.3.16",
     "@types/react-dom": "^18.3.5",
     "babel-loader": "^9.2.1",

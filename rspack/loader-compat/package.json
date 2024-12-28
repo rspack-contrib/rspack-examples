@@ -15,8 +15,8 @@
   "devDependencies": {
     "@babel/preset-env": "7.26.0",
     "@mdx-js/loader": "2.3.0",
-    "@rspack/cli": "^1.0.14",
-    "@rspack/core": "^1.0.14",
+    "@rspack/cli": "^1.1.8",
+    "@rspack/core": "^1.1.8",
     "@svgr/webpack": "6.5.1",
     "autoprefixer": "10.4.20",
     "babel-loader": "9.2.1",
