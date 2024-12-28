@@ -2160,8 +2160,8 @@ importers:
   rspack/polyfill:
     dependencies:
       core-js:
-        specifier: 3.30.1
-        version: 3.30.1
+        specifier: 3.39.0
+        version: 3.39.0
     devDependencies:
       '@rspack/cli':
         specifier: ^1.0.14
