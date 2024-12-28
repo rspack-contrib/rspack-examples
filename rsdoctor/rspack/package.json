@@ -1,0 +1,26 @@
+{
+  "name": "rsdoctor-rspack",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development rspack serve",
+    "build": "NODE_ENV=production rspack build",
+    "build:analysis": "RSDOCTOR=true NODE_ENV=production rspack build"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "semver6": "npm:semver@6.3.1",
+    "semver7": "npm:semver@7.5.4"
+  },
+  "devDependencies": {
+    "@rsdoctor/rspack-plugin": "^0.4.12",
+    "@rspack/cli": "^1.1.1",
+    "@rspack/core": "^1.1.1",
+    "@rspack/plugin-react-refresh": "^1.0.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "react-refresh": "^0.14.0"
+  }
+}

@@ -16,7 +16,5 @@
     "jsx": "preserve",
     "resolveJsonModule": true,
     "moduleResolution": "Bundler"
-  },
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Base"
+  }
 }
