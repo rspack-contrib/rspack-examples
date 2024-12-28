@@ -9,7 +9,7 @@
     "dev": "rspack serve"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.0.14",
-    "@rspack/core": "^1.0.14"
+    "@rspack/cli": "^1.1.8",
+    "@rspack/core": "^1.1.8"
   }
 }

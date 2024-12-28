@@ -19,7 +19,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.1.10",
+    "@rsbuild/core": "^1.1.13",
     "@rsbuild/plugin-react": "^1.1.0",
     "@types/node": "^20",
     "@types/react": "^18.3.16",
