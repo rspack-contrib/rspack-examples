@@ -874,8 +874,8 @@ importers:
   rsbuild/vue3-element-plus:
     dependencies:
       element-plus:
-        specifier: ^2.7.2
-        version: 2.7.2(vue@3.5.8(typescript@5.4.5))
+        specifier: ^2.9.1
+        version: 2.9.1(vue@3.5.8(typescript@5.4.5))
       vue:
         specifier: ^3.4.19
         version: 3.5.8(typescript@5.4.5)
@@ -7717,9 +7717,6 @@ packages:
     resolution: {integrity: sha512-39BOQLs9ZjKh0/patS9nrT8wc3ioX3/eA/zgbKNopnF2wCqJEoxywwwElATYvRsXdnOxA/OQeQoFZ3rFjVajhg==}
     engines: {node: '>=4.0'}
 
-  dayjs@1.11.12:
-    resolution: {integrity: sha512-Rt2g+nTbLlDWZTwwrIXjy9MeiZmSDI375FvZs72ngxx8PDC6YXOeR3q5LAuPzjZQxhiWdRKac7RKV+YyQYfYIg==}
-
   dayjs@1.11.13:
     resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
 
@@ -8006,8 +8003,8 @@ packages:
   electron-to-chromium@1.5.41:
     resolution: {integrity: sha512-dfdv/2xNjX0P8Vzme4cfzHqnPm5xsZXwsolTYr0eyW18IUmNyG08vL+fttvinTfhKfIKdRoqkDIC9e9iWQCNYQ==}
 
-  element-plus@2.7.2:
-    resolution: {integrity: sha512-AdEzBU/A68iUleio0MkQ46JeU5SeQvFFd915GJFScJmUEo5AmYg3OQ4pVjcu+p3b3Nupg9MC5Wa4xjAiC51kUg==}
+  element-plus@2.9.1:
+    resolution: {integrity: sha512-9Agqf/jt4Ugk7EZ6C5LME71sgkvauPCsnvJN12Xid2XVobjufxMGpRE4L7pS4luJMOmFAH3J0NgYEGZT5r+NDg==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -19717,8 +19714,6 @@ snapshots:
 
   date-format@4.0.14: {}
 
-  dayjs@1.11.12: {}
-
   dayjs@1.11.13: {}
 
   de-indent@1.0.2:
@@ -19973,7 +19968,7 @@ snapshots:
 
   electron-to-chromium@1.5.41: {}
 
-  element-plus@2.7.2(vue@3.5.8(typescript@5.4.5)):
+  element-plus@2.9.1(vue@3.5.8(typescript@5.4.5)):
     dependencies:
       '@ctrl/tinycolor': 3.6.1
       '@element-plus/icons-vue': 2.3.1(vue@3.5.8(typescript@5.4.5))
@@ -19983,7 +19978,7 @@ snapshots:
       '@types/lodash-es': 4.17.12
       '@vueuse/core': 9.13.0(vue@3.5.8(typescript@5.4.5))
       async-validator: 4.2.5
-      dayjs: 1.11.12
+      dayjs: 1.11.13
       escape-html: 1.0.3
       lodash: 4.17.21
       lodash-es: 4.17.21
