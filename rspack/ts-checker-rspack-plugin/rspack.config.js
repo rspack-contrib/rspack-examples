@@ -1,8 +1,8 @@
 const { defineConfig } = require('@rspack/cli');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const { TsCheckerRspackPlugin } = require('ts-checker-rspack-plugin');
 
 module.exports = defineConfig({
-  plugins: [new ForkTsCheckerWebpackPlugin()],
+  plugins: [new TsCheckerRspackPlugin()],
   module: {
     rules: [
       {
