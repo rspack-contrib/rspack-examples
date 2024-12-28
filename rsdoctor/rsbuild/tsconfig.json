@@ -4,7 +4,7 @@
     "target": "ES2019",
     "lib": ["DOM", "ESNext"],
     "allowJs": true,
-    "module": "NodeNext",
+    "module": "ES2020",
     "outDir": "dist",
     "baseUrl": ".",
     "strict": true,
@@ -15,8 +15,6 @@
     "noUnusedParameters": true,
     "jsx": "preserve",
     "resolveJsonModule": true,
-    "moduleResolution": "NodeNext"
-  },
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Base"
+    "moduleResolution": "Bundler"
+  }
 }

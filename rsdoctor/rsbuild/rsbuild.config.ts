@@ -5,8 +5,14 @@ import { RsdoctorRspackPlugin } from '@rsdoctor/rspack-plugin';
 export default defineConfig({
   plugins: [pluginReact()],
   tools: {
-    bundlerChain: (chain) => {
-      process.env.RSDOCTOR === 'true' && chain.plugin('Rsdoctor').use(RsdoctorRspackPlugin, [{}]);
+    rspack: (config, { appendPlugins }) => {
+      if (process.env.RSDOCTOR === 'true') {
+        appendPlugins(
+          new RsdoctorRspackPlugin({
+            // options
+          }),
+        );
+      }
     },
   },
 });

@@ -1,9 +1,9 @@
 {
-  "name": "@examples/doctor-rsbuild-minimal",
+  "name": "rsdoctor-rsbuild",
   "version": "0.0.1",
   "license": "MIT",
-  "files": ["dist", "src", "package.json"],
   "scripts": {
+    "dev": "rsbuild dev",
     "build": "rsbuild build",
     "build:analysis": "RSDOCTOR=true rsbuild build"
   },
@@ -14,9 +14,9 @@
     "semver7": "npm:semver@7.5.4"
   },
   "devDependencies": {
-    "@rsbuild/core": "0.7.10",
-    "@rsbuild/plugin-react": "0.7.10",
-    "@rsdoctor/rspack-plugin": "^0.3.11",
+    "@rsbuild/core": "^1.1.13",
+    "@rsbuild/plugin-react": "^1.1.0",
+    "@rsdoctor/rspack-plugin": "^0.4.12",
     "@types/react": "^18.3.16",
     "@types/react-dom": "^18.3.5",
     "@types/semver6": "npm:@types/semver@7.5.8",
