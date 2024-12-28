@@ -7,6 +7,6 @@
   "devDependencies": {
     "@rspack/cli": "1.1.8",
     "@rspack/core": "1.1.8",
-    "terser-webpack-plugin": "5.3.10"
+    "terser-webpack-plugin": "5.3.11"
   }
 }
