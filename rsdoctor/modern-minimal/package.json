@@ -14,7 +14,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@modern-js/app-tools": "2.48.3",
+    "@modern-js/app-tools": "2.63.4",
     "@modern-js/runtime": "2.48.3",
     "@rsdoctor/rspack-plugin": "^0.3.11",
     "@types/node": "^20",
