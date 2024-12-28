@@ -772,7 +772,7 @@ importers:
         version: 1.1.13
       '@rsbuild/plugin-svelte':
         specifier: ^1.0.7
-        version: 1.0.7(@babel/core@7.26.0)(@rsbuild/core@1.1.13)(less@4.2.1)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(pug@3.0.2)(sass@1.69.7)(stylus@0.59.0)(svelte@4.2.19)(typescript@5.4.5)
+        version: 1.0.7(@babel/core@7.26.0)(@rsbuild/core@1.1.13)(less@4.2.1)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(pug@3.0.2)(sass@1.69.7)(stylus@0.64.0)(svelte@4.2.19)(typescript@5.4.5)
       typescript:
         specifier: ^5.3.0
         version: 5.4.5
@@ -815,7 +815,7 @@ importers:
         version: 18.3.5(@types/react@18.3.18)
       '@vanilla-extract/webpack-plugin':
         specifier: ^2.3.16
-        version: 2.3.16(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.37.0)(webpack@5.96.1)
+        version: 2.3.16(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.64.0)(terser@5.37.0)(webpack@5.96.1)
       typescript:
         specifier: ^5.3.0
         version: 5.4.5
@@ -1500,11 +1500,11 @@ importers:
         specifier: 3.3.4
         version: 3.3.4(webpack@5.96.1)
       stylus:
-        specifier: 0.59.0
-        version: 0.59.0
+        specifier: 0.64.0
+        version: 0.64.0
       stylus-loader:
         specifier: 7.1.3
-        version: 7.1.3(stylus@0.59.0)(webpack@5.96.1)
+        version: 7.1.3(stylus@0.64.0)(webpack@5.96.1)
       svg-react-loader:
         specifier: 0.4.6
         version: 0.4.6
@@ -2627,7 +2627,7 @@ importers:
         version: 1.6.3(@vanilla-extract/css@1.17.0(babel-plugin-macros@3.1.0))
       '@vanilla-extract/webpack-plugin':
         specifier: ^2.3.16
-        version: 2.3.16(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.37.0)(webpack@5.96.1)
+        version: 2.3.16(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.64.0)(terser@5.37.0)(webpack@5.96.1)
       html-webpack-plugin:
         specifier: ^5.6.3
         version: 5.6.3(@rspack/core@1.1.8(@swc/helpers@0.5.15))(webpack@5.96.1)
@@ -8441,6 +8441,10 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
+  glob@10.4.5:
+    resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
+    hasBin: true
+
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
     deprecated: Glob versions prior to v9 are no longer supported
@@ -9155,6 +9159,9 @@ packages:
   jackspeak@2.3.6:
     resolution: {integrity: sha512-N3yCS/NegsOBokc8GAdM8UcmfsKiSS8cipheD/nivzr700H+nsMOxJjQnvwOcRYVuFkdH0wGUvW2WbXGmrZGbQ==}
     engines: {node: '>=14'}
+
+  jackspeak@3.4.3:
+    resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
 
   jake@10.8.7:
     resolution: {integrity: sha512-ZDi3aP+fG/LchyBzUM804VjddnwfSfsdeYkwt8NcbKRvo4rFkjhs456iLFn3k2ZUWvNe4i48WACDbza8fhq2+w==}
@@ -10160,6 +10167,10 @@ packages:
     resolution: {integrity: sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==}
     engines: {node: '>=16 || 14 >=14.17'}
 
+  minipass@7.1.2:
+    resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
+    engines: {node: '>=16 || 14 >=14.17'}
+
   minizlib@2.1.2:
     resolution: {integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==}
     engines: {node: '>= 8'}
@@ -10455,6 +10466,9 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
+  package-json-from-dist@1.0.1:
+    resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
+
   pako@1.0.11:
     resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
 
@@ -10541,6 +10555,10 @@ packages:
   path-scurry@1.10.1:
     resolution: {integrity: sha512-MkhCqzzBEpPvxxQ71Md0b1Kk51W01lrYvlMzSUaIzNsODdd7mqhiimSZlr+VegAz5Z6Vzt9Xg2ttE//XBhH3EQ==}
     engines: {node: '>=16 || 14 >=14.17'}
+
+  path-scurry@1.11.1:
+    resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
+    engines: {node: '>=16 || 14 >=14.18'}
 
   path-to-regexp@0.1.12:
     resolution: {integrity: sha512-RA1GjUVMnvYFxuqovrEqZoxxW5NUZqbwKtYz/Tt7nXerk0LbLblQmrsgdeOxV5SFHf0UDggjS/bSeOZwt1pmEQ==}
@@ -11522,11 +11540,11 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  sax@1.2.4:
-    resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
-
   sax@1.3.0:
     resolution: {integrity: sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==}
+
+  sax@1.4.1:
+    resolution: {integrity: sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg==}
 
   saxes@6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
@@ -12051,8 +12069,9 @@ packages:
       stylus: '>=0.52.4'
       webpack: ^5.0.0
 
-  stylus@0.59.0:
-    resolution: {integrity: sha512-lQ9w/XIOH5ZHVNuNbWW8D822r+/wBSO/d6XvtyHLF7LW4KaCIDeVbvn5DF8fGCJAUCwVhVi/h6J0NUcnylUEjg==}
+  stylus@0.64.0:
+    resolution: {integrity: sha512-ZIdT8eUv8tegmqy1tTIdJv9We2DumkNZFdCF5mz/Kpq3OcTaxSuCAYZge6HKK2CmNC02G1eJig2RV7XTw5hQrA==}
+    engines: {node: '>=16'}
     hasBin: true
 
   sucrase@3.35.0:
@@ -15643,11 +15662,11 @@ snapshots:
     optionalDependencies:
       '@rsbuild/core': 1.1.13
 
-  '@rsbuild/plugin-svelte@1.0.7(@babel/core@7.26.0)(@rsbuild/core@1.1.13)(less@4.2.1)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(pug@3.0.2)(sass@1.69.7)(stylus@0.59.0)(svelte@4.2.19)(typescript@5.4.5)':
+  '@rsbuild/plugin-svelte@1.0.7(@babel/core@7.26.0)(@rsbuild/core@1.1.13)(less@4.2.1)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(pug@3.0.2)(sass@1.69.7)(stylus@0.64.0)(svelte@4.2.19)(typescript@5.4.5)':
     dependencies:
       '@rsbuild/core': 1.1.13
       svelte-loader: 3.2.4(svelte@4.2.19)
-      svelte-preprocess: 6.0.3(@babel/core@7.26.0)(less@4.2.1)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(pug@3.0.2)(sass@1.69.7)(stylus@0.59.0)(svelte@4.2.19)(typescript@5.4.5)
+      svelte-preprocess: 6.0.3(@babel/core@7.26.0)(less@4.2.1)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(pug@3.0.2)(sass@1.69.7)(stylus@0.64.0)(svelte@4.2.19)(typescript@5.4.5)
     transitivePeerDependencies:
       - '@babel/core'
       - coffeescript
@@ -17102,7 +17121,7 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@vanilla-extract/integration@7.1.12(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.37.0)':
+  '@vanilla-extract/integration@7.1.12(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.64.0)(terser@5.37.0)':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/plugin-syntax-typescript': 7.25.9(@babel/core@7.26.0)
@@ -17114,8 +17133,8 @@ snapshots:
       find-up: 5.0.0
       javascript-stringify: 2.1.0
       mlly: 1.5.0
-      vite: 5.1.3(@types/node@20.12.12)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.37.0)
-      vite-node: 1.3.0(@types/node@20.12.12)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.37.0)
+      vite: 5.1.3(@types/node@20.12.12)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.64.0)(terser@5.37.0)
+      vite-node: 1.3.0(@types/node@20.12.12)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.64.0)(terser@5.37.0)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -17133,9 +17152,9 @@ snapshots:
     dependencies:
       '@vanilla-extract/css': 1.17.0(babel-plugin-macros@3.1.0)
 
-  '@vanilla-extract/webpack-plugin@2.3.16(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.37.0)(webpack@5.96.1)':
+  '@vanilla-extract/webpack-plugin@2.3.16(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.64.0)(terser@5.37.0)(webpack@5.96.1)':
     dependencies:
-      '@vanilla-extract/integration': 7.1.12(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.37.0)
+      '@vanilla-extract/integration': 7.1.12(@types/node@20.12.12)(babel-plugin-macros@3.1.0)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.64.0)(terser@5.37.0)
       debug: 4.4.0(supports-color@5.5.0)
       loader-utils: 2.0.4
       picocolors: 1.1.1
@@ -20102,6 +20121,15 @@ snapshots:
       minipass: 7.0.4
       path-scurry: 1.10.1
 
+  glob@10.4.5:
+    dependencies:
+      foreground-child: 3.1.1
+      jackspeak: 3.4.3
+      minimatch: 9.0.5
+      minipass: 7.1.2
+      package-json-from-dist: 1.0.1
+      path-scurry: 1.11.1
+
   glob@7.2.3:
     dependencies:
       fs.realpath: 1.0.0
@@ -20897,6 +20925,12 @@ snapshots:
   iterare@1.2.1: {}
 
   jackspeak@2.3.6:
+    dependencies:
+      '@isaacs/cliui': 8.0.2
+    optionalDependencies:
+      '@pkgjs/parseargs': 0.11.0
+
+  jackspeak@3.4.3:
     dependencies:
       '@isaacs/cliui': 8.0.2
     optionalDependencies:
@@ -22541,6 +22575,8 @@ snapshots:
 
   minipass@7.0.4: {}
 
+  minipass@7.1.2: {}
+
   minizlib@2.1.2:
     dependencies:
       minipass: 3.3.6
@@ -22858,6 +22894,8 @@ snapshots:
 
   p-try@2.2.0: {}
 
+  package-json-from-dist@1.0.1: {}
+
   pako@1.0.11: {}
 
   parallel-transform@1.2.0:
@@ -22954,6 +22992,11 @@ snapshots:
     dependencies:
       lru-cache: 10.4.3
       minipass: 7.0.4
+
+  path-scurry@1.11.1:
+    dependencies:
+      lru-cache: 10.4.3
+      minipass: 7.1.2
 
   path-to-regexp@0.1.12: {}
 
@@ -24026,9 +24069,9 @@ snapshots:
       immutable: 4.3.5
       source-map-js: 1.2.1
 
-  sax@1.2.4: {}
-
   sax@1.3.0: {}
+
+  sax@1.4.1: {}
 
   saxes@6.0.0:
     dependencies:
@@ -24684,19 +24727,19 @@ snapshots:
 
   stylis@4.3.2: {}
 
-  stylus-loader@7.1.3(stylus@0.59.0)(webpack@5.96.1):
+  stylus-loader@7.1.3(stylus@0.64.0)(webpack@5.96.1):
     dependencies:
       fast-glob: 3.3.2
       normalize-path: 3.0.0
-      stylus: 0.59.0
+      stylus: 0.64.0
       webpack: 5.96.1
 
-  stylus@0.59.0:
+  stylus@0.64.0:
     dependencies:
       '@adobe/css-tools': 4.3.3
       debug: 4.4.0(supports-color@5.5.0)
-      glob: 7.2.3
-      sax: 1.2.4
+      glob: 10.4.5
+      sax: 1.4.1
       source-map: 0.7.4
     transitivePeerDependencies:
       - supports-color
@@ -24794,7 +24837,7 @@ snapshots:
       sass: 1.69.7
       typescript: 5.4.5
 
-  svelte-preprocess@6.0.3(@babel/core@7.26.0)(less@4.2.1)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(pug@3.0.2)(sass@1.69.7)(stylus@0.59.0)(svelte@4.2.19)(typescript@5.4.5):
+  svelte-preprocess@6.0.3(@babel/core@7.26.0)(less@4.2.1)(postcss-load-config@4.0.2(postcss@8.4.49))(postcss@8.4.49)(pug@3.0.2)(sass@1.69.7)(stylus@0.64.0)(svelte@4.2.19)(typescript@5.4.5):
     dependencies:
       svelte: 4.2.19
     optionalDependencies:
@@ -24804,7 +24847,7 @@ snapshots:
       postcss-load-config: 4.0.2(postcss@8.4.49)(ts-node@10.9.2(@swc/core@1.10.3(@swc/helpers@0.5.15))(@types/node@20.12.12)(typescript@5.4.5))
       pug: 3.0.2
       sass: 1.69.7
-      stylus: 0.59.0
+      stylus: 0.64.0
       typescript: 5.4.5
 
   svelte@3.59.2: {}
@@ -25665,13 +25708,13 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-node@1.3.0(@types/node@20.12.12)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.37.0):
+  vite-node@1.3.0(@types/node@20.12.12)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.64.0)(terser@5.37.0):
     dependencies:
       cac: 6.7.14
       debug: 4.4.0(supports-color@5.5.0)
       pathe: 1.1.2
       picocolors: 1.1.1
-      vite: 5.1.3(@types/node@20.12.12)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.37.0)
+      vite: 5.1.3(@types/node@20.12.12)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.64.0)(terser@5.37.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -25682,7 +25725,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.1.3(@types/node@20.12.12)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.59.0)(terser@5.37.0):
+  vite@5.1.3(@types/node@20.12.12)(less@4.2.1)(lightningcss@1.26.0)(sass@1.69.7)(stylus@0.64.0)(terser@5.37.0):
     dependencies:
       esbuild: 0.19.3
       postcss: 8.4.49
@@ -25693,7 +25736,7 @@ snapshots:
       less: 4.2.1
       lightningcss: 1.26.0
       sass: 1.69.7
-      stylus: 0.59.0
+      stylus: 0.64.0
       terser: 5.37.0
 
   vm-browserify@1.1.2: {}
