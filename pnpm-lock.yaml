@@ -974,8 +974,8 @@ importers:
         specifier: 2.48.3
         version: 2.48.3(@rspack/core@0.5.8(@swc/helpers@0.5.3))(@types/express@4.17.21)(@types/webpack@5.28.5)(eslint@8.57.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(tsconfig-paths@4.2.0)(type-fest@2.19.0)(typescript@5.4.5)(webpack-dev-server@4.13.1(webpack@5.96.1))(webpack-hot-middleware@2.26.1)
       '@modern-js/runtime':
-        specifier: 2.48.3
-        version: 2.48.3(@types/react-dom@18.3.5(@types/react@18.3.16))(@types/react@18.3.16)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(webpack@5.96.1(esbuild@0.17.19))
+        specifier: 2.63.4
+        version: 2.63.4(@types/react-dom@18.3.5(@types/react@18.3.16))(@types/react@18.3.16)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@rsdoctor/rspack-plugin':
         specifier: ^0.3.11
         version: 0.3.11(@rspack/core@0.5.8(@swc/helpers@0.5.3))
@@ -4713,12 +4713,6 @@ packages:
       '@loadable/component': ^5.0.1
       react: ^16.3.0 || ^17.0.0 || ^18.0.0
 
-  '@loadable/webpack-plugin@5.15.2':
-    resolution: {integrity: sha512-+o87jPHn3E8sqW0aBA+qwKuG8JyIfMGdz3zECv0t/JF0KHhxXtzIlTiqzlIYc5ZpFs/vKSQfjzGIR5tPJjoXDw==}
-    engines: {node: '>=8'}
-    peerDependencies:
-      webpack: '>=4.6.0'
-
   '@lukeed/csprng@1.1.0':
     resolution: {integrity: sha512-Z7C/xXCiGWsg0KuKsHTKJxbWhpI3Vs5GwLfOean7MGyVFGqdRgBbAjOCh6u4bbjPc/8MJ2pZmK/0DLdCbivLDA==}
     engines: {node: '>=8'}
@@ -4800,9 +4794,18 @@ packages:
   '@modern-js/node-bundle-require@2.48.3':
     resolution: {integrity: sha512-RMkgwZnPB92kyF9+foRASFLYhKGwjDo66cfDaS2qOoIL9Kp50TbWK+XhSNzTDzYj3OfwQiAKQWkPeKxIwXt5Lg==}
 
+  '@modern-js/node-bundle-require@2.63.4':
+    resolution: {integrity: sha512-t2MlKuMB6Q0VKy7v5r/0LOHUATfCVG/L5IXP1hR7mf5QVeEeeYsUiQMywXo1xwPrJpd1MqcNIJgGEf6bHmzLIw==}
+
   '@modern-js/plugin-data-loader@2.48.3':
     resolution: {integrity: sha512-10krXJQ9XqMnlPIbFy37OX1I77U33FDVQV4QVF9ra0q1HYWEcjCIZKRq/3qt393AA91AdE/5sfk9K5hm7THNYw==}
     engines: {node: '>=14.17.6'}
+    peerDependencies:
+      react: '>=17.0.0'
+
+  '@modern-js/plugin-data-loader@2.63.4':
+    resolution: {integrity: sha512-7C2d3t3f7ifSt0mhnsQWj15VrmyIlj9Fyzg26SxcMlCtRrUGx8g3Wxw+NRbH3/EsONy65/kL3O00qOD4vmLznw==}
+    engines: {node: '>=16.2.0'}
     peerDependencies:
       react: '>=17.0.0'
 
@@ -4817,8 +4820,14 @@ packages:
       eslint:
         optional: true
 
+  '@modern-js/plugin-v2@2.63.4':
+    resolution: {integrity: sha512-aqqOG74f1eBDIqDR3mwyCfA2jdqpO4n2bAFnvntjeubEqaRAa6yKlGGNY+uEP9IivOdgNMxwg5NY5CbxG/EMiQ==}
+
   '@modern-js/plugin@2.48.3':
     resolution: {integrity: sha512-eEkyua75/7yQvfn6ChdBYr/M36PBQnaRInH8mik0RKFvZLdxP/q98mAyM9NnJ5QuqxfdhEqP6ACaw72PGFvWBA==}
+
+  '@modern-js/plugin@2.63.4':
+    resolution: {integrity: sha512-s+VRqF2n1Fz6m/OzDpZUZ/wZwcMXcdM5MO9+2/IOXzGemvGTDmt6RHO39/u++Xy8NjqHITlHWxNy9mhjY7sOHA==}
 
   '@modern-js/prod-server@2.48.3':
     resolution: {integrity: sha512-6N+nuQeW05Vald5ltBLJ+qlGetKQyI/fZhoYEtjaVeJ5JrKC2ZLj50zCUraxHY+Tjc5crAyrl4ZC5APWbUqWqg==}
@@ -4834,8 +4843,19 @@ packages:
       react-dom:
         optional: true
 
-  '@modern-js/runtime@2.48.3':
-    resolution: {integrity: sha512-eI+mkr6K84wgldj8qva8/UxyqOx+ZK49Nyk/PH9euWxrbZN0Afpq+rmnEpg3oqIvfJuqJl27T/yGx5hI7cSIwQ==}
+  '@modern-js/runtime-utils@2.63.4':
+    resolution: {integrity: sha512-/tX9ctT2EGIHB8mZn5ZwcfOKjZMoTn4Rg61slBF2SFDPQ21ps5ZnruXneuelaT4k9WV6VJhLZgoF6zU5iw6maQ==}
+    peerDependencies:
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
+  '@modern-js/runtime@2.63.4':
+    resolution: {integrity: sha512-djYWFtxiOaKr+I5j3FMoZVbKdI2ScwdDejhBPa2vsCpJ4XF8BMKNuTmmPIdXdsbnxwkjTxPZ0jVItbDTTGiAlQ==}
     engines: {node: '>=14.17.6'}
     peerDependencies:
       react: '>=17'
@@ -4867,6 +4887,9 @@ packages:
   '@modern-js/types@2.48.3':
     resolution: {integrity: sha512-nbUmBI1V+gT9A5p0FM8ya1Mdqwcc9OFa/v9cGNLmL4aqcgxgLSVbFunnGqfhfOFT6kLf+nViD/ZHCmm2EvEgFQ==}
 
+  '@modern-js/types@2.63.4':
+    resolution: {integrity: sha512-3yG1ekb6ITmoq7l7MlPuUf07/4LTKScvB1YyFxmFdhDjLMrmgpyZrn1twMZMvIqjZhKhSBKeO41SG3vqLf5dSw==}
+
   '@modern-js/uni-builder@2.48.3':
     resolution: {integrity: sha512-3HhCZF9bwS5adlWpdAHORcCJ7UgKD1flg23+8B/udkoBJHVWCPhLs6xrtzh83Z6cECRfMn5sLHPj3zTrAaniMg==}
 
@@ -4875,6 +4898,9 @@ packages:
 
   '@modern-js/utils@2.58.2':
     resolution: {integrity: sha512-nIT6jOdYSqNDDZq3arf8WoIcxhznTdK+AgwWZ5dqpL7IUzfUBt80MgOThttVZL8c10N0SGgbeEsQZpdpkCA+gA==}
+
+  '@modern-js/utils@2.63.4':
+    resolution: {integrity: sha512-dw9QMqCv3fl4VJV4H8gx5QV7croN23KNNX94MnoHYbUyZ1rEs9ZSRWjz8YL+Nm4Eu60qtBmuvJlqO0hibRMO4g==}
 
   '@module-federation/bridge-react-webpack-plugin@0.7.3':
     resolution: {integrity: sha512-LNg+ces5sSlHmEcw2Js1lIKXH1w/DjYFW7xIQLvbCC6ehdnK+DnAyJz0e9PBn85zjESPQ4AJK1n9yzjZCDxFhQ==}
@@ -5345,6 +5371,10 @@ packages:
 
   '@remix-run/router@1.15.1':
     resolution: {integrity: sha512-zcU0gM3z+3iqj8UX45AmWY810l3oUmXM7uH4dt5xtzvMhRtYVhKGOmgOd1877dOPPepfCjUv57w+syamWIYe7w==}
+    engines: {node: '>=14.0.0'}
+
+  '@remix-run/router@1.20.0':
+    resolution: {integrity: sha512-mUnk8rPJBI9loFDZ+YzPGdeniYK+FTmRD1TMCz7ev2SNIozyKKpnGgsxO34u6Z4z/t0ITuu7voi/AshfsGsgFg==}
     engines: {node: '>=14.0.0'}
 
   '@remix-run/router@1.7.2':
@@ -6473,6 +6503,9 @@ packages:
 
   '@swc/helpers@0.5.1':
     resolution: {integrity: sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==}
+
+  '@swc/helpers@0.5.13':
+    resolution: {integrity: sha512-UoKGxQ3r5kYI9dALKJapMmuK+1zWM/H17Z1+iwnNmzcJRnfFuevZs375TA5rW31pu4BS4NoSy1fRsexDXfWn5w==}
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -8370,6 +8403,10 @@ packages:
 
   cookie@0.6.0:
     resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
+    engines: {node: '>= 0.6'}
+
+  cookie@0.7.2:
+    resolution: {integrity: sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==}
     engines: {node: '>= 0.6'}
 
   cookies@0.9.1:
@@ -10404,6 +10441,10 @@ packages:
 
   isarray@2.0.5:
     resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
+
+  isbot@3.7.1:
+    resolution: {integrity: sha512-JfqOaY3O1lcWt2nc+D6Mq231CNpwZrBboLa59Go0J8hjGH+gY/Sy0CA/YLUSIScINmAVwTdJZIsOTk4PfBtRuw==}
+    engines: {node: '>=12'}
 
   isbot@3.8.0:
     resolution: {integrity: sha512-vne1mzQUTR+qsMLeCBL9+/tgnDXRyc2pygLGl/WsgA+EZKIiB5Ehu0CiVTHIIk30zhJ24uGz4M5Ppse37aR0Hg==}
@@ -12674,6 +12715,13 @@ packages:
       react: '>=16.8'
       react-dom: '>=16.8'
 
+  react-router-dom@6.27.0:
+    resolution: {integrity: sha512-+bvtFWMC0DgAFrfKXKG9Fc+BcXWRUO1aJIihbB79xaeq0v5UzfvnM5houGUm1Y461WVRcgAQ+Clh5rdb1eCx4g==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+
   react-router@6.22.0:
     resolution: {integrity: sha512-q2yemJeg6gw/YixRlRnVx6IRJWZD6fonnfZhN1JIOhV2iJCPeRNSH3V1ISwHf+JWcESzLC3BOLD1T07tmO5dmg==}
     engines: {node: '>=14.0.0'}
@@ -12682,6 +12730,12 @@ packages:
 
   react-router@6.22.1:
     resolution: {integrity: sha512-0pdoRGwLtemnJqn1K0XHUbnKiX0S4X8CgvVVmHGOWmofESj31msHo/1YiqcJWK7Wxfq2a4uvvtS01KAQyWK/CQ==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+
+  react-router@6.27.0:
+    resolution: {integrity: sha512-YA+HGZXz4jaAkVoYBE98VQl+nVzI+cVI2Oj/06F5ZM+0u3TgedN9Y9kmMRo2mnkSK2nCpNQn0DVob4HCsY/WLw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
@@ -16864,11 +16918,6 @@ snapshots:
       lodash: 4.17.21
       react: 18.3.1
 
-  '@loadable/webpack-plugin@5.15.2(webpack@5.96.1(esbuild@0.17.19))':
-    dependencies:
-      make-dir: 3.1.0
-      webpack: 5.96.1(esbuild@0.17.19)
-
   '@lukeed/csprng@1.1.0': {}
 
   '@mdx-js/loader@2.3.0(webpack@5.96.1)':
@@ -17077,6 +17126,12 @@ snapshots:
       '@swc/helpers': 0.5.3
       esbuild: 0.17.19
 
+  '@modern-js/node-bundle-require@2.63.4':
+    dependencies:
+      '@modern-js/utils': 2.63.4
+      '@swc/helpers': 0.5.13
+      esbuild: 0.17.19
+
   '@modern-js/plugin-data-loader@2.48.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/core': 7.26.0
@@ -17084,6 +17139,18 @@ snapshots:
       '@modern-js/utils': 2.48.3
       '@remix-run/node': 1.19.3
       '@swc/helpers': 0.5.3
+      path-to-regexp: 6.3.0
+      react: 18.3.1
+    transitivePeerDependencies:
+      - react-dom
+      - supports-color
+
+  '@modern-js/plugin-data-loader@2.63.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@babel/core': 7.26.0
+      '@modern-js/runtime-utils': 2.63.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/utils': 2.63.4
+      '@swc/helpers': 0.5.13
       path-to-regexp: 6.3.0
       react: 18.3.1
     transitivePeerDependencies:
@@ -17105,10 +17172,21 @@ snapshots:
     optionalDependencies:
       eslint: 8.57.1
 
+  '@modern-js/plugin-v2@2.63.4':
+    dependencies:
+      '@modern-js/node-bundle-require': 2.63.4
+      '@modern-js/utils': 2.63.4
+      '@swc/helpers': 0.5.13
+
   '@modern-js/plugin@2.48.3':
     dependencies:
       '@modern-js/utils': 2.48.3
       '@swc/helpers': 0.5.3
+
+  '@modern-js/plugin@2.63.4':
+    dependencies:
+      '@modern-js/utils': 2.63.4
+      '@swc/helpers': 0.5.13
 
   '@modern-js/prod-server@2.48.3(@types/express@4.17.21)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -17146,33 +17224,46 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@modern-js/runtime@2.48.3(@types/react-dom@18.3.5(@types/react@18.3.16))(@types/react@18.3.16)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(webpack@5.96.1(esbuild@0.17.19))':
+  '@modern-js/runtime-utils@2.63.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@modern-js/utils': 2.63.4
+      '@remix-run/router': 1.20.0
+      '@swc/helpers': 0.5.13
+      lru-cache: 6.0.0
+      react-router-dom: 6.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      serialize-javascript: 6.0.2
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@modern-js/runtime@2.63.4(@types/react-dom@18.3.5(@types/react@18.3.16))(@types/react@18.3.16)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/types': 7.26.0
       '@loadable/babel-plugin': 5.15.3(@babel/core@7.26.0)
       '@loadable/component': 5.15.3(react@18.3.1)
       '@loadable/server': 5.15.3(@loadable/component@5.15.3(react@18.3.1))(react@18.3.1)
-      '@loadable/webpack-plugin': 5.15.2(webpack@5.96.1(esbuild@0.17.19))
       '@modern-js-reduck/plugin-auto-actions': 1.1.11(@modern-js-reduck/store@1.1.11)
       '@modern-js-reduck/plugin-devtools': 1.1.11(@modern-js-reduck/store@1.1.11)
       '@modern-js-reduck/plugin-effects': 1.1.11(@modern-js-reduck/store@1.1.11)
       '@modern-js-reduck/plugin-immutable': 1.1.11(@modern-js-reduck/store@1.1.11)
       '@modern-js-reduck/react': 1.1.11(@types/react-dom@18.3.5(@types/react@18.3.16))(@types/react@18.3.16)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@modern-js-reduck/store': 1.1.11
-      '@modern-js/plugin': 2.48.3
-      '@modern-js/runtime-utils': 2.48.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@modern-js/types': 2.48.3
-      '@modern-js/utils': 2.48.3
-      '@remix-run/node': 1.19.3
-      '@swc/helpers': 0.5.3
+      '@modern-js/plugin': 2.63.4
+      '@modern-js/plugin-data-loader': 2.63.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/plugin-v2': 2.63.4
+      '@modern-js/runtime-utils': 2.63.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@modern-js/types': 2.63.4
+      '@modern-js/utils': 2.63.4
+      '@swc/helpers': 0.5.13
       '@types/loadable__component': 5.13.9
       '@types/react-helmet': 6.1.11
       '@types/styled-components': 5.1.34
-      cookie: 0.5.0
+      cookie: 0.7.2
+      es-module-lexer: 1.4.1
       esbuild: 0.17.19
-      hoist-non-react-statics: 3.3.2
       invariant: 2.2.4
+      isbot: 3.7.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-helmet: 6.1.0(react@18.3.1)
@@ -17183,7 +17274,6 @@ snapshots:
       - '@types/react'
       - '@types/react-dom'
       - supports-color
-      - webpack
 
   '@modern-js/server-core@2.48.3':
     dependencies:
@@ -17241,6 +17331,8 @@ snapshots:
 
   '@modern-js/types@2.48.3': {}
 
+  '@modern-js/types@2.63.4': {}
+
   '@modern-js/uni-builder@2.48.3(@babel/traverse@7.25.9)(@rspack/core@0.5.8(@swc/helpers@0.5.3))(@types/express@4.17.21)(@types/webpack@5.28.5)(esbuild@0.17.19)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(ts-node@10.9.2(@types/node@20.12.12)(typescript@5.4.5))(tsconfig-paths@4.2.0)(type-fest@2.19.0)(typescript@5.4.5)(webpack-dev-server@4.13.1(webpack@5.96.1))(webpack-hot-middleware@2.26.1)':
     dependencies:
       '@babel/core': 7.26.0
@@ -17285,7 +17377,7 @@ snapshots:
       postcss-page-break: 3.0.4(postcss@8.4.49)
       react-refresh: 0.14.2
       rspack-manifest-plugin: 5.0.0-alpha0(webpack@5.96.1(esbuild@0.17.19))
-      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.96.1)
+      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.96.1(esbuild@0.17.19))
       ts-loader: 9.4.4(typescript@5.4.5)(webpack@5.96.1(esbuild@0.17.19))
       webpack: 5.96.1(esbuild@0.17.19)
       webpack-manifest-plugin: 5.0.0(webpack@5.96.1(esbuild@0.17.19))
@@ -17331,6 +17423,13 @@ snapshots:
   '@modern-js/utils@2.58.2':
     dependencies:
       '@swc/helpers': 0.5.3
+      caniuse-lite: 1.0.30001669
+      lodash: 4.17.21
+      rslog: 1.2.2
+
+  '@modern-js/utils@2.63.4':
+    dependencies:
+      '@swc/helpers': 0.5.13
       caniuse-lite: 1.0.30001669
       lodash: 4.17.21
       rslog: 1.2.2
@@ -17849,6 +17948,8 @@ snapshots:
   '@remix-run/router@1.15.0': {}
 
   '@remix-run/router@1.15.1': {}
+
+  '@remix-run/router@1.20.0': {}
 
   '@remix-run/router@1.7.2': {}
 
@@ -19964,6 +20065,10 @@ snapshots:
   '@swc/counter@0.1.3': {}
 
   '@swc/helpers@0.5.1':
+    dependencies:
+      tslib: 2.8.1
+
+  '@swc/helpers@0.5.13':
     dependencies:
       tslib: 2.8.1
 
@@ -22171,6 +22276,8 @@ snapshots:
   cookie@0.5.0: {}
 
   cookie@0.6.0: {}
+
+  cookie@0.7.2: {}
 
   cookies@0.9.1:
     dependencies:
@@ -24708,6 +24815,8 @@ snapshots:
   isarray@1.0.0: {}
 
   isarray@2.0.5: {}
+
+  isbot@3.7.1: {}
 
   isbot@3.8.0: {}
 
@@ -27695,6 +27804,13 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-router: 6.22.1(react@18.3.1)
 
+  react-router-dom@6.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      '@remix-run/router': 1.20.0
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-router: 6.27.0(react@18.3.1)
+
   react-router@6.22.0(react@18.3.1):
     dependencies:
       '@remix-run/router': 1.15.0
@@ -27703,6 +27819,11 @@ snapshots:
   react-router@6.22.1(react@18.3.1):
     dependencies:
       '@remix-run/router': 1.15.1
+      react: 18.3.1
+
+  react-router@6.27.0(react@18.3.1):
+    dependencies:
+      '@remix-run/router': 1.20.0
       react: 18.3.1
 
   react-side-effect@2.1.2(react@18.3.1):
@@ -29240,7 +29361,7 @@ snapshots:
     optionalDependencies:
       '@swc/core': 1.10.1(@swc/helpers@0.5.15)
 
-  terser-webpack-plugin@5.3.10(esbuild@0.17.19)(webpack@5.96.1):
+  terser-webpack-plugin@5.3.10(esbuild@0.17.19)(webpack@5.96.1(esbuild@0.17.19)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
@@ -30877,7 +30998,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.96.1)
+      terser-webpack-plugin: 5.3.10(esbuild@0.17.19)(webpack@5.96.1(esbuild@0.17.19))
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:
