@@ -11,8 +11,8 @@
   "dependencies": {
     "@rspack/cli": "1.2.0-alpha.0",
     "@swc/helpers": "^0.5.15",
-    "react": "15.7.0",
-    "react-dom": "15.7.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-refresh": "0.16.0"
   },
   "devDependencies": {
