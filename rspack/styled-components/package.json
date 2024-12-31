@@ -17,8 +17,8 @@
     "styled-components": "5.3.11"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.1.8",
-    "@rspack/core": "^1.1.8",
+    "@rspack/cli": "1.2.0-alpha.0",
+    "@rspack/core": "1.2.0-alpha.0",
     "react-refresh": "^0.16.0"
   }
 }
