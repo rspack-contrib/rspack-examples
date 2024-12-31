@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@swc/helpers": "^0.5.15",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-refresh": "0.16.0"
   },
   "devDependencies": {
@@ -19,6 +19,6 @@
     "@rspack/cli": "1.2.0-alpha.0",
     "@rspack/core": "1.2.0-alpha.0",
     "babel-loader": "^9.2.1",
-    "babel-plugin-react-compiler": "0.0.0-experimental-4690415-20240515"
+    "babel-plugin-react-compiler": "0.0.0-experimental-cd3852a-20241229"
   }
 }
