@@ -2056,47 +2056,6 @@ importers:
         specifier: 1.2.0-alpha.0
         version: 1.2.0-alpha.0(@swc/helpers@0.5.15)
 
-  rspack/react-15:
-    dependencies:
-      '@rspack/cli':
-        specifier: 1.2.0-alpha.0
-        version: 1.2.0-alpha.0(@rspack/core@1.2.0-alpha.0(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.96.1)
-      '@swc/helpers':
-        specifier: ^0.5.15
-        version: 0.5.15
-      react:
-        specifier: ^19.0.0
-        version: 19.0.0
-      react-dom:
-        specifier: ^19.0.0
-        version: 19.0.0(react@19.0.0)
-      react-refresh:
-        specifier: 0.16.0
-        version: 0.16.0
-    devDependencies:
-      '@rspack/core':
-        specifier: 1.2.0-alpha.0
-        version: 1.2.0-alpha.0(@swc/helpers@0.5.15)
-
-  rspack/react-15-classic:
-    dependencies:
-      '@rspack/cli':
-        specifier: 1.2.0-alpha.0
-        version: 1.2.0-alpha.0(@rspack/core@1.2.0-alpha.0(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.96.1)
-      react:
-        specifier: ^19.0.0
-        version: 19.0.0
-      react-dom:
-        specifier: ^19.0.0
-        version: 19.0.0(react@19.0.0)
-      react-refresh:
-        specifier: 0.16.0
-        version: 0.16.0
-    devDependencies:
-      '@rspack/core':
-        specifier: 1.2.0-alpha.0
-        version: 1.2.0-alpha.0(@swc/helpers@0.5.15)
-
   rspack/react-compiler-babel:
     dependencies:
       '@swc/helpers':
