@@ -11,8 +11,8 @@
     "rspress": "^1.39.3"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18.3.18",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
     "react": "^19.0.0"
   }
 }

@@ -19,8 +19,8 @@
     "@babel/plugin-syntax-typescript": "^7.25.9",
     "@rspack/cli": "1.2.0-alpha.0",
     "@rspack/core": "1.2.0-alpha.0",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
     "babel-loader": "^9.2.1",
     "babel-plugin-react-compiler": "0.0.0-experimental-cd3852a-20241229",
     "typescript": "^5.4.5"
