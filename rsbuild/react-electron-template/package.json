@@ -1,0 +1,36 @@
+{
+  "name": "rsbuild-electron-template",
+  "version": "1.0.0",
+  "description": "Rsbuild Electron Template",
+  "main": "./release/dist/main/index.js",
+  "scripts": {
+    "dev": "npm run dev:render",
+    "dev:render": "cross-env PORT=8088 rsbuild dev --config ./builder/render/rsbuild.dev.ts",
+    "dev:main": "cross-env PORT=8088  nodemon",
+    "rebuild:main": "npm run build:main && electron ./release/dist/main/index.js",
+    "build:main": "rsbuild build --config ./builder/main/rsbuild.build.ts",
+    "build:render": "rsbuild build --config ./builder/render/rsbuild.build.ts",
+    "build": "npm run build:main &&  npm run build:render && electron-builder -c electron-builder.js ",
+    "postinstall": "electron-builder install-app-deps",
+    "package": "electron-builder build --publish never "
+  },
+  "keywords": ["rsbuild", "electron", "template", "react"],
+  "author": "Moki <2893096286@qq.com> (http://moonquakes.online)",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.0.1",
+    "@rsbuild/plugin-react": "^1.0.1",
+    "@types/node": "^20.16.5",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "cross-env": "^7.0.3",
+    "electron": "^30.5.0",
+    "electron-builder": "^24.13.3",
+    "nodemon": "^3.1.4",
+    "prebuild-install": "^7.1.2",
+    "typescript": "^5.5.4"
+  }
+}
