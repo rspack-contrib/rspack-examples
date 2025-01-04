@@ -30,6 +30,9 @@ export default defineConfig({
         test: /\.(jsx|js)$/,
         use: {
           loader: "builtin:swc-loader",
+          /**
+           * @type {import('@rspack/core').SwcLoaderOptions}
+           */
           options: {
             jsc: {
               parser: {
