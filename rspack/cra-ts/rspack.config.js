@@ -61,9 +61,6 @@ const config = {
       },
     ],
   },
-  optimization: {
-    minimize: false, // Disabling minification because it takes too long on CI
-  },
   plugins: [
     new ReactRefreshPlugin(),
     new rspack.HtmlRspackPlugin({
