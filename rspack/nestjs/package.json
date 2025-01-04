@@ -14,7 +14,7 @@
     "@nestjs/common": "^9.4.3",
     "@nestjs/core": "^9.4.3",
     "@nestjs/platform-express": "^9.4.3",
-    "reflect-metadata": "^0.1.13",
+    "reflect-metadata": "^0.2.2",
     "run-script-webpack-plugin": "0.2.0",
     "rxjs": "^7.8.1"
   },

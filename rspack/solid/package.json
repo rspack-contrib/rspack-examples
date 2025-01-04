@@ -13,8 +13,8 @@
     "@rspack/cli": "1.2.0-alpha.0",
     "babel-loader": "9.2.1",
     "babel-preset-solid": "1.9.3",
-    "solid-js": "1.6.9",
-    "solid-refresh": "0.5.2"
+    "solid-js": "1.9.3",
+    "solid-refresh": "0.7.5"
   },
   "devDependencies": {
     "@rspack/core": "1.2.0-alpha.0"

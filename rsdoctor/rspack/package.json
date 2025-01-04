@@ -12,7 +12,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "semver6": "npm:semver@6.3.1",
-    "semver7": "npm:semver@7.5.4"
+    "semver7": "npm:semver@7.6.3"
   },
   "devDependencies": {
     "@rsdoctor/rspack-plugin": "^0.4.12",

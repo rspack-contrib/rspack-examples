@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@rsbuild/core": "1.2.0-alpha.0",
-    "lit": "^3.1.2",
-    "typescript": "^5.3.0"
+    "lit": "^3.2.1",
+    "typescript": "^5.7.2"
   }
 }

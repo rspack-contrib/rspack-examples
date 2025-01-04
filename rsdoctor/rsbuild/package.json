@@ -11,7 +11,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "semver6": "npm:semver@6.3.1",
-    "semver7": "npm:semver@7.5.4"
+    "semver7": "npm:semver@7.6.3"
   },
   "devDependencies": {
     "@rsbuild/core": "1.2.0-alpha.0",
@@ -20,6 +20,6 @@
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "@types/semver6": "npm:@types/semver@7.5.8",
-    "typescript": "^5.3.0"
+    "typescript": "^5.7.2"
   }
 }

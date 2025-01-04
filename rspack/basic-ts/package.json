@@ -10,7 +10,7 @@
     "dev": "rspack serve"
   },
   "dependencies": {
-    "typescript": "^5.1.3"
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@rspack/cli": "1.2.0-alpha.0",

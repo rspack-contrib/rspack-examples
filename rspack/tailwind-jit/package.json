@@ -14,7 +14,7 @@
     "@rspack/core": "1.2.0-alpha.0",
     "autoprefixer": "10.4.20",
     "postcss": "8.4.49",
-    "postcss-loader": "7.2.3",
+    "postcss-loader": "7.3.4",
     "tailwindcss": "3.4.17"
   }
 }
