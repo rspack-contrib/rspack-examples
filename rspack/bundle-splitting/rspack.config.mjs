@@ -1,14 +1,12 @@
-const rspack = require('@rspack/core');
+// @ts-check
+import { rspack } from "@rspack/core";
+import { defineConfig } from "@rspack/cli";
 
-/** @type {import('@rspack/cli').Configuration} */
-const config = {
+export default defineConfig({
   entry: {
-    main: {
-      import: ['./index.js'],
-    },
+    main: "./index.js",
   },
   module: {
-    rules: [],
     parser: {
       asset: {
         dataUrlCondition: {
@@ -21,14 +19,12 @@ const config = {
     splitChunks: {
       cacheGroups: {
         vendor: {
-          chunks: 'all',
-          name: 'vendor',
+          chunks: "all",
+          name: "vendor",
           test: /common/,
         },
       },
     },
   },
   plugins: [new rspack.HtmlRspackPlugin()],
-};
-
-module.exports = config;
+});

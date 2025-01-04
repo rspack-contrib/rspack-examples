@@ -1,11 +1,11 @@
-const rspack = require('@rspack/core');
-/** @type {import('@rspack/cli').Configuration} */
-const config = {
+import { defineConfig } from '@rspack/cli';
+import { rspack } from '@rspack/core';
+
+export default defineConfig({
   entry: './src/index.js',
   plugins: [
     new rspack.HtmlRspackPlugin({
       template: './index.html',
     }),
   ],
-};
-module.exports = config;
+});
