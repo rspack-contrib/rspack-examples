@@ -20,6 +20,6 @@
     "@rspack/core": "1.2.0-alpha.0",
     "@rspack/plugin-react-refresh": "^1.0.1",
     "react-refresh": "^0.16.0",
-    "serve": "14.1.2"
+    "serve": "14.2.4"
   }
 }

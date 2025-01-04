@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@rspack/cli": "1.2.0-alpha.0",
-    "monaco-editor": "^0.39.0"
+    "monaco-editor": "^0.52.2"
   },
   "devDependencies": {
     "@rspack/core": "1.2.0-alpha.0"

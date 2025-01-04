@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@rspack/cli": "1.2.0-alpha.0",
-    "monaco-editor": "^0.39.0",
+    "monaco-editor": "^0.52.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-refresh": "0.16.0"
@@ -19,6 +19,6 @@
     "@rspack/core": "1.2.0-alpha.0",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
-    "typescript": "^5.1.6"
+    "typescript": "^5.7.2"
   }
 }
