@@ -7,9 +7,6 @@ const isProduction = process.env.NODE_ENV === 'production';
 const config = {
   entry: { main: './src/index.tsx' },
   devtool: false,
-  optimization: {
-    minimize: false, // Disabling minification because it takes too long on CI
-  },
   resolve: {
     extensions: ['...', '.ts', '.tsx', '.jsx'],
   },

@@ -11,9 +11,6 @@ const config = {
   resolve: {
     extensions: ['...', '.ts', '.tsx', '.jsx'],
   },
-  optimization: {
-    minimize: false, // Disabling minification because it takes too long on CI
-  },
   module: {
     rules: [
       {

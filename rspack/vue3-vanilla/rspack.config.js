@@ -10,9 +10,6 @@ const config = {
   devServer: {
     historyApiFallback: true,
   },
-  optimization: {
-    minimize: false, // Disabling minification because it takes too long on CI
-  },
   resolve: {
     extensions: ['...', '.ts', '.tsx', '.jsx'],
   },
