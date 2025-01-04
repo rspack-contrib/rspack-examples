@@ -2872,9 +2872,15 @@ importers:
       '@types/react':
         specifier: ^19.0.2
         version: 19.0.2
+      '@types/react-dom':
+        specifier: ^19.0.2
+        version: 19.0.2(@types/react@19.0.2)
       react:
         specifier: ^19.0.0
         version: 19.0.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.0.0(react@19.0.0)
 
 packages:
 
