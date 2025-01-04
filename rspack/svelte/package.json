@@ -11,7 +11,7 @@
   "devDependencies": {
     "@rspack/cli": "1.2.0-alpha.0",
     "@rspack/core": "1.2.0-alpha.0",
-    "@tsconfig/svelte": "^3.0.0",
+    "@tsconfig/svelte": "^5.0.4",
     "@types/node": "^22.10.5",
     "cross-env": "^7.0.3",
     "html-rspack-plugin": "^6.0.2",

@@ -35,7 +35,6 @@ const config = {
               compilerOptions: {
                 dev: !prod,
               },
-
               emitCss: prod,
               hotReload: !prod,
               preprocess: sveltePreprocess({ sourceMap: !prod, postcss: true }),
