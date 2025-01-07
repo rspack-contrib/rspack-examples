@@ -12,6 +12,7 @@
   "devDependencies": {
     "@rspack/cli": "1.2.0-alpha.0",
     "@rspack/core": "1.2.0-alpha.0",
-    "ts-node": "10.9.2"
+    "ts-node": "10.9.2",
+    "typescript": "^5.7.2"
   }
 }
