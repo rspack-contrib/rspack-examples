@@ -8,9 +8,9 @@
     "preview": "rsbuild preview"
   },
   "devDependencies": {
-    "@rsbuild/core": "1.2.0-alpha.0",
+    "@rsbuild/core": "1.2.0-beta.0",
     "@types/express": "^5.0.0",
     "express": "^4.21.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.3"
   }
 }

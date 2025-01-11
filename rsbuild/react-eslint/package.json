@@ -13,15 +13,15 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@rsbuild/core": "1.2.0-alpha.0",
+    "@rsbuild/core": "1.2.0-beta.0",
     "@rsbuild/plugin-eslint": "^1.1.0",
     "@rsbuild/plugin-react": "^1.1.0",
-    "@types/react": "^19.0.2",
+    "@types/react": "^19.0.4",
     "@types/react-dom": "^19.0.2",
-    "@typescript-eslint/eslint-plugin": "^8.19.0",
-    "@typescript-eslint/parser": "^8.19.0",
+    "@typescript-eslint/eslint-plugin": "^8.19.1",
+    "@typescript-eslint/parser": "^8.19.1",
     "eslint": "^8.57.1",
     "eslint-plugin-react-hooks": "^5.1.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.3"
   }
 }
