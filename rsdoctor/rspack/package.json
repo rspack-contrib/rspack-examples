@@ -19,8 +19,8 @@
     "@rspack/cli": "1.2.0-beta.0",
     "@rspack/core": "1.2.0-beta.0",
     "@rspack/plugin-react-refresh": "^1.0.1",
-    "@types/react": "^19.0.4",
-    "@types/react-dom": "^19.0.2",
+    "@types/react": "^19.0.6",
+    "@types/react-dom": "^19.0.3",
     "react-refresh": "^0.16.0"
   }
 }
