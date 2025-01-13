@@ -1,4 +1,4 @@
-const rspack = require('@rspack/core');
+const { rspack } = require('@rspack/core');
 class StatsPrinterTestPlugin {
   apply(compiler) {
     compiler.hooks.compilation.tap('StatsPrinterTestPlugin', (compilation) => {

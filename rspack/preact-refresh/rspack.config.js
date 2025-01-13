@@ -1,4 +1,4 @@
-const rspack = require('@rspack/core');
+const { rspack } = require('@rspack/core');
 const PreactRefreshPlugin = require('@rspack/plugin-preact-refresh');
 const dev = process.env.NODE_ENV === 'development';
 /** @type {import('@rspack/cli').Configuration} */

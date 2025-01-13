@@ -1,5 +1,5 @@
 const { RunScriptWebpackPlugin } = require('run-script-webpack-plugin');
-const rspack = require('@rspack/core');
+const { rspack } = require('@rspack/core');
 
 /** @type {import('@rspack/cli').Configuration} */
 const config = {

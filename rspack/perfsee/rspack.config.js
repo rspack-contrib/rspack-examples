@@ -1,4 +1,4 @@
-const rspack = require('@rspack/core');
+const { rspack } = require('@rspack/core');
 const { PerfseePlugin } = require('@perfsee/webpack');
 /** @type {import('@rspack/cli').Configuration} */
 const config = {

@@ -1,4 +1,4 @@
-const rspack = require('@rspack/core');
+const { rspack } = require('@rspack/core');
 const { VueLoaderPlugin } = require('vue-loader');
 
 /** @type {import('@rspack/cli').Configuration} */
