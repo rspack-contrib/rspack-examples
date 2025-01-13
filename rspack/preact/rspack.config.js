@@ -1,4 +1,4 @@
-const rspack = require('@rspack/core');
+const { rspack } = require('@rspack/core');
 const dev = process.env.NODE_ENV === 'development';
 /** @type {import('@rspack/cli').Configuration} */
 const config = {

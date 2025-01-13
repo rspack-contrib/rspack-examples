@@ -1,4 +1,5 @@
-const rspack = require('../../packages/rspack');
+const { rspack } = require('../../packages/rspack');
+
 /**
  * @type {import("@rspack/core").Configuration}
  */

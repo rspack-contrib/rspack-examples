@@ -1,4 +1,4 @@
-const rspack = require('@rspack/core');
+const { rspack } = require('@rspack/core');
 const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 
 /** @type {import('@rspack/cli').Configuration} */

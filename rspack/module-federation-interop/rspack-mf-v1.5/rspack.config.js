@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ReactRefreshPlugin = require('@rspack/plugin-react-refresh');
-const rspack = require('@rspack/core');
+const { rspack } = require('@rspack/core');
 
 const isProduction = process.env.NODE_ENV === 'production';
 const containerName = 'Rspack_MF_v1_5';
