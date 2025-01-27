@@ -216,6 +216,31 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3
 
+  rsbuild/query-raw:
+    dependencies:
+      react:
+        specifier: ^19.0.0
+        version: 19.0.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.0.0(react@19.0.0)
+    devDependencies:
+      '@rsbuild/core':
+        specifier: 1.2.3
+        version: 1.2.3
+      '@rsbuild/plugin-react':
+        specifier: ^1.1.0
+        version: 1.1.0(@rsbuild/core@1.2.3)
+      '@types/react':
+        specifier: ^19.0.8
+        version: 19.0.8
+      '@types/react-dom':
+        specifier: ^19.0.3
+        version: 19.0.3(@types/react@19.0.8)
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
+
   rsbuild/react:
     dependencies:
       react:
@@ -18991,7 +19016,7 @@ snapshots:
 
   babel-walk@3.0.0-canary-5:
     dependencies:
-      '@babel/types': 7.26.0
+      '@babel/types': 7.26.7
     optional: true
 
   bail@2.0.2: {}
@@ -19500,8 +19525,8 @@ snapshots:
 
   constantinople@4.0.1:
     dependencies:
-      '@babel/parser': 7.26.2
-      '@babel/types': 7.26.0
+      '@babel/parser': 7.26.7
+      '@babel/types': 7.26.7
     optional: true
 
   constants-browserify@1.0.0: {}
@@ -27384,8 +27409,8 @@ snapshots:
 
   with@7.0.2:
     dependencies:
-      '@babel/parser': 7.26.2
-      '@babel/types': 7.26.0
+      '@babel/parser': 7.26.7
+      '@babel/types': 7.26.7
       assert-never: 1.2.1
       babel-walk: 3.0.0-canary-5
     optional: true
