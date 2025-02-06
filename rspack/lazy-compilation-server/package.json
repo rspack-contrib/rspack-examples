@@ -1,0 +1,16 @@
+{
+  "name": "example-use-custom-server-for-lazy-compilation",
+  "private": true,
+  "scripts": {
+    "dev": "node ./dev.js"
+  },
+  "devDependencies": {
+    "@rspack/cli": "1.2.2",
+    "@rspack/core": "1.2.2",
+    "html-webpack-plugin": "^5.6.3",
+    "@rspack/dev-server": "latest"
+  },
+  "rspack": {
+    "version": ">=0.3.11"
+  }
+}
