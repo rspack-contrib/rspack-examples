@@ -1,4 +1,4 @@
-const rspack = require('@rspack/core');
+const { rspack } = require('@rspack/core');
 const { RspackDevServer } = require('@rspack/dev-server');
 
 const compiler = rspack({
