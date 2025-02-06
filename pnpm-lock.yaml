@@ -1018,7 +1018,7 @@ importers:
         version: 0.4.13(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1173,7 +1173,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1241,7 +1241,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1374,7 +1374,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1384,18 +1384,12 @@ importers:
 
   rspack/lazy-compilation-server:
     devDependencies:
-      '@rspack/cli':
-        specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
       '@rspack/dev-server':
-        specifier: latest
+        specifier: 1.0.10
         version: 1.0.10(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
-      html-webpack-plugin:
-        specifier: ^5.6.3
-        version: 5.6.3(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
 
   rspack/library-cjs:
     devDependencies:
@@ -1446,7 +1440,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1471,7 +1465,7 @@ importers:
         version: 3.1.0(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1555,7 +1549,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1583,7 +1577,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1655,7 +1649,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1686,7 +1680,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1748,7 +1742,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1779,7 +1773,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1875,7 +1869,7 @@ importers:
     dependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1967,7 +1961,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -1982,7 +1976,7 @@ importers:
         version: 1.13.0(encoding@0.1.13)(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2004,7 +1998,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2022,7 +2016,7 @@ importers:
     dependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@swc/helpers':
         specifier: ^0.5.15
         version: 0.5.15
@@ -2119,7 +2113,7 @@ importers:
         version: 7.25.9(@babel/core@7.26.7)
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2153,7 +2147,7 @@ importers:
         version: 7.25.9(@babel/core@7.26.7)
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2215,7 +2209,7 @@ importers:
         version: 7.26.0(@babel/core@7.26.7)
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2233,7 +2227,7 @@ importers:
     dependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@swc/helpers':
         specifier: ^0.5.15
         version: 0.5.15
@@ -2264,7 +2258,7 @@ importers:
     dependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@swc/helpers':
         specifier: ^0.5.15
         version: 0.5.15
@@ -2292,7 +2286,7 @@ importers:
     dependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@swc/helpers':
         specifier: ^0.5.15
         version: 0.5.15
@@ -2329,7 +2323,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2344,7 +2338,7 @@ importers:
         version: 7.26.7
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       babel-loader:
         specifier: 9.2.1
         version: 9.2.1(@babel/core@7.26.7)(webpack@5.97.1(esbuild@0.24.2))
@@ -2477,7 +2471,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2534,7 +2528,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2574,7 +2568,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2639,7 +2633,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2657,7 +2651,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2684,7 +2678,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2721,7 +2715,7 @@ importers:
         version: 7.26.0(@babel/core@7.26.7)
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2752,7 +2746,7 @@ importers:
         version: 7.26.7
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2777,7 +2771,7 @@ importers:
         version: 7.26.0(@babel/core@7.26.7)
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2802,7 +2796,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -2860,7 +2854,7 @@ importers:
     devDependencies:
       '@rspack/cli':
         specifier: 1.2.2
-        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
+        version: 1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))
       '@rspack/core':
         specifier: 1.2.2
         version: 1.2.2(@swc/helpers@0.5.15)
@@ -16809,26 +16803,6 @@ snapshots:
       - webpack
       - webpack-cli
 
-  '@rspack/cli@1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))':
-    dependencies:
-      '@discoveryjs/json-ext': 0.5.7
-      '@rspack/core': 1.2.2(@swc/helpers@0.5.15)
-      '@rspack/dev-server': 1.0.10(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
-      colorette: 2.0.19
-      exit-hook: 4.0.0
-      interpret: 3.1.1
-      rechoir: 0.8.0
-      webpack-bundle-analyzer: 4.6.1
-      yargs: 17.6.2
-    transitivePeerDependencies:
-      - '@types/express'
-      - bufferutil
-      - debug
-      - supports-color
-      - utf-8-validate
-      - webpack
-      - webpack-cli
-
   '@rspack/cli@1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack-cli@5.1.4)(webpack@5.97.1)':
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
@@ -16854,6 +16828,26 @@ snapshots:
       '@discoveryjs/json-ext': 0.5.7
       '@rspack/core': 1.2.2(@swc/helpers@0.5.15)
       '@rspack/dev-server': 1.0.10(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(@swc/core@1.10.9(@swc/helpers@0.5.15))(esbuild@0.24.2))
+      colorette: 2.0.19
+      exit-hook: 4.0.0
+      interpret: 3.1.1
+      rechoir: 0.8.0
+      webpack-bundle-analyzer: 4.6.1
+      yargs: 17.6.2
+    transitivePeerDependencies:
+      - '@types/express'
+      - bufferutil
+      - debug
+      - supports-color
+      - utf-8-validate
+      - webpack
+      - webpack-cli
+
+  '@rspack/cli@1.2.2(@rspack/core@1.2.2(@swc/helpers@0.5.15))(webpack@5.97.1(esbuild@0.24.2))':
+    dependencies:
+      '@discoveryjs/json-ext': 0.5.7
+      '@rspack/core': 1.2.2(@swc/helpers@0.5.15)
+      '@rspack/dev-server': 1.0.10(@rspack/core@1.2.2(@swc/helpers@0.5.15))(@types/express@4.17.21)(webpack@5.97.1(esbuild@0.24.2))
       colorette: 2.0.19
       exit-hook: 4.0.0
       interpret: 3.1.1
