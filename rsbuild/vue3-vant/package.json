@@ -8,11 +8,11 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "vant": "^4.9.16",
+    "vant": "^4.9.17",
     "vue": "^3.4.12"
   },
   "devDependencies": {
-    "@rsbuild/core": "1.2.3",
+    "@rsbuild/core": "1.2.8",
     "@rsbuild/plugin-less": "^1.1.0",
     "@rsbuild/plugin-vue": "^1.0.5",
     "@vant/auto-import-resolver": "^1.2.1",

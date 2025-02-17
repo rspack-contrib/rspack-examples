@@ -26,10 +26,10 @@
     "lint-staged": "15.4.3",
     "taze": "^0.18.0"
   },
-  "packageManager": "pnpm@10.1.0",
+  "packageManager": "pnpm@10.4.1",
   "pnpm": {
     "overrides": {
-      "react-focus-lock": "2.13.5"
+      "react-focus-lock": "2.13.6"
     }
   }
 }
