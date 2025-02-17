@@ -12,14 +12,14 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "semver6": "npm:semver@6.3.1",
-    "semver7": "npm:semver@7.6.3"
+    "semver7": "npm:semver@7.7.1"
   },
   "devDependencies": {
     "@rsdoctor/rspack-plugin": "^0.4.13",
-    "@rspack/cli": "1.2.2",
-    "@rspack/core": "1.2.2",
+    "@rspack/cli": "1.2.3",
+    "@rspack/core": "1.2.3",
     "@rspack/plugin-react-refresh": "^1.0.1",
-    "@types/react": "^19.0.8",
+    "@types/react": "^19.0.9",
     "@types/react-dom": "^19.0.3",
     "react-refresh": "^0.16.0"
   }
