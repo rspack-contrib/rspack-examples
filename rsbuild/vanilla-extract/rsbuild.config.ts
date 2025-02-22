@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     pluginReact({
       reactRefreshOptions: {
-        exclude: [/\.css\.ts$/],
+        exclude: [/node_modules/, /\.css\.ts$/],
       },
     }),
   ],
