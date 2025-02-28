@@ -8,12 +8,12 @@
     "preview": "rspress preview"
   },
   "dependencies": {
-    "rspress": "^1.41.2"
+    "rspress": "^1.42.1"
   },
   "devDependencies": {
-    "@types/node": "^22.13.4",
-    "@types/react": "^19.0.9",
-    "@types/react-dom": "^19.0.3",
+    "@types/node": "^22.13.7",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   }

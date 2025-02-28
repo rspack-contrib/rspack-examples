@@ -17,12 +17,12 @@
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.25.9",
     "@babel/plugin-syntax-typescript": "^7.25.9",
-    "@rspack/cli": "1.2.3",
-    "@rspack/core": "1.2.3",
-    "@types/react": "^19.0.9",
-    "@types/react-dom": "^19.0.3",
+    "@rspack/cli": "1.2.6",
+    "@rspack/core": "1.2.6",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "babel-loader": "^9.2.1",
     "babel-plugin-react-compiler": "0.0.0-experimental-cd3852a-20241229",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.2"
   }
 }

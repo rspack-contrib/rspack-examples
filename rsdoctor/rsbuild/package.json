@@ -14,12 +14,12 @@
     "semver7": "npm:semver@7.7.1"
   },
   "devDependencies": {
-    "@rsbuild/core": "1.2.8",
-    "@rsbuild/plugin-react": "^1.1.0",
+    "@rsbuild/core": "1.2.13",
+    "@rsbuild/plugin-react": "^1.1.1",
     "@rsdoctor/rspack-plugin": "^0.4.13",
-    "@types/react": "^19.0.9",
-    "@types/react-dom": "^19.0.3",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "@types/semver6": "npm:@types/semver@7.5.8",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.2"
   }
 }

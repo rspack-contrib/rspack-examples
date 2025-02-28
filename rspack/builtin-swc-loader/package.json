@@ -16,19 +16,19 @@
     "vue": "3.5.8"
   },
   "devDependencies": {
-    "@lingui/swc-plugin": "^5.1.0",
-    "@rspack/cli": "1.2.3",
-    "@rspack/core": "1.2.3",
+    "@lingui/swc-plugin": "^5.4.0",
+    "@rspack/cli": "1.2.6",
+    "@rspack/core": "1.2.6",
     "@swc/helpers": "^0.5.15",
-    "@swc/plugin-emotion": "^8.6.0",
-    "@swc/plugin-loadable-components": "^5.2.0",
-    "@swc/plugin-prefresh": "^6.2.0",
-    "@swc/plugin-relay": "^6.2.0",
-    "@swc/plugin-remove-console": "^6.2.0",
-    "@swc/plugin-styled-components": "^6.7.0",
-    "@swc/plugin-styled-jsx": "^6.5.0",
-    "@swc/plugin-transform-imports": "^6.4.0",
-    "swc-plugin-css-modules": "^2.2.0",
+    "@swc/plugin-emotion": "^8.7.2",
+    "@swc/plugin-loadable-components": "^5.3.1",
+    "@swc/plugin-prefresh": "^6.3.2",
+    "@swc/plugin-relay": "^6.3.2",
+    "@swc/plugin-remove-console": "^6.3.2",
+    "@swc/plugin-styled-components": "^6.8.2",
+    "@swc/plugin-styled-jsx": "^6.6.2",
+    "@swc/plugin-transform-imports": "^6.5.2",
+    "swc-plugin-css-modules": "^2.2.1",
     "swc-plugin-vue-jsx": "^0.3.2"
   }
 }
