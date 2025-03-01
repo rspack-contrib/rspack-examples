@@ -12,12 +12,12 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@rsbuild/core": "1.2.8",
-    "@rsbuild/plugin-babel": "^1.0.3",
-    "@rsbuild/plugin-react": "^1.1.0",
-    "@types/react": "^19.0.9",
-    "@types/react-dom": "^19.0.3",
+    "@rsbuild/core": "1.2.13",
+    "@rsbuild/plugin-babel": "^1.0.4",
+    "@rsbuild/plugin-react": "^1.1.1",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "babel-plugin-react-compiler": "0.0.0-experimental-cd3852a-20241229",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.2"
   }
 }
