@@ -1,7 +1,7 @@
 {
-  "name": "rspack-examples",
+  "name": "rstack-examples",
   "version": "1.0.0",
-  "description": "Repository for examples of Rspack / Rsbuild / Repress / Rsdoctor",
+  "description": "Repository for examples of rstack",
   "license": "MIT",
   "scripts": {
     "bump": "taze -l",
